@@ -1,0 +1,73 @@
+.bg-page{
+    background-color: #1095b0;;
+}
+
+.header{
+    height: 50vh;
+    background-color: #00aef7;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-bottom: 5px solid white;
+    border-bottom-right-radius: 100%;
+    box-shadow: 1px 1px 1px 0px black;
+}
+
+.header-content{
+    margin-top: 70px;
+    font-size: 32px;
+    color: white;
+}
+
+.welcome-text p{
+    font-size: 23px;
+}
+.welcome-text h1{
+    font-size: 42px;
+    margin-left: 120px;
+}
+
+.margin-top-30px{
+    margin-top: 70px;
+}
+
+.margin-bottom-30px{
+    margin-bottom: 70px;
+}
+
+.teamspeak h2{
+    font-size: 35px;
+}
+
+.ts-img{
+    width: 120px;
+}
+
+.contact h2{
+    font-size: 35px;
+}
+
+.contact p{
+    font-size: 23px;
+}
+
+.contact img{
+    width: 235px;
+}
+
+.footer{
+    min-height: 50vh;
+    background-color: #00aef7;
+    border-top: 5px solid white;
+    border-top-left-radius: 100%;
+    box-shadow: 0px 1px 1px 2px black;
+    padding-top: 120px;
+}
+
+.footer a{
+    font-size: 32px;
+    font-weight: bolder;
+} 
+
+.w-70{
+    width: 70%;
+}
