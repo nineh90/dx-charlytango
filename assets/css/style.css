@@ -1,9 +1,23 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-mono-v22-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-mono-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
 .bg-page{
-    background-color: #1095b0;;
+    background-color: #1095b0;
+}
+
+.bg-green{
+    background-color: #5bb511;
 }
 
 .header{
-    height: 50vh;
+    font-family:  'Roboto Mono';
+    height: 75vh;
     background-color: #00aef7;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -14,12 +28,13 @@
 
 .header-content{
     margin-top: 70px;
-    font-size: 32px;
+    font-size: 24px;
     color: white;
 }
 
 .welcome-text p{
-    font-size: 23px;
+    font-family:  'Roboto Mono';
+    font-size: 20px;;
 }
 .welcome-text h1{
     font-size: 42px;
@@ -47,7 +62,8 @@
 }
 
 .contact p{
-    font-size: 23px;
+    font-family:  'Roboto Mono';
+    font-size: 20px;
 }
 
 .contact img{
@@ -55,10 +71,11 @@
 }
 
 .footer{
+    font-family:  'Roboto Mono';
     min-height: 50vh;
     background-color: #00aef7;
     border-top: 5px solid white;
-    border-top-left-radius: 100%;
+    /* border-top-left-radius: 100%; */
     box-shadow: 0px 1px 1px 2px black;
     padding-top: 120px;
 }
@@ -70,4 +87,64 @@
 
 .w-70{
     width: 70%;
+}
+
+.nav{
+    font-family:  'Roboto Mono';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    height: 65px;    
+}
+
+.main-menu{
+    border: solid 1px white;
+    border-radius: 12px;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.main-menu:hover{
+    background-color: white;
+    color: #1095b0;
+    box-shadow: 1px 1px 1px 1px #00aef7;
+
+}
+
+.navbar a{
+    font-size: 20px;
+    border: solid  white;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.navbar a:hover{
+    color: #1095b0;
+    background-color: white;
+}
+
+.submenu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1095b0;
+}
+
+.cross{
+    position: absolute;
+    top: 90px;
+    right: 90px;
+    width: 65px;
 }
