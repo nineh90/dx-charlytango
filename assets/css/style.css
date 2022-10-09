@@ -59,6 +59,7 @@
 
 .contact h2{
     font-size: 35px;
+    font-family: 'Roboto Mono';
 }
 
 .contact p{
@@ -72,7 +73,7 @@
 
 .footer{
     font-family:  'Roboto Mono';
-    min-height: 50vh;
+    min-height: 35vh;
     background-color: #00aef7;
     border-top: 5px solid white;
     /* border-top-left-radius: 100%; */
@@ -81,9 +82,26 @@
 }
 
 .footer a{
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 } 
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer h2{
+        font-size: 36px;
+        color: red;
+}
+
+.footer p{
+    font-size: 18px;
+    color: white;
+}
 
 .w-70{
     width: 70%;
@@ -118,14 +136,16 @@
 }
 
 .navbar a{
-    font-size: 20px;
-    border: solid  white;
+    font-size: 15px;
+    border: solid white;
     text-decoration: none;
     color: white;
-    padding: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-bottom: 4px;
+    padding: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 240px;
+    font-family: 'Roboto Mono';
 }
 
 .navbar a:hover{
@@ -144,7 +164,7 @@
 
 .cross{
     position: absolute;
-    top: 90px;
-    right: 90px;
-    width: 65px;
+    top: 45px;
+    right: 45px;
+    width: 45px;
 }
