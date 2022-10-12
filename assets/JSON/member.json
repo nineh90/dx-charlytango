@@ -1,0 +1,36 @@
+[
+    {
+        "country" : "Italien",
+        "flag" : "flagImage URL/Folder",
+        "prefix": "001 CT...",
+        "member": [{
+            "callsign": "1CT0002",
+            "name": "Berti.L.",
+            "country": "Tarracina (LT)",
+            "status": "unknown"
+        }, {
+            "callsign": "1CT0003",
+            "name": "Tiziano",
+            "country": "Casapinta",
+            "status": "unknown"
+        }]
+    }, 
+    {
+        "country" : "USA",
+        "flag" : "flagImage URL/Folder",
+        "prefix": "002 CT...",
+        "member": [{
+            "callsign": "2CT0002",
+            "name": "Joe",
+            "country": "Meadville (PA)",
+            "status": "unknown"
+        }, {
+            "callsign": "2CT0003",
+            "name": "Earl",
+            "country": "Longbeach (CA)",
+            "status": "unknown"
+        }]
+    }  
+]
+
+
