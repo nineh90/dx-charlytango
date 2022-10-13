@@ -1,0 +1,316 @@
+[
+    {
+        "date" : "18.09.2022",
+        "memberCode" : "13CT2233",
+        "name": "Oliver",
+        "locator": "",
+        "placeOfResidence": "Neuruppin"
+    }, 
+    {
+        "date" : "14.09.2022",
+        "memberCode" : "13CT3075",
+        "name": "Frank",
+        "locator": "JO43BK",
+        "placeOfResidence": "Varel"
+    },  
+    {
+        "date" : "09.08.2022",
+        "memberCode" : "13CT2616",
+        "name": "Normann",
+        "locator": "",
+        "placeOfResidence": "Eningen"
+    },
+    {
+        "date" : "14.07.2022",
+        "memberCode" : "13CT2869",
+        "name": "Andreas",
+        "locator": "",
+        "placeOfResidence": "Fuldatal"
+    },
+    {
+        "date" : "05.07.2022",
+        "memberCode" : "13CT2903",
+        "name": "Andreas",
+        "locator": "",
+        "placeOfResidence": "Ursensollen"
+    },
+    {
+        "date" : "12.06.2022",
+        "memberCode" : "13CT1993",
+        "name": "Steven",
+        "locator": "",
+        "placeOfResidence": "Solingen"
+    },
+    {
+        "date" : "10.06.2022",
+        "memberCode" : "13CT1992",
+        "name": "Chantal",
+        "locator": "",
+        "placeOfResidence": "Solingen"
+    },   
+    {
+        "date" : "10.06.2022",
+        "memberCode" : "13CT1987",
+        "name": "Andreas",
+        "locator": "",
+        "placeOfResidence": "Solingen"
+    }, 
+    {
+        "date" : "06.06.2022",
+        "memberCode" : "13CT6401",
+        "name": "Hans",
+        "locator": "",
+        "placeOfResidence": "Willich"
+    }, 
+    {
+        "date" : "24.05.2022",
+        "memberCode" : "13CT1881",
+        "name": "Stephan",
+        "locator": "",
+        "placeOfResidence": "Bernau"
+    },
+    {
+        "date" : "17.05.2022",
+        "memberCode" : "13CT1969",
+        "name": "Christian",
+        "locator": "",
+        "placeOfResidence": "Quickborn"
+    },  
+    {
+        "date" : "16.05.2022",
+        "memberCode" : "13CT2109",
+        "name": "Camillo",
+        "locator": "",
+        "placeOfResidence": "Erfurt"
+    },  
+    {
+        "date" : "16.05.2022",
+        "memberCode" : "35CT1821",
+        "name": "Thomas",
+        "locator": "",
+        "placeOfResidence": "Oedt a.D. Wild"
+    },  
+    {
+        "date" : "16.05.2022",
+        "memberCode" : "13CT1068",
+        "name": "Dietmar",
+        "locator": "",
+        "placeOfResidence": "Maintal"
+    },  
+    {
+        "date" : "16.05.2022",
+        "memberCode" : "13CT0699",
+        "name": "Andreas",
+        "locator": "",
+        "placeOfResidence": "Dortmund"
+    },
+    {
+        "date" : "13.05.2022",
+        "memberCode" : "13CT2494",
+        "name": "Maik",
+        "locator": "",
+        "placeOfResidence": "Rügen"
+    },  
+    {
+        "date" : "24.04.2022",
+        "memberCode" : "13CT8020",
+        "name": "Jochen",
+        "locator": "",
+        "placeOfResidence": "Neu - Ulm"
+    },    
+    {
+        "date" : "24.04.2022",
+        "memberCode" : "13CT3111",
+        "name": "Karsten",
+        "locator": "JO31JV",
+        "placeOfResidence": "Borken"
+    }, 
+    {
+        "date" : "16.02.2022",
+        "memberCode" : "13CT1296",
+        "name": "Arno",
+        "locator": "",
+        "placeOfResidence": "Wiesmoor"
+    }, 
+    {
+        "date" : "20.01.2022",
+        "memberCode" : "13CT1766",
+        "name": "Michael",
+        "locator": "",
+        "placeOfResidence": "Eutin"
+    },    
+    {
+        "date" : "14.01.2022",
+        "memberCode" : "13CT3950",
+        "name": "Thomas",
+        "locator": "",
+        "placeOfResidence": "Staudt"
+    },    
+    {
+        "date" : "14.01.2022",
+        "memberCode" : "13CT1769",
+        "name": "Thorsten",
+        "locator": "",
+        "placeOfResidence": "Maintal"
+    },
+    {
+        "date" : "13.01.2022",
+        "memberCode" : "13CT3054",
+        "name": "Peter",
+        "locator": "",
+        "placeOfResidence": "Kalbe/Burnau"
+    },    
+    {
+        "date" : "24.10.2021",
+        "memberCode" : "13CT1989",
+        "name": "Lutz",
+        "locator": "JO40PR",
+        "placeOfResidence": "Alsfeld"
+    },
+    {
+        "date" : "02.10.2021",
+        "memberCode" : "13CT3007",
+        "name": "Lenia",
+        "locator": "",
+        "placeOfResidence": "Hamm"
+    },   
+    {
+        "date" : "17.07.2021",
+        "memberCode" : "13CT1920",
+        "name": "Georg",
+        "locator": "",
+        "placeOfResidence": "Vilsbiburg"
+    },    
+    {
+        "date" : "16.07.2021",
+        "memberCode" : "13CT1960",
+        "name": "Peter",
+        "locator": "JN68FJ",
+        "placeOfResidence": "Egglkofen"
+    },
+    {
+        "date" : "13.06.2021",
+        "memberCode" : "13CT1315",
+        "name": "Markus",
+        "locator": "JO40DA",
+        "placeOfResidence": "Mainz"
+    },
+    {
+        "date" : "12.06.2021",
+        "memberCode" : "13CT1698",
+        "name": "Colin",
+        "locator": "",
+        "placeOfResidence": "Zettliz"
+    },    {
+        "date" : "12.06.2021",
+        "memberCode" : "13CT1697",
+        "name": "Ralf",
+        "locator": "",
+        "placeOfResidence": "Zettliz"
+    },
+    {
+        "date" : "02.06.2021",
+        "memberCode" : "13CT1885",
+        "name": "Ulli",
+        "locator": "",
+        "placeOfResidence": "Sehmatal-Neudorf"
+    },
+    {
+        "date" : "20.05.2021",
+        "memberCode" : "13CT1754",
+        "name": "Reinhold",
+        "locator": "",
+        "placeOfResidence": "Bernau Am Chiemsee"
+    },  
+    {
+        "date" : "18.04.2021",
+        "memberCode" : "13CT1976",
+        "name": "Daniel",
+        "locator": "",
+        "placeOfResidence": "Dresden"
+    },  
+    {
+        "date" : "15.03.2021",
+        "memberCode" : "13CT1752",
+        "name": "Diethold",
+        "locator": "",
+        "placeOfResidence": "Castrop-Rauxel"
+    },
+    {
+        "date" : "09.03.2021",
+        "memberCode" : "13CT1850",
+        "name": "Stefan",
+        "locator": "",
+        "placeOfResidence": "Meschede"
+    },  
+    {
+        "date" : "03.03.2021",
+        "memberCode" : "13CT1654",
+        "name": "Volker",
+        "locator": "",
+        "placeOfResidence": "Brilon"
+    },  
+    {
+        "date" : "03.03.2021",
+        "memberCode" : "13CT1643",
+        "name": "Wilhelm",
+        "locator": "",
+        "placeOfResidence": "Steinhagen"
+    },  
+    {
+        "date" : "03.03.2021",
+        "memberCode" : "13CT1619",
+        "name": "Michael",
+        "locator": "",
+        "placeOfResidence": "Hattingen"
+    },  
+    {
+        "date" : "27.02.2021",
+        "memberCode" : "13CT1909",
+        "name": "Sven",
+        "locator": "",
+        "placeOfResidence": "Geldern"
+    },  
+    {
+        "date" : "25.02.2021",
+        "memberCode" : "13CT1995",
+        "name": "Tom",
+        "locator": "",
+        "placeOfResidence": "Neubrandenburg"
+    }, 
+    {
+        "date" : "15.02.2021",
+        "memberCode" : "13CT1783",
+        "name": "Michael",
+        "locator": "",
+        "placeOfResidence": "Minden"
+    }, 
+    {
+        "date" : "09.02.2021",
+        "memberCode" : "13CT4801",
+        "name": "Roland",
+        "locator": "",
+        "placeOfResidence": "Laupheim"
+    },  
+    {
+        "date" : "21.01.2021",
+        "memberCode" : "13CT1875",
+        "name": "Christian",
+        "locator": "",
+        "placeOfResidence": "Dülmen"
+    },  
+    {
+        "date" : "16.01.2021",
+        "memberCode" : "13CT1775",
+        "name": "Jacob",
+        "locator": "",
+        "placeOfResidence": "Halle ( Saale )"
+    }, 
+    {
+        "date" : "12.01.2021",
+        "memberCode" : "13CT1474",
+        "name": "Marc",
+        "locator": "",
+        "placeOfResidence": "Dortmund"
+    }
+]    

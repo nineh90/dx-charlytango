@@ -7,6 +7,10 @@
          url('../fonts/roboto-mono-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+.font-family-roboto-mono{
+    font-family: 'Roboto Mono';
+}
+
 .bg-page{
     background-color: #1095b0;
 }
@@ -167,4 +171,40 @@
     top: 45px;
     right: 45px;
     width: 45px;
+    cursor: pointer;
 }
+
+.contact-form{
+    width: 550px;
+    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#memberList {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #memberList td, #memberList th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #memberList tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+  #memberList tr:hover {
+    background-color: rgb(255, 250, 250);
+    color: lime;
+}
+  
+  #memberList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+  }

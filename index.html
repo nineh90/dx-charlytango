@@ -10,153 +10,12 @@
     <script src="./assets/javascript/main.js"></script>
 </head>
 <body class="bg-page">
-    <!--Navbar NEW-->
-    <div class="nav d-flex w-100 bg-page">
-        <div onclick="openCtMenu()" class="main-menu">HAUPTMENÜ</div>
-    </div>
-
-    <div id="submenu" class="submenu navbar d-none d-flex align-center justify-center">
-
-        <div class="">
-        <img src="./assets/img/ban_ctfrac.png" alt="">
-
-            <img onclick="closeSubMenu()" class="cross" src="./assets/img/cross.png" alt="">
-            <div class="navbar d-flex justify-center  margin-top-30px flex-wrap">
-
-                <!-- CT-hauptmenü -->
-                    <nav class="d-flex column txt-center">
-                        <a class="bg-green">CT - Hauptmenü</a>
-                        <a href="#">Über CharlyTango</a>
-                        <a href="#">CharlyTango Heute</a>
-                        <a href="#">In Gedanken</a>
-                        <a href="#">Neuanmeldung</a>
-                        <a href="#">Mitgliederliste</a>
-                        <a href="#">Neue Mitglieder</a>
-                        <a href="#">QSL-Karten</a>
-                        <a href="#">Bilder Galerie</a>
-                        <a href="#">CT-Frequenzen</a>
-                        <a href="#">CT-Downloads</a>
-                        <a href="#">Prefix - Liste</a>
-                        <a href="#">Gästebuch</a>
-                    </nav>   
-                    <!--Funkbereich-->
-                    <nav class="d-flex column txt-center">
-                        <a class="bg-green">Funkbereich</a>
-                        <a href="#">Was sind freie Funknetze</a>
-                        <a href="#">Geschichte CB-Funk</a>
-                        <a href="#">Bandplan CB 11m</a>
-                        <a href="#">Bandplan Freenet 149MhZ</a>
-                        <a href="#">Bandplan PMR 446MhZ</a>
-                        <a href="#">CB Einsatzgebiete</a>
-                        <a href="#">CB Betriebsart</a>
-                        <a href="#">Abkürzungen im CB</a>
-                        <a href="#">CB-Sprache</a>
-                        <a href="#">Regeln</a>
-                        <a href="#">Notruf</a>
-                        <a href="#">CB-Funk SWR</a>
-                    </nav>  
-                    <!--Allgemeines-->
-                    <nav class="d-flex column txt-center">
-                        <a class="bg-green">Allgemeines</a>
-                        <a href="#">Bundesnetzagentur</a>
-                        <a href="#">GW Anmeldung BNetzA</a>
-                        <a href="#">TeamViewer</a>
-                        <a href="#">AFU-Prüfung</a>
-                        <a href="#">CB-Funk Schutzzone</a>
-                        <a href="#">Wellenausbreitung</a>
-                        <a href="#">HF-Störungen</a>
-                        <a href="#">Locator - Bestimmung</a>
-                        <a href="#">Locator - Datenbank</a>
-                        <a href="#">Locatorberechnung</a>
-                        <a href="#">Buchstabier-Alphabet</a>
-                    </nav>
-                    <div>
-                        <!--Teamspeak-Menü-->
-                        <nav class="d-flex column txt-center">
-                            <a class="bg-green">Teamspeak 3</a>
-                            <a href="#">TS-3 Download</a>
-                            <a href="#">TS-3 Installationshilfe</a>
-                            <a href="#">TS-3 GW Installationshilfe</a>
-                            <a href="#">TS-3 Gateway Commander</a>
-                            <a href="#">TS-3 Schnellconect</a>
-                            <a href="#">Bllick auf TS-3 Server</a>
-                        </nav>
-                        
-                        <!--GW-Technik-Menü-->
-                        <nav class="d-flex column txt-center">
-                            <a class="bg-green">GW-Technik</a>
-                            <a href="#">Einfaches Interface</a>
-                            <a href="#">Soundkarteninterface</a>
-                            <a href="#">Mikrofonbelegung CB</a>
-                            <a href="#">Mikrofonbelegung PMR</a>
-                            <a href="#">Anschluss an PC</a>
-                        </nav>
-                    </div>    
-                    <!--PR-Technik-->
-                    <div>
-                        <nav class="d-flex column txt-center">
-                            <a class="bg-green">PR-Technik</a>
-                            <a href="#">Geschichte PR</a>
-                            <a href="#">Was ist PR</a>
-                            <a href="#">PR Betriebsart</a>
-                            <a href="#">PR auf CB-Funk</a>
-                            <a href="#">PR-Download</a>
-                        </nav>
-                        <!--Weather-->
-                        <nav class="d-flex column txt-center">
-                            <a class="bg-green">Wetter Info</a>
-                            <a href="#">Blitzradar</a>
-                            <a href="#">Wetterwarnung</a>
-                            <a href="#">Blitzortung</a>
-                        </nav>
-                    </div>
-                    <div>    
-                        <!--Interace-->
-                        <nav class="d-flex column txt-center">
-                            <a class="bg-green">Interace SSTV</a>
-                            <a href="#">Anleitung Interace SSTV</a>
-                            <a href="#">Download Interace SSTV</a>
-                        </nav>
-                        <!--Allgemeine News-->
-                        <nav class="d-flex column txt-center">
-                            <a class="bg-green">Allgemeine News</a>
-                            <a href="#">Funkmagazin</a>
-                            <a href="#">DARC</a>
-                        </nav>
-                    </div>    
-        
-        
-        
-            </div>
-        </div>    
-    </div>   
-
-
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
     <!--Header-->
-    <div class="header w-100">
-        <div class="d-flex justify-around align-center">
-            <img src="./assets/img/funk00010.gif" alt="">
-            <img src="./assets/img/ban_ctfrac.png" alt="">
-            <img src="./assets/img/flags.gif" alt="">
-        </div>    
-        <div class="d-flex justify-center txt-center">
-            <p class="header-content">
-                HAM - CB - SWL - BCL - COMPUTER - AM - FM - SSB<br>
-                Monitor Frequenz 26.765 FM, 27.385 FM<br>
-                Packet-Radio 26.675 FM, 26.915 FM, 26.925 FM, 27.245 FM<br>
-                SSTV 26.685 FM
-            </p>
-        </div>
-        <div class="d-flex w-100 justify-center">
-            <img src="./assets/img/kodax-02.gif" alt="">
-        </div>
-        <div class="welcome-text">
-            <h1>
-                Herzlich Willkommen bei<br>
-                DX-CharlyTango
-            </h1>   
-        </div>        
-    </div>
+    <div w3-include-html="./assets/template/header.html"></div>  
     <!--Welcome Content-->
     <div class="d-flex justify-around align-center margin-top-30px margin-bottom-30px">
         <div class="welcome-text txt-center">
@@ -172,12 +31,11 @@
                 an das Internet an zu schließen und über sogenannte Relais die auf der Funkplattform<br>
                 zu finden sind Deutschland oder auch Weltweit miteinander zu kommunizieren.
             </p>
-
         </div>
         <img class="" src="./assets/img/georgeg-schwarz.gif" alt="">
     </div>
 
-    <div class="d-flex w-100 justify-center">
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
         <img src="./assets/img/kodax-02.gif" alt="">
     </div>
 
@@ -219,16 +77,10 @@
         <img src="./assets/img/kodax-02.gif" alt="">
     </div>
     <!--Footer-->
-    <div class="footer d-flex  align-center column">
-        <div class="w-100 d-flex justify-around">
-            <a href="#">Impressum</a>
-            <a href="#">Kontakt</a>
-        </div>
-        <h2>"CHARLY TANGO, OVER AND OUT!"</h2> 
-        <p>&COPY NILS NEHRING</p>   
-        <!-- <div class="margin-top-30px">
-            <img src="./assets/img/ban_ctfrac.png" alt="">
-        </div> -->
-    </div>
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
 </body>
 </html>
