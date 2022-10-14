@@ -19,8 +19,7 @@ function renderMemberList(loadedData){
         const placeOfResidence = loadedData[i]['placeOfResidence'];
         generateMemberTable(date, member, name, locator, placeOfResidence);
         console.log(date, member, name, placeOfResidence);
-    }
-    
+    }    
 }    
 
 function generateMemberTable(date, member, name, locator, placeOfResidence){

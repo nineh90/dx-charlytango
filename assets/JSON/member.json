@@ -1,36 +1,316 @@
 [
     {
         "country" : "Italien",
-        "flag" : "flagImage URL/Folder",
+        "flag" : "it",
         "prefix": "001 CT...",
         "member": [{
             "callsign": "1CT0002",
             "name": "Berti.L.",
-            "country": "Tarracina (LT)",
+            "city": "Tarracina (LT)",
             "status": "unknown"
         }, {
             "callsign": "1CT0003",
             "name": "Tiziano",
-            "country": "Casapinta",
+            "city": "Casapinta",
             "status": "unknown"
         }]
     }, 
     {
         "country" : "USA",
-        "flag" : "flagImage URL/Folder",
+        "flag" : "us",
         "prefix": "002 CT...",
         "member": [{
             "callsign": "2CT0002",
             "name": "Joe",
-            "country": "Meadville (PA)",
+            "city": "Meadville (PA)",
             "status": "unknown"
         }, {
             "callsign": "2CT0003",
             "name": "Earl",
-            "country": "Longbeach (CA)",
+            "city": "Longbeach (CA)",
             "status": "unknown"
         }]
-    }  
+    }, 
+    {
+        "country" : "Brazil",
+        "flag" : "br",
+        "prefix": "003 CT...",
+        "member": [{
+            "callsign": "2CT0002",
+            "name": "Joe",
+            "city": "Meadville (PA)",
+            "status": "unknown"
+        }, {
+            "callsign": "2CT0003",
+            "name": "Earl",
+            "city": "Longbeach (CA)",
+            "status": "unknown"
+        }]
+    }, 
+    {
+        "country" : "Argentina",
+        "flag" : "ar",
+        "prefix": "004 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "Venezuela",
+        "flag" : "ve",
+        "prefix": "005 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "Colombia",
+        "flag" : "co",
+        "prefix": "006 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    },
+    {
+        "country" : "PERU",
+        "flag" : "pe",
+        "prefix": "008 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "CANADA",
+        "flag" : "ca",
+        "prefix": "009 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "MEXICO",
+        "flag" : "mx",
+        "prefix": "010 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "PUERTO RICO",
+        "flag" : "pr",
+        "prefix": "011 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "URUGUAY",
+        "flag" : "uy",
+        "prefix": "012 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    },
+    {
+        "country" : "GERMANY",
+        "flag" : "de",
+        "prefix": "013 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "FRANCE",
+        "flag" : "fr",
+        "prefix": "014 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "SWITZERLAND",
+        "flag" : "ch",
+        "prefix": "015 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "BELGIUM",
+        "flag" : "be",
+        "prefix": "016 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    },
+    {
+        "country" : "GREECE",
+        "flag" : "gr",
+        "prefix": "018 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "NETHERLANDS",
+        "flag" : "nl",
+        "prefix": "019 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "NORWAY",
+        "flag" : "no",
+        "prefix": "020 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "SWEDEN",
+        "flag" : "se",
+        "prefix": "021 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "JAMAYCA",
+        "flag" : "jm",
+        "prefix": "023 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    },
+    {
+        "country" : "PANAMA",
+        "flag" : "pa",
+        "prefix": "024 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }, 
+    {
+        "country" : "JAPAN",
+        "flag" : "jp",
+        "prefix": "025 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    },
+    {
+        "country" : "ENGLAND",
+        "flag" : "gb-eng",
+        "prefix": "026 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    },
+    {
+        "country" : "ICELAND",
+        "flag" : "is",
+        "prefix": "027 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }        ,
+    {
+        "country" : "HONDURAS",
+        "flag" : "hn",
+        "prefix": "028 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }        ,
+    {
+        "country" : "REP.OF IRELAND",
+        "flag" : "ie",
+        "prefix": "029 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }        ,
+    {
+        "country" : "SPAIN",
+        "flag" : "es",
+        "prefix": "030 CT...",
+        "member": [{
+            "callsign": "",
+            "name": "",
+            "city": "",
+            "status": ""
+        }]
+    }        
 ]
 
 

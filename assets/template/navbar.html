@@ -10,20 +10,19 @@
     <title>DX-Navbar</title>
 </head>
 <body>
-    <div id="submenu" class="submenu navbar d-none d-flex align-center justify-center">
+    <div id="submenu" class="submenu navbar d-none d-flex">
         <div>
-            <img src="../img/ban_ctfrac.png" alt="Banner Charly Tango">
-            <img onclick="closeSubMenu()" class="cross" src="../img/cross.png" alt="Close menu Cross"> 
+            <img onclick="closeSubMenu()" class="cross" src="./assets/img/cross.png" alt="Close menu Cross"> 
             
-            <div class="navbar d-flex justify-center  margin-top-30px flex-wrap">
+            <div class="navbar d-flex flex-wrap">
                         <!-- CT-hauptmenü -->
-                    <nav class="d-flex column txt-center">
+                    <nav class="d-flex column txt-center active" onclick="openNavEntry(event)">
                         <a class="bg-green">CT - Hauptmenü</a>
                         <a href="./about-us.html">Über CharlyTango</a>
                         <a href="./ct-today.html">CharlyTango Heute</a>
                         <a href="./in-memorian.html">In Gedanken</a>
                         <a href="./neues-mitglied.html">Neuanmeldung</a>
-                        <a href="#">Mitgliederliste</a>
+                        <a href="./mitglieder-liste.html">Mitgliederliste</a>
                         <a href="./neue-mitglieder.html">Neue Mitglieder</a>
                         <a href="#">QSL-Karten</a>
                         <a href="#">Bilder Galerie</a>
@@ -33,7 +32,7 @@
                         <a href="#">Gästebuch</a>
                     </nav>   
                         <!--Funkbereich-->
-                    <nav class="d-flex column txt-center">
+                    <nav class="d-flex column txt-center" onclick="openNavEntry(event)">
                         <a class="bg-green">Funkbereich</a>
                         <a href="#">Was sind freie Funknetze</a>
                         <a href="#">Geschichte CB-Funk</a>
@@ -49,7 +48,7 @@
                         <a href="#">CB-Funk SWR</a>
                     </nav>  
                         <!--Allgemeines-->
-                    <nav class="d-flex column txt-center">
+                    <nav class="d-flex column txt-center"  onclick="openNavEntry(event)">
                         <a class="bg-green">Allgemeines</a>
                         <a href="#">Bundesnetzagentur</a>
                         <a href="#">GW Anmeldung BNetzA</a>
@@ -65,7 +64,7 @@
                     </nav>
                     <div>
                             <!--Teamspeak-Menü-->
-                        <nav class="d-flex column txt-center">
+                        <nav class="d-flex column txt-center"  onclick="openNavEntry(event)">
                             <a class="bg-green">Teamspeak 3</a>
                             <a href="#">TS-3 Download</a>
                             <a href="#">TS-3 Installationshilfe</a>
@@ -76,7 +75,7 @@
                         </nav>
                             
                             <!--GW-Technik-Menü-->
-                        <nav class="d-flex column txt-center">
+                        <nav class="d-flex column txt-center"  onclick="openNavEntry(event)">
                             <a class="bg-green">GW-Technik</a>
                             <a href="#">Einfaches Interface</a>
                             <a href="#">Soundkarteninterface</a>
@@ -87,7 +86,7 @@
                         </div>    
                             <!--PR-Technik-->
                     <div>
-                        <nav class="d-flex column txt-center">
+                        <nav class="d-flex column txt-center" onclick="openNavEntry(event)">
                             <a class="bg-green">PR-Technik</a>
                             <a href="#">Geschichte PR</a>
                             <a href="#">Was ist PR</a>
@@ -96,7 +95,7 @@
                             <a href="#">PR-Download</a>
                         </nav>
                         <!--Weather-->
-                        <nav class="d-flex column txt-center">
+                        <nav class="d-flex column txt-center" onclick="openNavEntry(event)">
                             <a class="bg-green">Wetter Info</a>
                             <a href="#">Blitzradar</a>
                             <a href="#">Wetterwarnung</a>
@@ -105,13 +104,13 @@
                     </div>
                     <div>    
                         <!--Interace-->
-                        <nav class="d-flex column txt-center">
+                        <nav class="d-flex column txt-center" onclick="openNavEntry(event)">
                             <a class="bg-green">Interace SSTV</a>
                             <a href="#">Anleitung Interace SSTV</a>
                             <a href="#">Download Interace SSTV</a>
                         </nav>
                         <!--Allgemeine News-->
-                        <nav class="d-flex column txt-center">
+                        <nav class="d-flex column txt-center" onclick="openNavEntry(event)">
                             <a class="bg-green">Allgemeine News</a>
                             <a href="#">Funkmagazin</a>
                             <a href="#">DARC</a>

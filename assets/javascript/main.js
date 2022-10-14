@@ -49,3 +49,15 @@ function closeSubMenu(){
 function openSTartPage(){
     window.location = ('index.html');
 }
+
+function openNavEntry(e) {
+    let activeEntry = e.currentTarget;
+    let navs = document.getElementsByTagName("nav");
+    if (navs) {
+        for (let i = 0 ; i < navs.length; i++) {
+            navs[i].classList.remove("active");
+        }
+    }
+    activeEntry.classList.add("active");
+    
+}
