@@ -2121,10 +2121,170 @@
         "flag" : "ca",
         "prefix": "009 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "9CT0001",
+            "name": "Castantino ",
+            "city": "Pembroke",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0002",
+            "name": "Lisa ",
+            "city": "Houston",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0003",
+            "name": "Earl ",
+            "city": "Houston",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0004",
+            "name": "Bob ",
+            "city": "Deps. Dartmouth",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0005",
+            "name": "Arche",
+            "city": "Peterborough",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0006",
+            "name": "Bob",
+            "city": "Long Sault",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0007",
+            "name": "Dick",
+            "city": "Mount Pearl",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0008",
+            "name": "Dennis",
+            "city": "Toronto",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0009",
+            "name": "Michael",
+            "city": "Winnipegmanitoba",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0010",
+            "name": "Maynard",
+            "city": "Shelb. Co",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0011",
+            "name": "Bob",
+            "city": "Cornwall",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0012",
+            "name": "Gerhard ",
+            "city": "Grand lepiere",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0013",
+            "name": "Dave",
+            "city": "Portes Laken Scoti",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0014",
+            "name": "Herbert",
+            "city": "Happy Valley",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0015",
+            "name": "Ted",
+            "city": "Shearstown",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0016",
+            "name": "Sylvain",
+            "city": "Chateauguay Quebec",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0077",
+            "name": "Wolfgang",
+            "city": "Billington",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0101",
+            "name": "Robert",
+            "city": "Montreal",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0102",
+            "name": "Reg",
+            "city": "Grand-Falls",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0103",
+            "name": "Dave ",
+            "city": "Grand-Falls",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0104",
+            "name": "Joe",
+            "city": "OldcastleOntario",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0104",
+            "name": "Joe",
+            "city": "OldcastleOntario",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0105",
+            "name": "Diane",
+            "city": "South Porcupine",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0114",
+            "name": "Richard",
+            "city": "Ontario",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0125",
+            "name": "John",
+            "city": "Orleans",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0126",
+            "name": "Ronald",
+            "city": "Welshpool",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0127",
+            "name": "Joe",
+            "city": "Orleans",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0129",
+            "name": "Henry",
+            "city": "Bishops-Falls",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0140",
+            "name": "Don",
+            "city": "Cornwall",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0170",
+            "name": "Harrip",
+            "city": "Burnaby",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0506",
+            "name": "Matt",
+            "city": "Milton",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0616",
+            "name": "John",
+            "city": "St Johns",
+            "status": "unknown"
+        },{
+            "callsign": "9CT0777",
+            "name": "George",
+            "city": "Bridgewater",
+            "status": "unknown"
         }]
     }, 
     {
@@ -2132,10 +2292,55 @@
         "flag" : "mx",
         "prefix": "010 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "10CT0001",
+            "name": "Francisco",
+            "city": "Mazatlan Sinaloa",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0002",
+            "name": "Fernando",
+            "city": "Guadlajarajal",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0003",
+            "name": "Ruben",
+            "city": "Degolladojal",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0004",
+            "name": "Manuel",
+            "city": "Mexico-D. F.",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0005",
+            "name": "Lucas",
+            "city": "Tabasco",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0006",
+            "name": "Albert",
+            "city": "Cozumelisl",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0101",
+            "name": "Arturo",
+            "city": "Monterrey",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0107",
+            "name": "Alfredo",
+            "city": "Mexico-D. F.",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0110",
+            "name": "Enrique",
+            "city": "Mexico City",
+            "status": "unknown"
+        },{
+            "callsign": "10CT0121",
+            "name": "Enrigue",
+            "city": "Mexico D.F.",
+            "status": "unknown"
         }]
     }, 
     {
@@ -2143,10 +2348,40 @@
         "flag" : "pr",
         "prefix": "011 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "11CT0002",
+            "name": "Bello",
+            "city": "Cardlina",
+            "status": "unknown"
+        },{
+            "callsign": "11CT0003",
+            "name": "Eddy",
+            "city": "Asoltren",
+            "status": "unknown"
+        },{
+            "callsign": "11CT0004",
+            "name": "Jose",
+            "city": "Mayaguey",
+            "status": "unknown"
+        },{
+            "callsign": "11CT0006",
+            "name": "Luis R. M.",
+            "city": "Ponce Calle",
+            "status": "unknown"
+        },{
+            "callsign": "11CT0101",
+            "name": "Manuel",
+            "city": "San-German",
+            "status": "unknown"
+        },{
+            "callsign": "11CT0102",
+            "name": "Carlos",
+            "city": "Juncos",
+            "status": "unknown"
+        },{
+            "callsign": "11CT0103",
+            "name": "Luis",
+            "city": "Ponce",
+            "status": "unknown"
         }]
     }, 
     {
@@ -2154,10 +2389,45 @@
         "flag" : "uy",
         "prefix": "012 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "12CT0001",
+            "name": "Alfonso",
+            "city": "Montevideo",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0002",
+            "name": "Jorge",
+            "city": "Montevideo",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0003",
+            "name": "Jorge",
+            "city": "San.Carlos",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0004",
+            "name": "Edison",
+            "city": "Rivera",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0102",
+            "name": "Jose",
+            "city": "Melo.Cerro-Largo",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0104",
+            "name": "Angel",
+            "city": "Montevideo",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0160",
+            "name": "Omar",
+            "city": "Montevideo",
+            "status": "unknown"
+        },{
+            "callsign": "12CT0192",
+            "name": "Alex",
+            "city": "Altantida-Canellones",
+            "status": "unknown"
         }]
     },
     {
