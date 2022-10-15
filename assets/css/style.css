@@ -234,6 +234,33 @@ nav.active a {
     color: white;
 }
 
+#currentMemberList {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+#currentMemberList td, #memberList th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#currentMemberList tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+#currentMemberList tr:hover {
+    background-color: rgb(50, 48, 48);
+    color: lime;
+}
+  
+#currentMemberList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
 
 
 #allMemberList img{
