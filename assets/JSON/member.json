@@ -1877,10 +1877,50 @@
         "flag" : "ar",
         "prefix": "004 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "4CT0001",
+            "name": "Henriette",
+            "city": "Loma-Hermosa",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0002",
+            "name": "Victor",
+            "city": "Loma-Hermosa",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0003",
+            "name": "Ronman",
+            "city": "Posadas-Misidnes",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0004",
+            "name": "Raul-Mario",
+            "city": "Arrecifes Peio",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0005",
+            "name": "Omar-Aldo",
+            "city": "Arrecifes Peio",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0006",
+            "name": "Jorge",
+            "city": "Haedo",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0101",
+            "name": "Ramon",
+            "city": "Tucuman",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0114",
+            "name": "Ruben",
+            "city": "Concordia",
+            "status": "unknown"
+        },{
+            "callsign": "4CT0165",
+            "name": "Sebastian",
+            "city": "Funentes-Sf",
+            "status": "unknown"
         }]
     }, 
     {
@@ -1888,10 +1928,80 @@
         "flag" : "ve",
         "prefix": "005 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "5CT0001",
+            "name": "Javier",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0002",
+            "name": "Pierluis",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0003",
+            "name": "Humberto",
+            "city": "Valenzia-Carabobo",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0004",
+            "name": "Jorgen",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0012",
+            "name": "Helimenas",
+            "city": "Maracaibo",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0101",
+            "name": "Manuel",
+            "city": "Pto-Ordaz",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0102",
+            "name": "Lorenzo",
+            "city": "Poerto La Cruz",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0104",
+            "name": "Mark",
+            "city": "Sandwich",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0105",
+            "name": "Sergio",
+            "city": "Maracaibo",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0106",
+            "name": "Anibel",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0107",
+            "name": "Johan",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0141",
+            "name": "Edward",
+            "city": "Maracaibo Zulia",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0162",
+            "name": "Carlos",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0171",
+            "name": "Larry",
+            "city": "Caracas",
+            "status": "unknown"
+        },{
+            "callsign": "5CT0177",
+            "name": "Dirk",
+            "city": "Caracas",
+            "status": "unknown"
         }]
     }, 
     {
@@ -1899,10 +2009,90 @@
         "flag" : "co",
         "prefix": "006 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "6CT0001",
+            "name": "Armando",
+            "city": "Cali",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0002",
+            "name": "Yamil",
+            "city": "Pereiraapt.Aereo",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0003",
+            "name": "Helena",
+            "city": "Laspalmasmedellin",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0004",
+            "name": "Luis",
+            "city": "Medellin",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0005",
+            "name": "Gerry",
+            "city": "Cali",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0006",
+            "name": "Alex",
+            "city": "Medellin",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0007",
+            "name": "Gerry",
+            "city": "Cali",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0008",
+            "name": "Edward",
+            "city": "Cali",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0009",
+            "name": "Havier",
+            "city": "Pasto",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0101",
+            "name": "Alvaro",
+            "city": "Pamlano N de S.",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0102",
+            "name": "Fabio",
+            "city": "Pasto",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0103",
+            "name": "Victor",
+            "city": "Bogota",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0104",
+            "name": "Israel",
+            "city": "Medellin",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0105",
+            "name": "Gustavo",
+            "city": "Medellin",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0106",
+            "name": "Carlos",
+            "city": "Cali",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0107",
+            "name": "Edwin",
+            "city": "Pasto",
+            "status": "unknown"
+        },{
+            "callsign": "6CT0757",
+            "name": "Cesla",
+            "city": "Medellin",
+            "status": "unknown"
         }]
     },
     {
@@ -1910,10 +2100,20 @@
         "flag" : "pe",
         "prefix": "008 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "8CT0001",
+            "name": "Jaime",
+            "city": "Trujillo",
+            "status": "unknown"
+        },{
+            "callsign": "8CT0002",
+            "name": "Gino",
+            "city": "Tacna",
+            "status": "unknown"
+        },{
+            "callsign": "8CT0012",
+            "name": "Rosy",
+            "city": "Lima",
+            "status": "unknown"
         }]
     }, 
     {
