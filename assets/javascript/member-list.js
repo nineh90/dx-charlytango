@@ -56,7 +56,8 @@ function openDetailview(i){
 }
 
 function generateTableCurrentCountry(){
-    allMemberList.innerHTML = `<table id="currentMemberList" class="txt-center">
+    allMemberList.innerHTML = `
+                                <table id="currentMemberList" class="txt-center">
                                     <tr>
                                         <th>Rufzeichen</th>
                                         <th>Name</th>

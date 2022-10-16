@@ -71,7 +71,9 @@ function fixBanner(){
     if (img){
         navImg.classList.remove('d-none');
         navImg.classList.add('w3-animate-top');
-        navImg.style = 'transform: translate(0px, 0px);';
+    }
+    if(window.scrollY == 0){
+        navImg.classList.add('d-none');
     }
     console.log('scroll')
 }
