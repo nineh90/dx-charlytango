@@ -1,4 +1,5 @@
 let headLineText;
+window.addEventListener('scroll', fixBanner)  
 
 async function includeHTML(link) {
     let includeElements = document.querySelectorAll('[w3-include-html]');
@@ -61,3 +62,17 @@ function openNavEntry(e) {
     activeEntry.classList.add("active");
     
 }
+
+
+
+
+function fixBanner(){
+    let img = document.getElementById('navImg');
+    if (img){
+        navImg.classList.remove('d-none');
+        navImg.classList.add('w3-animate-top');
+        navImg.style = 'transform: translate(0px, 0px);';
+    }
+    console.log('scroll')
+}
+
