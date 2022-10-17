@@ -60,21 +60,30 @@ function openNavEntry(e) {
         }
     }
     activeEntry.classList.add("active");
-    
+ 
 }
 
+// function initQSL(){
+//     setTimeout()     
+
+//     let headline = document.getElementById('headLine');
+//     if (headline){
+//         headline.innerHTML = `CharlyTango QSL-Karten`;
+//     } else if(headline){
+//         initQSL();
+//     }
+// }
 
 
 
 function fixBanner(){
     let img = document.getElementById('navImg');
     if (img){
-        navImg.classList.remove('d-none');
-        navImg.classList.add('w3-animate-top');
+        img.classList.remove('d-none');
+        img.classList.add('w3-animate-top');
     }
     if(window.scrollY == 0){
-        navImg.classList.add('d-none');
+        img.classList.add('d-none');
     }
-    console.log('scroll')
 }
 

@@ -10,13 +10,12 @@ async function init(){
 }
 
 function forLoopCountryList(){ 
-    allMemberList.innerHTML ="";
+    allMemberList.innerHTML = "";
     for (let i = 0; i < loadedData.length; i++) {
         const countryImage = loadedData[i]['flag'];
         const countryName = loadedData[i]['country'];
         const preFix = loadedData[i]['prefix'];
         renderCountryList(countryImage, countryName, preFix, i);
-        console.log(countryImage, countryName,loadedData[i] );
 
     }
  
@@ -48,7 +47,6 @@ function openDetailview(i){
         const name = memberJSON[j]['name'];
         const city = memberJSON[j]['city'];
         const status = memberJSON[j]['status'];
-        console.log(callsign, name, city, status)       
         renderMemberListCurrentCountry(callsign, name, city, status);        
 
     }
@@ -62,7 +60,7 @@ function generateTableCurrentCountry(){
                                         <th>Rufzeichen</th>
                                         <th>Name</th>
                                         <th>Stadt</th>
-                                        <th>Staus</th>
+                                        <th>Status</th>
                                     </tr>
                                 </table>  `;
                              

@@ -109,14 +109,14 @@
 .w-70{
     width: 70%;
 }
-
-/* #navImg {
+/* 
+ #navImg {
     -moz-transform: translate(0px, -60px);
     -webkit-transform: translate(0px, -60px);
     -o-transform: translate(0px, -60px);
     -ms-transform: translate(0px, -60px);
     transform: translate(0px, -60px);
-    } */
+    }  */
 
 .nav{
     font-family:  'Roboto Mono';
@@ -280,6 +280,56 @@ nav.active a {
     color: white;
 }
 
+#frequenzList {
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+#frequenzList td, #memberList th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#frequenzList tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+#frequenzList tr:hover {
+    background-color: rgb(50, 48, 48);
+    color: lime;
+
+}
+  
+#frequenzList th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+
+}
+
+#preFixList{
+    max-width: 60%;
+
+}
+
+.prefix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px black;
+    background-color: rgba(39, 74, 77, 0.25);
+    color: white;
+    width: 320px;
+    height: 75px;
+    padding: 6px;
+    margin: 5px;
+    text-align: center;
+
+
+}
+
 
 
 #allMemberList img{
@@ -308,3 +358,19 @@ nav.active a {
     background: #b30000; 
   }
 
+.open-start-page-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.qsl-img img{
+    width: 650px;
+    height: 450px;
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: solid 3px black;
+    background-color: white;
+}

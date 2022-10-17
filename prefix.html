@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/prefix.js"></script>
+</head>
+<body onload="initPrefix()" class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>  
+    <!--Content-->
+
+        <div class="d-flex flex-wrap justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <div id="preFixList" class="d-flex flex-wrap"></div>
+        </div>  
+    
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+        <img src="./assets/img/kodax-02.gif" alt="">
+    </div>
+
+    
+    
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>
