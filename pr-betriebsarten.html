@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/main.js"></script>
+</head>
+<body onload="initFrequenzList()" class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>  
+    <!--Content-->
+
+        <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <h2>Diese Betriebsarten gibt es</h2>
+            <p>
+                Es sind zwei Modulationsverfahren gebräuchlich: FSK und AFSK.
+            </p>
+            <p>
+                <strong>
+                    AFSK (Audio Frequency Shift Keying)
+                </strong>
+            </p>
+            <p>
+                Ein NF-Ton wird in der Frequenz umgetastet, z.B. von 1200 auf 2200 Hz und mit einem normalen FM-Funkgerät übertragen.<br> 
+                Vorteil: einfachster Anschluß an der Mikrofon- und Lautsprecherbuchse, jedes FM Funkgerät ist geeignet, es sind keine<br> 
+                Eingriffe ins Funkgerät notwendig. Nachteil: schlechte Ausnützung der zur Verfügung stehenden Bandbreite bzw. geringe<br> 
+                Übertragungsgeschwindigkeit.
+            </p>
+            <p>
+                <strong>
+                    FSK (Frequency Shift Keying)
+                </strong>
+            </p>
+            <p>
+                Die Frequenz des HF-Trägers wird umgetastet. Erfordert meist einen Anschluß direkt am Modulator des (FM) Funkgeräts.<br> 
+                Das Empfangssignal muß am Demodulator / FM-Diskriminator abgegriffen werden. Bei manchen Funkgeräten müssen breitere<br> 
+                ZF-Filter verwendet werden, Eingriffe sind bei den meisten Geräte erforderlich.<br> 
+                <strong>Vorteil:</strong> wesentlich höhere Übertragungsgeschwindigkeit, sehr gute Ausnutzung des zur Verfügung stehenden Kanals.
+            </p>
+            <h2>Bauarten</h2>
+            <p>
+                <strong>
+                    300 Baud AFSK / FSK, Packet-Radio auf Kurzwelle
+                </strong>
+            </p>
+            <p>
+                Packet-Radio auf Kurzwelle wird meist mit einer Geschwindigkeit von 300 Baud gemacht. Die Modulationsart ist FSK,<br> 
+                im einfachsten Fall wird ein SSB-Sender mit einem von zwei verschiedenen NF-Tönen moduliert. Die Shift beträgt 200 Hz.<br> 
+                Welche Töne dabei verwendet werden ist nicht wesentlich, sofern die Frequenzen einen Abstand von 200 Hz besitzen. Bei<br> 
+                Packet-Radio existiert kein Unterschied zwischen Mark und Space, d.h. es macht nichts, wenn man die beiden Frequenzen<br> 
+                vertauscht.
+            </p>
+            <p>
+                <strong>
+                    1200 Baud AFSK, der Standard auf VHF und UHF
+                </strong>
+            </p>
+            <p>
+                Die Übertragungsgechwindigkeit bei Packet-Radio beträgt üblicherweise 1200 Baud bzw. 1200 Bit/sec., das entspricht<br> 
+                etwa 150 Zeichen pro Sekunde. Die Modulationsart ist AFSK, das heißt es wird einer von zwei NF Tönen auf den<br>  
+                Mikrofoneingang eines gewöhnlichen FM-Funkgerätes gegeben. Im Amateurfunk verwendet man meist die Bell 202 Norm<br>  
+                mit den Tonfrequenzen 1200 und 2200 Hz. Es genügt, wenn man sich ein passendes Verbindungskabel zwischen dem<br>  
+                Mikrophonanschluß des Funkgeräts und dem Packet-Radio-Controller anfertigt, das mit den Signalen Mikrophon, Lautsprecher,<br>  
+                PTT, Masse belegt ist.<br> 
+                Die 1200 Baud Technik ist am weitesten verbreitet und wird bei 80-90% der Digipeater verwendet. Für Datenübertragung im<br>  
+                CB-Funk (FM) ist 1200 Baud AFSK Packet-Radio optimal geeignet.
+            </p>
+            <p>
+                <strong>
+                    2400 Baud AFSK, wenig verbreitet aber schneller als der Standard
+                </strong>
+            </p>
+            <p>
+                Die meisten 1200 Baud Packet-Radio-Controller verwenden als Modem den quarzgesteuerten TCM3105-Chip. Ersetzt man bei<br>
+                 diesem IC den vorgeschriebenen 4,433 MHz Quarz durch einen 7,3728 MHz Quarz, so kann man die Baudrate des Controllers<br> 
+                 auf 2400 Baud verdoppeln. Bei vielen FM-Funkgeräten wird das so erzeugte 2400 Baud Signal noch einwandfrei übertragen.<br> 
+                 Die Übertragung ist etwas empfindlicher gegen Störungen und kann bei manchen Sendern oder Empfängern Probleme bereiten.<br> 
+                 Die 2400 Baud AFSK Übertragung ist wenig gebräuchlich.
+            </p>
+            <p>
+                <strong>
+                    4800 Baud G3RUH FSK, wenig verbreitet, aufwendig aber langsamer als 9600 Baud
+                </strong>
+            </p>
+            <p>
+                Die 4800 Baud Technik ist nur sehr selten anzutreffen, da sie gegenüber der 9600 Baud Technik keine großen Vorteile bietet<br> 
+                und nur die halbe Datenrate zuläßt.<br>
+                Für Übertragungsgeschwindigkeiten über 2400 Baud ist es erforderlich, einen Anschluß an den Modulator und Demodulator des<br> 
+                Funkgerätes herzustellen, ein Eingriff in das Funkgerät ist also notwendig. Die NF-Bandbreite sollte möglichst von sehr<br> 
+                tiefen bis zu sehr hohen Frequenzen reichen, der Frequenzgang muß völlig linear sein<br> 
+                (d.h. es sollten keine nennenswerten Verzerrungen von Impulsen auftreten).
+            </p>
+            <p>
+                <strong>
+                    9600 Baud G3RUH FSK, findet zunehmend Verbreitung für schnelles Packet-Radio
+                </strong>
+            </p>
+            <p>
+                Durch das steigende Datenverkehrsaufkommen gehen mehr und mehr Packet-Knoten dazu über, 9600 Baud als Übertragungsgeschwindigkeit<br> 
+                für die Benutzereinstiege zu verwenden. Für den Datenverkehr zwischen den Knoten ist diese Datenrate schon lange gebräuchlich.<br> 
+                Neue Digipeater werden fast immer mit 9600 Baud Zugängen ausgestattet.<br>
+                Es wird ausschließlich das von James Miller, G3RUH vorgeschlagene FSK-Modulationsprinzip verwendet. Das G3RUH-Modem kann für<br> 
+                verschiedene Funkgeräte (Sender) optimal eingestellt werden und bietet ein Maximum an Übertragungsgeschwindigkeit bei minimaler<br> 
+                HF-Bandbreite.
+            </p>
+            <p>
+                <strong>
+                    9600 Baud: zuerst für Satelliten entwickelt
+                </strong>
+            </p>
+            <p>
+                Das G3RUH-Modem wurde ursprünglich für Satellitenkommunikation entwickelt, hat sich jedoch aufgrund seiner guten<br> 
+                Übertragungseigenschaften auch bei terrestrischen Funkstrecken durchgesetzt.
+            </p>
+            <p>
+                <strong>
+                    Welche Funkgeräte eignen sich?
+                </strong>
+            </p>
+            <p>
+                Für 9600 Baud Übertragung ist es erforderlich, einen Anschluß an den Modulator und Demodulator des Funkgerätes<br> 
+                herzustellen, ein Eingriff in das Funkgerät ist also notwendig. Die NF-Bandbreite sollte möglichst von sehr tiefen<br> 
+                bis zu sehr hohen Frequenzen reichen, der Frequenzgang muß völlig linear sein, es sollten keine nennenswerten Verzerrungen<br> 
+                von Impulsen auftreten.<br>
+                Für die meisten FM-Funkgeräte wurden bisher Umbauanleitungen veröffentlicht, in denen genau erklärt wird, welche Anschlüsse<br> 
+                anzubringen sind, damit ein 9600 Baud Betrieb möglich ist. Selbstverständlich sollte der Umbau eines Funkgeräts durch<br> 
+                abschließende Messung (Oszilloskop) überprüft werden. Bei PLL-Funkgeräten tritt das Problem auf, daß die tiefen Frequenzanteile<br> 
+                von der PLL-Regelschleife weggeregelt werden, die relativ hohe Bandbreite des Sendesignals kann bei zu schmalen ZF-Filtern im<br> 
+                Empfänger zu Problemen führen.<br>
+                Es gibt einige Funkgeräte auf dem Markt, die von vornherein für 9600 Baud Betrieb ausgelegt wurden, oder bei denen wenigstens<br> 
+                der entsprechende Anschluß werksseitig schon angebracht ist. Bei der Auswahl eines geeigneten Funkgeräts sollte man besonderes<br> 
+                Augenmerk auf die Sende/Empfangs-Umschaltzeit legen. Bei PLL-gesteuerten Funkgeräten benötigt die Umschaltung von Senden auf<br> 
+                Empfang oder umgekehrt relativ viel Zeit, ca. 100 bis 300 Millisekunden. Da (bei 9600 Baud) ein typisches Datenpaket auch 100-300<br> 
+                Millisekunden braucht, verschenkt man 50% der Kanalkapazität für unnütze Wartezeiten. Geeignete quarzgesteuerte Funkgeräte haben<br> 
+                Verzögerungszeiten (TX-Delay) unter 10 Millisekunden und sind in jedem Fall vorzuziehen.
+            </p>
+            <p>
+                <strong>
+                    19200 Baud G3RUH FSK, etwas aufwendig aber sehr schnelle Übertragung möglich
+                </strong>
+            </p>
+            <p>
+                Bei dieser Übetragungsgeschwindigkeit gilt das bei 9600 Baud gesagte entsprechend. Allerdings ist die HF-Bandbreite<br> 
+                hier etwa doppelt so hoch, d.h. ein Austausch der ZF-Filter im Empfänger ist fast immer erforderlich. Digipeater mit<br> 
+                19200 Baud sind wenig gebräuchlich, bei den Strecken zwischen zwei Packet-Knoten ist diese Geschwindigkeit häufiger<br> 
+                anzutreffen.
+            </p>
+            <p>
+                <strong>
+                    38400 Baud, 76800 Baud, 153600 Baud, 307200 Baud G3RUH FSK, für Experimente und Linkstrecken
+                </strong>
+            </p>
+            <p>
+                Diese Übertragungsgeschwindigkeiten sind für Packet-Benutzer ungebräuchlich und werden meist nur experimentell eingesetzt.<br> 
+                Zwischen Netzknoten sind diese Geschwindigkeiten schon teilweise im Gebrauch. Mit TNC2-Packet-Controllern lassen sich diese<br> 
+                Geschwindigkeiten nicht mehr erzielen, hier kommt nur der TNC3 in Betracht.
+            </p>
+            <p>
+                <strong>
+                    bis 1 Mbaud, für high-speed Packet-Spezialisten
+                </strong>
+            </p>
+            <p>
+                Mit speziellen Funkgeräten lassen sich diese Übertragungsraten realisieren, meist bei Frequenzen über 1,3 GHz.<br> 
+                Amateurfunk ist ein Feld für Experimente, der Anfang ist hier schon gemacht.
+            </p>
+            <p>
+                <strong>
+                    DAMA-Betriebsart, verbessert die Kanalauslastung auf Simplexkanälen
+                </strong>
+            </p>
+            <p>
+                DAMA ist ein Verfahren, das den Zugriff der Benutzer eines Digipeaters koordiniert und damit Kollisionen vermeidet.<br> 
+                Besonders auf Simplex-Zugängen verbessert DAMA die Leistung eines Netzknotens beträcht-lich. Voraussetzung für <br>
+                Verbindungen mit DAMA-Knoten ist ein TNC, das eine DAMA-fähige Firmware besitzt. Da DAMA nur in Deutschland und<br> 
+                angrenzenden Ländern verwendet wird unterstützen importierte TNCs den DAMA Mode nicht. Etwa 50 bis 75% der Netzknoten<br> 
+                in DL verwenden DAMA.
+            </p>
+            
+        </div>  
+    
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+        <img src="./assets/img/kodax-02.gif" alt="">
+    </div>
+
+    
+    
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>

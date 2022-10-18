@@ -548,3 +548,7 @@ nav.active a {
     border: solid 3px black;
     background-color: white;
 }
+
+.radio{
+    width: 240px;
+}

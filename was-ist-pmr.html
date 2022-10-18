@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/ct-frequenz.js"></script>
+</head>
+<body onload="initFrequenzList()" class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>  
+    <!--Content-->
+
+        <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <h2>Wie funktioniert Paket Radio</h2>
+            <p>
+                Packet-Radio ist ein besonders kostengünstiges Verfahren zur drahtlosen Datenübertragung. Packet-Radio wird von<br> 
+                Funkamateuren und CB-Funkern betrieben, es gibt keine Betreiberorganisation und natürlich keine Onlinegebühren.<br> 
+                Aufgrund seiner hervorragenden Eigenschaften wird Packet-Radio auch kommerziell und im Bereich Forschung eingesetzt.<br>
+                Packet-Radio ist ein Verfahren, mit dem man über Funk Daten senden und empfangen kann. Die Daten werden meist über<br> 
+                einen Computer eingegeben, der Packet-Radio-Controller erzeugt daraus Töne, die per Funk übertragen werden können.<br> 
+                Der Packet-Radio-Controller der Gegenstation empfängt diese Töne und wandelt sie wieder in computerlesbare Daten um.<br> 
+                Grundsätzlich unterscheidet sich Packet-Radio von der historischen Betriebsart RTTY (Funkfernschreiben) dadurch,<br> 
+                dass die Daten nicht kontinuierlich gesendet, sondern zu Paketen zusammengefasst, welche dann ausgesendet werden.<br> 
+                Daher der Name Packet-Radio.<br>
+                Im Amateurfunk wird meist 9600 Baud FSK Modulation benutzt. Dieses Verfahren ist wesentlich schneller<br> 
+                als die herkömmliche 1200 Baud AFSK-Technik, kann jedoch nur mit Amateurfunkgeräten verwendet werden. Im CB-Funk sind<br> 
+                1200 Baud üblich.<br>   
+                1981 begannen Funkamateure in den USA dieses Übertragungsprotokoll zu definieren, mittlerweile hat sich daraus ein<br> 
+                weltumspannendes privates Datennetz entwickelt.
+            </p>
+            <p>
+                <strong>
+                    Viele Stationen auf gleicher Frequenz / gleichem Kanal
+                </strong>
+            </p>
+            <p>
+                Mit jedem Datenpaket wird (ausser den eigentlichen Nutzdaten) noch das Rufzeichen des Absenders und des Empfängers<br>
+                übertragen. Dadurch ist es möglich, dass mehrere Packet-Radio Verbindungen auf derselben Frequenz stattfinden<br>  
+                ohne sich zu stören: Jeder Empfänger sucht sich aus der Vielzahl der mitgehörten Pakete nur diejenigen heraus,<br>  
+                die für ihn bestimmt sind. Jeder Sender prüft, bevor er sendet, ob die Frequenz frei ist.<br>  
+                Dadurch werden Kollisionen vermieden und die Frequenz kann für viele Benutzer gleichzeitig genutzt werden.
+            </p>
+            <p>
+                <strong>
+                    Übertragungsfehler ausgeschlossen
+                </strong>
+            </p>
+            <p>
+                In den Datenpaketen sind Prüfsummen enthalten, die es ermöglichen, Übertragungsfehler zu erkennen. Nur 100% fehlerfreie<br> 
+                Pakete werden vom Empfänger akzeptiert und auf dem Bildschirm angezeigt. Richtig empfangene Pakete werden bestätigt.<br> 
+                Unbestätigte Pakete werden so lange wiederholt, bis sie fehlerfrei beim Empfänger angekommen sind. 
+            </p>
+            <p>
+                <strong>
+                    Große Reichweite durch Digipeater
+                </strong>
+            </p>
+            <p>
+                Der Packet-Radio-Verkehr kann direkt zwischen zwei Funkpartnern stattfinden. Zusätzlich können die Datenpakete<br> 
+                jedoch auch über mehrere Zwischenstationen (Digipeater) weitergereicht werden, was die Reichweite erheblich vergrößert.<br> 
+                Beim klassischen 'digipeating' kann ein Datenpaket über bis zu 7 Zwischenstationen weitergereicht werden bis es beim<br> 
+                Empfänger ankommt.
+            </p>
+            <p>
+                <strong>
+                    Weltweites Packet-Netzwerk
+                </strong>
+            </p>
+            <p>
+                Das sehr gut ausgebaute Amateurfunk-Digipeater-Netz in Deutschland arbeitet mit leistungsfähigen Knotenrechnern,<br> 
+                die ein von einem Benutzer empfangenes Datenpaket über Richtfunkstrecken gezielt zu dem Knotenrechner hin vermitteln,<br> 
+                in dessen Nähe der gewünschte Funkpartner sitzt. Der Packet-Radio Benutzer muß sich gerätetechnisch also nur bemühen,<br> 
+                einen sicheren Zugang zu einem beliebigen Knotenrechner im Packet-Radio Netz zu bekommen.
+            </p>
+            <h2>Diese Geräte benötigt man für Paket Radio</h2>
+            <div>
+                <p>
+                    <strong>
+                        Funkgerät
+                    </strong>
+                </p>
+                <p>
+                    Für 1200 Baud Betrieb eignet sich praktisch jedes beliebige 2m oder 70cm Funkgerät sowie fast jedes FM-CB-Funkgerät.<br> 
+                    DerPacket-Radio-Controller wird an die Mikrofon- und Lautsprecherbuchse angeschlossen. Geräte, bei denen das Mikrophon<br> 
+                    fest angeschlossen ist, oder bei denen ein eingebautes Mikrofon verwendet wird<br> 
+                    (Handfunkgeräte ohne Anschluss für externe Mikrofone) sind nicht geeignet.<br>
+                    Falls Sie 9600 Baud Packet machen wollen, sollten Sie ein Gerät verwenden, das sich gut für Packet modifizieren läßt.<br> 
+                    Ideal sind Quarzgesteuerte Geräte, die hervorragend kurze Sende/Empfangs-Umschaltzeiten besitzen.<br> 
+                    1200 Baud AFSK ist auch die im CB-Funk übliche Betriebsart.
+                </p>
+                <img src="./assets/img/CBfunke2 (1).gif" alt="">
+            </div>
+            <div>    
+                <p>
+                    <strong>
+                        Computer
+                    </strong>
+                </p>
+                <p>
+                    Packet-Radio-Modems und TNC's können mit jedem Computer betrieben werden, der eine serielle Schnittstelle (RS232, V24)<br> 
+                    besitzt. Ideal sin IBM-kompatible (PC, AT, 386, 486 etc.), Laptops, Notebooks etc.. Genau so gut lässt sich ein Atari-ST<br> 
+                    oder Amiga anschließen. Für alle diese Rechner sind Terminalprogramme verfügbar, mit denen man sehr komfortabel Daten<br> 
+                    senden und empfangen kann.
+                </p>
+                <img src="./assets/img/RTEmagicC_computer_gif.gif" alt="">
+            </div> 
+            <div>
+                <p>
+                    <strong>
+                        Packet-Radio-Controller / Modem oder TNC
+                    </strong>
+                </p>
+                <p>
+                    Der Packet-Radio-Controller setzt die NF-Signale des Funkgeräts in digitale Informationen um und überträgt sie zum<br> 
+                    Computer und umgekehrt. Der Packet-Radio-Controller kontrolliert den korrekten Aufbau der Datenpakete und analysiert<br> 
+                    die empfangenen Pakete. Er wird über die serielle Schnittstelle angeschlossen, am Funkgerät verwendet man die Anschlüsse<br> 
+                    Mikrofon, Lautsprecher und PTT. (für 1200 Baud) bzw. Modulator, Demodulator und PTT für 9600 Baud) 
+                </p>
+            </div>       
+        </div>  
+    
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+        <img src="./assets/img/kodax-02.gif" alt="">
+    </div>
+
+    
+    
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>
