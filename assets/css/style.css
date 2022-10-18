@@ -226,6 +226,15 @@ nav.active a {
     align-items: center;
 }
 
+.microphone-assignment{
+    width: 650px;
+    padding: 32px;
+    background: white;
+    border-radius: 24px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+}
+
 #memberList {
     border-collapse: collapse;
     width: 100%;
@@ -309,6 +318,35 @@ nav.active a {
 
 }
 
+#microphoneAssignment {
+    border-collapse: collapse;
+    width: 70%;
+  }
+  
+#microphoneAssignment td, #memberList th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+#microphoneAssignment tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+#microphoneAssignment tr:hover {
+    background-color: rgb(50, 48, 48);
+    color: lime;
+
+}
+  
+#microphoneAssignment th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+
+}
+
 #preFixList{
     max-width: 60%;
 
@@ -324,10 +362,34 @@ nav.active a {
     width: 320px;
     height: 75px;
     padding: 6px;
+    margin: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px black;
+    border-radius: 12px;
+    background-color: rgba(39, 74, 77, 0.25);
+    color: white;
+    width: 320px;
+    height: 75px;
+    padding: 6px;
     margin: 5px;
     text-align: center;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
 
+}
 
+.circuit-diagram{
+    background: white;
+    width: 550px;
+    height: auto;
+    padding: 24px;
+    /* border: 2px solid black; */
+    border-radius: 24px;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
 }
 
 

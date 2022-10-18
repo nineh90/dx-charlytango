@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/javascript/main.js"></script>
-    <script src="./assets/javascript/prefix.js"></script>
+    <script src="./assets/javascript/ct-occupancy.js"></script>
 </head>
-<body onload="initPrefix()" class="bg-page">
+<body onload="initCbOccupancy()" class="bg-page">
     <!--Navbar Top-->
     <div w3-include-html="./assets/template/navbar-top.html"></div>
     <!--Open Navbar fullPage-->
@@ -19,8 +19,23 @@
     <div w3-include-html="./assets/template/header.html"></div>  
     <!--Content-->
 
-        <div class="d-flex flex-wrap justify-center align-center margin-top-30px margin-bottom-30px txt-center">
-            <div id="preFixList" class="d-flex justify-center flex-wrap"></div>
+        <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <h2>Mikrofonbelegung CB-Funkeräte</h2>
+            <img class="microphone-assignment margin-top-30px margin-bottom-30px txt-center" src="./assets/img/mike-stecker.gif" alt="">
+            <table id="microphoneAssignment">
+                <tr>
+                    <th>Gerätetyp</th>
+                    <th>Steckertyp</th>
+                    <th>Pin 1</th>
+                    <th>Pin 2</th>
+                    <th>Pin 3</th>
+                    <th>Pin 4</th>
+                    <th>Pin 5</th>
+                    <th>Pin 6</th>
+                    <th>Pin 7</th>
+                    <th>Pin 8</th>
+                </tr>
+            </table>
         </div>  
     
     <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
