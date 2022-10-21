@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/cb-swr.js"></script>
+</head>
+<body onload="initCbSWR()" class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>  
+    <!--Content-->
+
+        <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <h2>CB-Funk - SWR - Dämpfung - Verluste</h2>
+            <div>
+                <p>
+                    Im Zusammenhang mit der Montage einer Funkantenne tauchen oftmals die Begriffe SWR, Dämpfung, Verluste auf.
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <strong>
+                        Zusammenhang zwischen SWR und Verlust
+                    </strong>    
+                </p>
+                <table class="table" id="swr">
+                    <tr>
+                        <th>SWR</th>
+                        <th>Verlust in %</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="w-30">
+                <p>
+                    Der Einfluß des Verbindungskabels zwischen Antenne und CB-Funkgerät auf die Leistungsfähigkeit der gesamten Funkanlage
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <strong>
+                        RG58C/U
+                    </strong>    
+                </p>
+                <table class="table" id="rg58c">
+                    <tr>
+                        <th>Länge in m</th>
+                        <th>Dämpfung in db</th>
+                        <th>Verminderung Sendeleistung</th>
+                        <th>Verminderung der Sendeleistung</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <p>
+                    <strong>
+                        RG213
+                    </strong>    
+                </p>
+                <table class="table" id="rg213">
+                    <tr>
+                        <th>Länge in m</th>
+                        <th>Dämpfung in db</th>
+                        <th>Verminderung Sendeleistung</th>
+                        <th>Verminderung der Sendeleistung</th>
+                    </tr>
+                </table>
+            </div>
+
+        </div>  
+    
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+        <img src="./assets/img/kodax-02.gif" alt="">
+    </div>
+
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>

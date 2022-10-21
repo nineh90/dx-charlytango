@@ -292,6 +292,35 @@ nav.active a {
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
 }
 
+.table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+.table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+  
+.table tr:hover {
+    background-color: rgb(50, 48, 48);
+    color: lime;
+}
+  
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+
 #memberList {
     border-collapse: collapse;
     width: 100%;
