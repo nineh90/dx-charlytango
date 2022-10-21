@@ -1,0 +1,403 @@
+[   
+    {
+      "cbChannel": "1",  
+      "mhz": "26.965",   
+      "modulationType":"AM / FM / SSB",  
+      "use": "FM Anrufkanal"  
+    },{
+      "cbChannel": "2",  
+      "mhz": "26.975",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "3",  
+      "mhz": "26.985",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "4",  
+      "mhz": "27.005",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "AM Anrufkanal"  
+    },{
+      "cbChannel": "5",  
+      "mhz": "27.015",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "6",  
+      "mhz": "27.025",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "7",  
+      "mhz": "27.035",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "8",  
+      "mhz": "27.055",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "9",  
+      "mhz": "27.065",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "AM deutscher Truckerkanal; AM und FM / Notrufkanal"  
+    },{
+      "cbChannel": "10",  
+      "mhz": "27.075",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "11",  
+      "mhz": "27.085",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "HF-Gatewaybetrieb"  
+    },{
+      "cbChannel": "12",  
+      "mhz": "27.105",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "13",  
+      "mhz": "27.115",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "14",  
+      "mhz": "27.125",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "15",  
+      "mhz": "27.135",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "16",  
+      "mhz": "27.155",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "17",  
+      "mhz": "27.165",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "18",  
+      "mhz": "27.175",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "19",  
+      "mhz": "27.185",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "FM internationaler Truckerkanal"  
+    },{
+      "cbChannel": "20",  
+      "mhz": "27.205",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "21",  
+      "mhz": "27.215",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "22",  
+      "mhz": "27.225",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "23",  
+      "mhz": "27.255",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "24",  
+      "mhz": "27.235",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "25",  
+      "mhz": "27.245",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "26",  
+      "mhz": "27.265",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "27",  
+      "mhz": "27.275",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "28",  
+      "mhz": "27.285",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "29",  
+      "mhz": "27.295",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "HF-Gatewaybetrieb"  
+    },{
+      "cbChannel": "30",  
+      "mhz": "27.305",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "31",  
+      "mhz": "27.315",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "32",  
+      "mhz": "27.325",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "33",  
+      "mhz": "27.335",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "34",  
+      "mhz": "27.345",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "HF-Gatewaybetrieb"  
+    },{
+      "cbChannel": "35",  
+      "mhz": "27.355",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "36",  
+      "mhz": "27.365",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "37",  
+      "mhz": "27.375",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "38",  
+      "mhz": "27.385",  
+      "modulationType": "AM / FM / SSB",  
+      "use": ""  
+    },{
+      "cbChannel": "39",  
+      "mhz": "27.395",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "HF-Gatewaybetrieb"  
+    },{
+      "cbChannel": "40",  
+      "mhz": "27.405",  
+      "modulationType": "AM / FM / SSB",  
+      "use": "Datenfunkkanal"  
+    },{
+      "cbChannel": "41",  
+      "mhz": "26.565",  
+      "modulationType": "FM",  
+      "use": "digitale Betriebsarten"  
+    },{
+      "cbChannel": "42",  
+      "mhz": "26.575",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "43",  
+      "mhz": "26.585",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "44",  
+      "mhz": "26.595",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "45",  
+      "mhz": "26.605",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "46",  
+      "mhz": "26.615",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "47",  
+      "mhz": "26.625",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "48",  
+      "mhz": "26.635",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "49",  
+      "mhz": "26.645",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "50",  
+      "mhz": "26.655",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "51",  
+      "mhz": "26.665",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "52",  
+      "mhz": "26.675",  
+      "modulationType": "FM",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "53",  
+      "mhz": "26.685",  
+      "modulationType": "FM",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "54",  
+      "mhz": "26.695",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "55",  
+      "mhz": "26.705",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "56",  
+      "mhz": "26.715",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "57",  
+      "mhz": "26.725",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "58",  
+      "mhz": "26.735",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "59",  
+      "mhz": "26.745",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "60",  
+      "mhz": "26.755",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "61",  
+      "mhz": "26.765",  
+      "modulationType": "FM",  
+      "use": "HF-Gatewaybetrieb"  
+    },{
+      "cbChannel": "62",  
+      "mhz": "26.775",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "63",  
+      "mhz": "26.785",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "64",  
+      "mhz": "26.795",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "65",  
+      "mhz": "26.805",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "66",  
+      "mhz": "26.815",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "67",  
+      "mhz": "26.825",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "68",  
+      "mhz": "26.835",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "69",  
+      "mhz": "26.845",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "70",  
+      "mhz": "26.855",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "71",  
+      "mhz": "26.865",  
+      "modulationType": "FM",  
+      "use": "HF-Gatewaybetrieb"  
+    },{
+      "cbChannel": "72",  
+      "mhz": "26.875",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "73",  
+      "mhz": "26.885",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "74",  
+      "mhz": "26.895",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "75",  
+      "mhz": "26.905",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "76",  
+      "mhz": "26.915",  
+      "modulationType": "FM",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "77",  
+      "mhz": "26.925",  
+      "modulationType": "FM",  
+      "use": "Packet Radio"  
+    },{
+      "cbChannel": "78",  
+      "mhz": "26.935",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "79",  
+      "mhz": "26.945",  
+      "modulationType": "FM",  
+      "use": ""  
+    },{
+      "cbChannel": "80",  
+      "mhz": "26.955",  
+      "modulationType": "FM",  
+      "use": "HF-Gatewaybetrieb"  
+    }
+]

@@ -8,13 +8,8 @@ async function includeHTML(link) {
         file = element.getAttribute("w3-include-html"); // "includes/header.html"
         let resp = await fetch(file);
         if (resp.ok) {
-            element.innerHTML = await resp.text();
-            if (link === 'prefix_liste') {
-                await loadPrefixList();
-            }
-        } else {
-            element.innerHTML = 'Page not found';
-        }
+            element.innerHTML = await resp.text(); 
+        } 
     }
     // setTimeout(switchHeadLine, 1000)
     // switchHeadLine();
@@ -41,10 +36,15 @@ document.getElementById('headLine').innerHTML = headLineText;
 
 function openCtMenu(){
     submenu.classList.remove('d-none');
+    document.body.classList.add('overflow-hidden');
+    overLay.classList.remove('d-none');
 } 
 
 function closeSubMenu(){
     submenu.classList.add('d-none');
+    document.body.classList.remove('overflow-hidden');
+    overLay.classList.add('d-none');
+
 }
 
 function openSTartPage(){

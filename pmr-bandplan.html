@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">    
+    <script src="./assets/javascript/main.js"></script>
+</head>
+<body class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>  
+    <!--Content-->
+
+        <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <h2>PMR-446 MHz</h2>
+            <div class="d-flex column w-50">
+                <p>
+                    Mit PMR bezeichnet man eine Funkanwendung, die von jedem kostenlos
+                    ohne Lizenz genutzt werden darf ("Jedermannfunk").
+                    PMR steht dabei für "private mobile radio".
+                    PMR nutzt den UHF-Frequenzbereich 446,000–446,100 MHz.
+                    Dieser Frequenzbereich ist dem PMR-Funk zunächst nur bis zum 31.12.2013 zugeteilt.
+                    In der folgenden Tabelle sind die Frequenzen der zur Verfügung stehenden 8 Kanäle gelistet.
+                    Man sieht, das Frequenzraster beträgt 12,5 kHz.
+                </p>
+                <p>
+                    Ferner gibt es zwei Verfahren, die es ermöglichen Benutzergruppen zu bilden.
+                    Dies ist einmal das analoge Pilottonverfahren CTCSS (Continuous Tone Coded Subaudio Squelch oder Continuous Tone Coded Squelch System) und die digitale Rauschsperre Digital-Coded Squelch (DCS).
+                    CTCSS und DCX bilden jedoch keine Abhörsicherheit, sondern ermöglichen lediglich das Ausblenden von nicht gewollten Sendern.
+                    Wenn man z.B. den Hauptsender CTCSS0 eingestellt hat kann man alle Stationen hören, die auf den "Unterkanälen" des Hauptsenders senden.
+                    Hat man einen "Unterkanal" eingestellt, so kann man nur die Stationen empfangen, die ebenfalls auf diesem "Unterkanal" senden.
+                </p>
+                <p>
+                    Erlaubt sind Geräte mit bis zu 500mW Leistung. Außerdem muss die Antenne fest mit dem Gerät verbunden sein.
+                    Es gibt vorwiegend Handgeräte mit Gummiwendelantenne, sowie vereinzelt Tisch- bzw. Pultgeräte mit fester Antenne.
+                    Außerdem wird zurzeit ein Handgerät angeboten bei dem die Antenne mit einer Leitung vom Gerät abgesetzt ist und auf dem Autodach montiert werden kann. Jedoch ist auch hier alles fest konvektioniert und bietet wenig "Bastelpotenzial".
+                </p>
+                <p>
+                    Die maximale Reichweite wird von vielen Herstellern mit 5km angegeben. Diese Reichweite lässt sich aber nur schwer erreichen (evtl. Freifläche).
+                    In Wäldern kann man oft eine Reichweite von 2-3km und und in bebauten Gebieten höchstens bis 1km erreichen.
+                    Einiges lässt sich auch mit der Höhe "rausholen" (Berg, Dach).
+                </p>
+            </div>
+
+            <div class="d-flex column justify-center">
+                <div class="d-flex radio-content-container">
+                    <div>
+                        Kanal
+                    </div>
+                    <div>
+                        Frequenz in MHz
+                    </div>
+                </div> 
+                <div class="d-flex radio-content-container">
+                    <div>
+                        1
+                    </div>
+                    <div>
+                        446,00625
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        2
+                    </div>
+                    <div>
+                        446,01875
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        3
+                    </div>
+                    <div>
+                        446,03125
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        4
+                    </div>
+                    <div>
+                        446,04375
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        5
+                    </div>
+                    <div>
+                        446,05625
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        6
+                    </div>
+                    <div>
+                        446,06875
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        7
+                    </div>
+                    <div>
+                        446,08125
+                    </div>
+                </div>
+                <div class="d-flex radio-content-container">
+                    <div>
+                        8
+                    </div>
+                    <div>
+                        446,09375
+                    </div>
+                </div>
+            </div>    
+
+        </div>  
+    
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+        <img src="./assets/img/kodax-02.gif" alt="">
+    </div>
+
+    
+    
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>

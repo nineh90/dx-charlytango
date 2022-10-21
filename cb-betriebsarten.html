@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <script src="./assets/javascript/main.js"></script>
+</head>
+<body class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Open Navbar fullPage-->
+    <div w3-include-html="./assets/template/navbar.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>  
+    <!--Content-->
+
+        <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
+            <h2>CB-Funk-Betriebsarten</h2>
+            <div class="d-flex w-30 column">
+                <p>
+                    <strong>
+                        In Deutschland sind zugelassen:
+                    </strong>
+                </p>  
+                <p>
+                    80 Kanäle Frequenz-Modulation (FM) 4 Watt Sendeleistung
+                </p>
+                <p>
+                    40 Kanäle Amplituden-Modulation (AM) 1 Watt Sendeleistung
+                </p>
+                <p>
+                    40 Kanäle Einseitenband-Modulation (Single-Side-Band = SSB) 4 Watt Sendeleistung (ETS-300433)
+                </p>
+                   
+            </div>
+            <div class="d-flex w-50 column">
+                <p>
+                    <strong>
+                        Frequenz-Modulation (FM)
+                    </strong>
+                </p>
+                <p>
+                    Bei FM bleibt die Stärke des Signales immer gleich, weil die Sprache (Information) in die Frequenz des Signales gepackt wird.
+                    Man spricht von einem Frequenz-Hub.
+                    Dies ist der Bereich (z.B. 3 kHz) in welchem das Sendesignal schwankt.
+                    Zum Beispiel: ein FM-Sender sendet auf 27.125 kHz. Somit schwankt das tatsächliche Signal von 27.122 bis 27.128 kHz, ist also insgesamt 6 kHz breit.
+                    FM eignet sich besonders gut für lokale Verbindungen, da die Sprachqualität wesentlich besser ist, als bei FM. 
+                </p>
+            </div>
+            <div class="d-flex w-50 column">
+                <p>
+                    <strong>
+                        Amplituden-Modulation (AM)
+                    </strong>
+                </p>
+                <p>
+                    Bei AM wird die Sprache des Funkers auf die Funkwelle des Senders draufgepackt (aufmoduliert).
+                    Somit schwankt die Amplitude (Stärke der Welle) ständig im Rhythmus der Sprache und erzeugt so beim Sender ein schwankendes Signal, welches abhängig von der Lautstärke der Sprache des Senders ist.
+                    Ein AM-Signal ist sehr störanfällig, jedoch wegen geringer Bandbreite sehr gut für Weitverkehrs-Funk (DX) geeignet. 
+                </p>
+            </div>
+            <div class="d-flex w-50 column">
+                <p>
+                    <strong>
+                        Einseitenband-Modulation (SSB)
+                    </strong>
+                </p>
+                <p>
+                    SSB ist eine Weiterentwicklung von AM.
+                    Bei AM wird unabhängig von der Modulation ständig ein konstanter Träger gesendet, also Leistung vergeudet.
+                    Bei vorhandener Modulation erscheinen zwei Seitenbänder, welche die gleiche Information tragen.
+                    Bei SSB wird der unmodulierter Träger und ein Seitenband unterdrückt, so hat man einen optimalen Wirkungsgrad.
+                    Um das SSB-Signal im Empfänger wieder hörbar zu machen muss die Trägerfrequenz wieder hinzugefügt und die Empfangsfrequenz mit dem Clarifier-Regler sehr präzise eingestellt werden .
+                </p>
+            </div>
+            <div class="d-flex w-50 column">
+                <p>
+                    <strong>
+                        Sprechfunk
+                    </strong>
+                </p>
+                <p>
+                    Von Anfang an war CB-Funk als reiner Sprechfunk konzipiert.
+                    Dementsprechend gab es natürlich auch nur Sprechfunk-Geräte in AM und später auch FM.
+                    Auch wenn CB-Funk als mobiler Nahbereichsfunk deklariert wurde, konnte man doch unter guten Bedingungenn durchaus sehr weite Funkverbindungen herstellen.
+                    Abhängig von der Sonnenaktivität und den daraus resultierenden Ausbreitungsbedingungen sind europaweite und auch transatlantische Verbindungen keine Seltenheit und heben die Attraktivität von CB enorm.
+                </p>
+            </div>
+            <div class="d-flex w-50 column">
+                <p>
+                    <strong>
+                        Digitaler CB-Funk
+                    </strong>
+                </p>
+                <p>
+                    Durch die entsprechenden Verfügungen der RegTP wurden digitale Betriebsarten für den CB-Funk zur Benutzung auf den CB-Kanälen 6, 7, 24, 25, 52, 53, 76, 77 freigegeben.
+                    Es dürfen jedoch nur Geräte verwendet werden, die für den Anschluss beliebiger Zusatzmikrofone zugelassen sind.
+                    CB-Datenfunk darf betrieben werden in den Betriebsarten F1D, F2D und G2D (Frequenz- und Phasenmodulation, FSK bzw. AFSK).
+                    Damit ist es möglich, zum Beispiel Schmalband-Fernsehen (SSTV) oder Morsetelegraphie anzuwenden.
+                    Am häufigsten kommt jedoch Packet Radio zum Einsatz.
+                    Die Hobbyfunker haben sich inzwischen ein sehr großes und gut funktionierendes Netz aus Mailboxen (zum Speichern und Empfangen von persönlichen und allgemeinen Nachrichten), Digipeatern (Datenfunk-Umsetzern) und Nodes (Netzwerkknoten) hergestellt.
+                    Zur Verwendung von Packet Radio benötigt man ein Modem, welches zum Beispiel am COM-Port eines PCs angesteckt und mit dem Funkgerät verbunden wird.
+                    Zum Einsatz kommen auch sogenannte TNCs (Terminal Node Controller), sozusagen ein intelligentes Modem, welches auch ohne PC funktioniert.
+                </p>
+                <p>
+                    Detaillierte Infos erhalten Sie bei der Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, 
+                    Post und Eisenbahnen (früher RegTP) 
+                    unter: <a target="_blank" href="http://www.bundesnetzagentur.de">www.bundesnetzagentur.de</a>
+                </p>
+            </div>
+            
+        </div>  
+    
+    <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+        <img src="./assets/img/kodax-02.gif" alt="">
+    </div>
+
+    
+    
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+
+    <script>
+        includeHTML();
+    </script> 
+</body>
+</html>

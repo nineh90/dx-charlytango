@@ -30,7 +30,8 @@ function forLoopMicrophoneAssignment(){
 }
 
 function addAssignmentsToTable(table, deviceType, plugType, pin1, pin2, pin3, pin4, pin5, pin6, pin7, pin8){
-    table.innerHTML += `<tr>
+    table.innerHTML += `
+                        <tr>
                             <td>${deviceType}</td>
                             <td>${plugType}</td>
                             <td>${pin1}</td>
@@ -41,5 +42,6 @@ function addAssignmentsToTable(table, deviceType, plugType, pin1, pin2, pin3, pi
                             <td>${pin6}</td>
                             <td>${pin7}</td>
                             <td>${pin8}</td>
-                        </tr>`;
+                        </tr>
+                       `;
 }

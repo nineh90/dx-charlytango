@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../javascript/main.js"></script>
-    <title>DX-Navbar</title>
-</head>
-<body>
+<div onclick="closeSubMenu()" id="overLay" class="overlay d-none"></div>
+
     <div id="submenu" class="submenu navbar d-none d-flex">
         <div>
             <img onclick="closeSubMenu()" class="cross" src="./assets/img/cross.png" alt="Close menu Cross"> 
             
+            
+
             <div class="navbar flex-wrap">
                         <!-- CT-hauptmenü -->
                     <nav class="d-flex column txt-center active" onclick="openNavEntry(event)">
@@ -31,17 +23,17 @@
                         <!--Funkbereich-->
                     <nav class="d-flex column txt-center" onclick="openNavEntry(event)">
                         <a class="bg-green">Funkbereich</a>
-                        <a href="#">Was sind freie Funknetze</a>
-                        <a href="#">Geschichte CB-Funk</a>
-                        <a href="#">Bandplan CB 11m</a>
-                        <a href="#">Bandplan Freenet 149MhZ</a>
-                        <a href="#">Bandplan PMR 446MhZ</a>
-                        <a href="#">CB Einsatzgebiete</a>
-                        <a href="#">CB Betriebsart</a>
-                        <a href="#">Abkürzungen im CB</a>
-                        <a href="#">CB-Sprache</a>
-                        <a href="#">Regeln</a>
-                        <a href="#">Notruf</a>
+                        <a href="./freie-funknetze.html">Was sind freie Funknetze</a>
+                        <a href="./cb-geschichte.html">Geschichte CB-Funk</a>
+                        <a href="./cb-bandplan11m.html">Bandplan CB 11m</a>
+                        <a href="./freenet-bandplan.html">Bandplan Freenet 149MhZ</a>
+                        <a href="./pmr-bandplan.html">Bandplan PMR 446MhZ</a>
+                        <a href="./cb-einsatzgebiete.html">CB Einsatzgebiete</a>
+                        <a href="./cb-betriebsarten.html">CB Betriebsart</a>
+                        <a href="./cb-abkürzung.html">Abkürzungen im CB</a>
+                        <a href="./cb-sprache.html">CB-Sprache</a>
+                        <a href="./cb-regeln.html">Regeln</a>
+                        <a href="./cb-notruf.html">Notruf</a>
                         <a href="#">CB-Funk SWR</a>
                     </nav>  
                         <!--Allgemeines-->
@@ -107,5 +99,3 @@
         </div>    
     </div>   
     
-</body>
-</html>

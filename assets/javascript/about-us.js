@@ -3,5 +3,6 @@ function initAboutUS(){
 }
 
 function renderHeadLine(){
+    let headLine = document.getElementById('headLine');
     headLine.innerHTML = 'Über Uns';
 }

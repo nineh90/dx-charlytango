@@ -1,0 +1,32 @@
+@media(max-width: 1440px){
+            
+    .mobile-hide{
+        display: none;
+    }
+
+    .mobile-table{
+        display: flex;
+        overflow: hidden;
+    }
+
+    .mobile-table tbody{
+        display: flex;
+        /* overflow-x: auto;
+        overflow-y: hidden; */
+        -webkit-overflow-scrolling: touch;
+    }
+    .mobile-table tr{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+
+    }
+    .mobile-table td{
+        height: 45px;
+    }
+    .mobile-table th{
+        height: 39px;
+        padding: 0;
+    }
+ 
+}            
