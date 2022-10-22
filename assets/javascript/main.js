@@ -1,5 +1,28 @@
 let headLineText;
+
 window.addEventListener('scroll', fixBanner)  
+
+function loadHeader(){
+    setTimeout(showSecondImage, 2000);  
+}
+
+function showSecondImage(){
+    let image = document.getElementById('headerImageContainer');
+        image.style.backgroundImage = "url('./assets/img/aftstation.png')";
+    setTimeout(showThirdImage, 2000);
+}
+
+function showThirdImage(){
+    let image = document.getElementById('headerImageContainer');
+        image.style.backgroundImage = "url('./assets/img/antenne1.png')";
+    setTimeout(showFirstImage, 2000);
+}
+
+function showFirstImage(){
+    let image = document.getElementById('headerImageContainer');
+        image.style.backgroundImage = "url('./assets/img/antenne2.png')";
+    setTimeout(showSecondImage, 2000);
+}
 
 async function includeHTML(link) {
     let includeElements = document.querySelectorAll('[w3-include-html]');

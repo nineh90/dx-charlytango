@@ -8,28 +8,40 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/media.css">
+    <!--Remove after Test-->
+    <link rel="stylesheet" href="./assets/css/newheader.css">
+    <!---->
     <script src="./assets/javascript/main.js"></script>
 </head>
-<body class="bg-page">
+<body onload="loadHeader()" class="bg-page">
     <!--Navbar Top-->
     <div w3-include-html="./assets/template/navbar-top.html"></div>
     <!--Open Navbar fullPage-->
     <div w3-include-html="./assets/template/navbar.html"></div>
     <!--Header-->
-    <div w3-include-html="./assets/template/header.html"></div>  
+    <div w3-include-html="./assets/template/newheader.html"></div>  
     <!--Welcome Content-->
-    <div class="d-flex justify-around align-center margin-top-30px margin-bottom-30px">
+    <div class="d-flex justify-center txt-center">
+        <p class="header-content">
+            HAM - CB - SWL - BCL - COMPUTER - AM - FM - SSB<br>
+            Monitor Frequenz 26.765 FM, 27.385 FM<br>
+            Packet-Radio 26.675 FM, 26.915 FM, 26.925 FM, 27.245 FM<br>
+            SSTV 26.685 FM
+        </p>
+    </div>
+    <div class="d-flex justify-around align-center column-reverse margin-top-30px margin-bottom-30px">
+
         <div class="welcome-text txt-center">
             <p>
-                Wir wollen versuchen die Charly Tango's wieder zusammen zu bekommen.<br>
-                Uns ist klar das es wahrscheinlich viele nicht mehr gibt oder<br> 
-                auch kein Funk mehr betreiben aber diejenigen die noch Funken<br> 
-                oder die zu den neuen Funkern gehören sollen sich über diese Seite angesprochen fühlen.<br>
-                Für Anregungen, Kritik oder sonstige Meinungen sind wir immer offen.<br> 
-                Diese könnt ihr über Kontakt tun.<br> 
-                Wir werden versuchen so bald als möglich die Wünsche die schon geäußert wurden um zu setzen.<br>
-                Dank des Internets ist es den Funkern möglich Funkgeräte mit ein Soundkarteninterface<br> 
-                an das Internet an zu schließen und über sogenannte Relais die auf der Funkplattform<br>
+                Wir wollen versuchen die Charly Tango's wieder zusammen zu bekommen.
+                Uns ist klar das es wahrscheinlich viele nicht mehr gibt oder 
+                auch kein Funk mehr betreiben aber diejenigen die noch Funken 
+                oder die zu den neuen Funkern gehören sollen sich über diese Seite angesprochen fühlen.
+                Für Anregungen, Kritik oder sonstige Meinungen sind wir immer offen. 
+                Diese könnt ihr über Kontakt tun. 
+                Wir werden versuchen so bald als möglich die Wünsche die schon geäußert wurden um zu setzen.
+                Dank des Internets ist es den Funkern möglich Funkgeräte mit ein Soundkarteninterface 
+                an das Internet an zu schließen und über sogenannte Relais die auf der Funkplattform
                 zu finden sind Deutschland oder auch Weltweit miteinander zu kommunizieren.
             </p>
         </div>
@@ -63,13 +75,13 @@
         <h2>Kontakt</h2>
         <p>
             Für Anregungen, Verbesserungsvorschläge, fehlende Informationen über
-            den CT wären wir dankbar.<br>
+            den CT wären wir dankbar.
             Über <a href="mailto:#">E-Mail</a> könnt ihr mit uns in Verbindung treten.
         </p>
 
         <p>
-            Bitte habt Geduld mit mir<br>
-            ich beantworte die Mails alleine, bin voll Berufstätig<br>
+            Bitte habt Geduld mit mir
+            ich beantworte die Mails alleine, bin voll Berufstätig
             und komm im Moment nicht hinterher.
         </p>
         <img class="margin-top-30px" src="./assets/img/georgeg-schwarz.gif" alt="">

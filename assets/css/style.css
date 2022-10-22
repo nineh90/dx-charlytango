@@ -35,8 +35,11 @@ strong{
 
 .header{
     font-family:  'Roboto Mono';
-    height: 75vh;
-    background-color: #00aef7;
+    height: 50vh;
+    background-image: url('../img/antenne2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
     padding-top: 70px;
     padding-bottom: 70px;
     border-bottom: 5px solid white;
@@ -156,7 +159,10 @@ strong{
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
-    height: 65px;    
+    height: 65px;
+    background: linear-gradient(to bottom, rgb(12 105 122) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 10;
+
 }
 
 .main-menu{
@@ -178,9 +184,6 @@ strong{
     cursor: pointer;
 }
 
-.nav{
-    background: linear-gradient(to bottom, rgb(12 105 122) 0%, rgba(0, 0, 0, 0) 100%);
-}
 
 nav {
     cursor: pointer;
@@ -236,6 +239,7 @@ nav.active a {
     background-color: #1095b0;
     overflow-y: scroll;
     justify-content: center;
+    z-index: 999;
 
 }
 
@@ -647,6 +651,7 @@ table th {
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 5;
   }
 
 .open-start-page-btn {
