@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/newheader.css">
     <!---->
     <script src="./assets/javascript/main.js"></script>
+ 
 </head>
 <body onload="loadHeader()" class="bg-page">
     <!--Navbar Top-->
@@ -31,7 +32,7 @@
     </div>
     <div class="d-flex justify-around align-center column-reverse margin-top-30px margin-bottom-30px">
 
-        <div class="welcome-text txt-center">
+        <div class="welcome-text w-50 txt-center">
             <p>
                 Wir wollen versuchen die Charly Tango's wieder zusammen zu bekommen.
                 Uns ist klar das es wahrscheinlich viele nicht mehr gibt oder 
@@ -54,37 +55,43 @@
 
     <!--TEAMSPEAK-->
     <div class="teamspeak w-100 d-flex justify-around align-center margin-top-30px margin-bottom-30px">
-        <img class="ts-img" src="./assets/img/Ts3.png" alt="">
-        <h2>
-            TEAMSPEAK 3
-        </h2>
-        <img class="ts-img" src="./assets/img/Ts3.png" alt="">
+        <div class="w-50 d-flex justify-around">
+            <img class="ts-img" src="./assets/img/Ts3.png" alt="">
+            <h2>
+                TEAMSPEAK 3
+            </h2>
+            <img class="ts-img" src="./assets/img/Ts3.png" alt="">
+        </div>    
     </div>
-    <div class="welcome-text">
-        <p class="txt-center">
-            TS3 Server: 81.169.211.205<br>
-            <br>
-            Man kann auch <span>Gateways</span> einbauen direkt mitmachen ohne anfragen 
-        </p>
+    <div class="welcome-text d-flex justify-center">
+        <div class="w-50">
+            <p class="txt-center">
+                TS3 Server: 81.169.211.205<br>
+                <br>
+                Man kann auch <span>Gateways</span> einbauen direkt mitmachen ohne anfragen 
+            </p>
+        </div>    
     </div>
     <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
         <img src="./assets/img/kodax-02.gif" alt="">
     </div>
     <!--contact-->
     <div class="contact d-flex column txt-center align-center">
-        <h2>Kontakt</h2>
-        <p>
-            Für Anregungen, Verbesserungsvorschläge, fehlende Informationen über
-            den CT wären wir dankbar.
-            Über <a href="mailto:#">E-Mail</a> könnt ihr mit uns in Verbindung treten.
-        </p>
+            <div class="w-50">
+            <h2>Kontakt</h2>
+            <p>
+                Für Anregungen, Verbesserungsvorschläge, fehlende Informationen über
+                den CT wären wir dankbar.
+                Über <a href="mailto:#">E-Mail</a> könnt ihr mit uns in Verbindung treten.
+            </p>
 
-        <p>
-            Bitte habt Geduld mit mir
-            ich beantworte die Mails alleine, bin voll Berufstätig
-            und komm im Moment nicht hinterher.
-        </p>
-        <img class="margin-top-30px" src="./assets/img/georgeg-schwarz.gif" alt="">
+            <p>
+                Bitte habt Geduld mit mir
+                ich beantworte die Mails alleine, bin voll Berufstätig
+                und komm im Moment nicht hinterher.
+            </p>
+            <img class="margin-top-30px" src="./assets/img/georgeg-schwarz.gif" alt="">
+    </div>
     </div>
     <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
         <img src="./assets/img/kodax-02.gif" alt="">
@@ -95,5 +102,6 @@
     <script>
         includeHTML();
     </script> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
 </html>

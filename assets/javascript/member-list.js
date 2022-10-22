@@ -6,8 +6,15 @@ async function init(){
     let responseFromJSON = await fetch(JSON);
     loadedData = await responseFromJSON.json();
     setTimeout(forLoopCountryList, 500);
-
+    setTimeout(renderHeadLine, 1000); 
 }
+
+function renderHeadLine(){
+    let headLine = document.getElementById('headLine');
+    if (headLine){
+        headLine.innerHTML = `Mitgliederliste`;
+    }
+} 
 
 function forLoopCountryList(){ 
     allMemberList.innerHTML = "";

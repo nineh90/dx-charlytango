@@ -1,10 +1,37 @@
 let headLineText;
 
-window.addEventListener('scroll', fixBanner)  
+window.addEventListener('scroll', fixBanner);
+
+function initCtToday(){
+    let headLine = document.getElementById('headLine');
+    if (headLine){
+        headLine.innerHTML = `CharlyTango Heute`;
+    }    
+}
+
+function initInMemorian(){
+    let headLine = document.getElementById('headLine');
+    if (headLine){
+        headLine.innerHTML = `In Gedenken`;
+    }
+}
+
+function initNewMember(){
+    let headLine = document.getElementById('headLine');
+    if (headLine){
+        headLine.innerHTML = `Kontakt &<br> neues Mitglied werden`;
+    }
+}    
+
 
 function loadHeader(){
-    setTimeout(showSecondImage, 2000);  
+    setTimeout(showSecondImage, 2000);
+    
+
+    
 }
+
+
 
 function showSecondImage(){
     let image = document.getElementById('headerImageContainer');
