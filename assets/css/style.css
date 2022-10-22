@@ -292,36 +292,38 @@ nav.active a {
     box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgb(0 0 0 / 0%);
 }
 
-.table {
+table {
     border-collapse: collapse;
     width: 100%;
   }
   
-.table td, .table th {
+table td, .table th {
     border: 1px solid #ddd;
     padding: 8px;
+    
   }
   
-.table tr:nth-child(even){
-    background-color: #f2f2f2;
+table tr:nth-child(even){
+    background-color: #00aef7;
 }
   
-.table tr:hover {
-    background-color: rgb(50, 48, 48);
+table tr:hover {
+    background-color: rgba(50, 48, 48 , 20%);
     color: lime;
 }
   
-.table th {
+table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #04AA6D;
+    background-color: #042eaa;
     color: white;
+
 }
 
 
 
-#memberList {
+/* #memberList {
     border-collapse: collapse;
     width: 100%;
   }
@@ -402,7 +404,7 @@ nav.active a {
     background-color: #04AA6D;
     color: white;
 
-}
+} 
 
 #cbChannelList {
     border-collapse: collapse;
@@ -542,7 +544,7 @@ nav.active a {
     background-color: #04AA6D;
     color: white;
 
-}
+} */
 
 
 

@@ -20,113 +20,116 @@
     <!--Content-->
 
         <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
-            <h2>Die Entstehung von Paket Radio</h2>
-            <p>
-                Bereits seit langer Zeit ist das Funkfernschreiben im Amateurfunk gebräuchlich (RTTY). Mechanische Fernschreibmaschinen<br>
-                (Siemens T100, Lorenz Lo15) waren für Amateure billig erhältlich und ließen sich mit einem Konverter ohne Aufwand an einen<br>
-                Transceiver anschließen. Die übliche Geschwindigkeit war 45 Baud, das entspricht ca. 6 Buchstaben pro Sekunde.<br>
-                Durch Verwendung von Terminals sowie Hobbycomputern wurde es für Amateure möglich, wesentlich schnellere Übertragungsverfahren<br> 
-                zu verwenden. Mit geringem Aufwand konnten Konverter über eine serielle Schnittstelle an einen Computer angeschlossen werden<br> 
-                und ermöglichten Übertragungsgeschwindigkeiten bis zu 2400 Baud (ca. 200 Buchstaben pro Sekunde). Eine Datensicherung<br> 
-                (Fehlererkennung bzw. Fehlerkorrektur) fand nicht statt, ein 'Protokoll' existierte nicht.<br>
-                Aus dem kommerziellen Funkfernschreibverkehr wurde das AMTOR-Verfahren übernommen. Hier werden kleinste Datenpakete mit nur wenigen<br>
-                Buchstaben gesendet und jedesmal die Empfangsbestätigung abgewartet. Bei negativer oder fehlender Empfangsbestätigung wird das Paket<br> 
-                wiederholt. Die erzielbare Geschwindigkeit liegt, wie bei RTTY bei etwa 6 Buchstaben pro Sekunde, jedoch sind Übertragungsfehler<br> 
-                unwahrscheinlich.<br>
-                Der Begriff Packet-Radio wurde Ende 1981 in Tucson, Arizona geprägt. Eine Gruppe von Funkamateuren hatte sich zur TAPR<br> 
-                (=Tucson Amateur Packet Radio) zusammengeschlossen und plante, ein lokales Datennetz auf Amateurfunkfrequenzen aufzubauen. Dabei war<br> 
-                jedoch vorgesehen, dieses Datennetz später international auszuweiten.<br>
-                Der erste Schritt wurde im Oktober 1982 unternommen. Bei der AMSAT in Washington trafen sich verschiedene Gruppen von Funkamateuren,<br> 
-                und legten ein Protokoll für eine Paketdatenvermittlung fest. Hauptzielrichtung war es, ein einheitliches Verfahren zur<br> 
-                Datenübertragung von und zu den geplanten Phase III B Satelliten (OSCAR 10) zu entwickeln.<br>
-                Für die Datenübertragung innerhalb der postalischen Netze war das X.25 Protokoll bereits eingeführt, bei uns ist es unter der<br> 
-                Bezeichnung 'Datex-P' gebräuchlich. So lag es nahe, auch für den Amateurfunk ein ähnliches Verfahren zu verwenden. Im Gegensatz zum<br> 
-                postalischen Netz, das speziell für Punkt-zu-Punkt-Verbindungen ausgelegt ist, hört ein Funkempfänger alle benachbarten Sender und<br> 
-                wird auch von allen Nachbarn gestört. Außerdem ist es beim Amateurfunk wichtig, daß die Rufzeichen der beteiligten Stationen mit<br> 
-                ausgesendet werden.<br>
-                Das erweiterte X.25 Protokoll, das alle Anforderungen für den Amateurfunkbetrieb aufweist, wurde festgelegt und AX.25<br> 
-                (A=Amateur) genannt. AX.25 definiert die Stufe 2 des OSI-ISO-Modells.<br>
-                Die TAPR entwickelte 1983 eine Rechnerkarte 'TNC1', die die Daten in dem AX.25 Protokoll senden und empfangen konnte.<br> 
-                Der Bausatz kostete damals 240 $ und umfaßte eine 16x27 cm große Leiterplatte mit dem Motorola Mikroprozessor 6809 und<br> 
-                den Modem-IC XR2211 und XR2201. Die Stromversorgung war auf der Platine enthalten, bei +12, +5 und -12 Volt betrug die<br> 
-                Leistungsaufnahme einige Watt.<br>
-                Während sich das TNC1 in den USA langsam verbreitete, gab es in der Bundesrepublik nur wenige Anwender für diese Betriebsart.<br> 
-                Eine Stuttgarter Gruppe machte 1982 Versuche mit 1200 Baud ASCII Übertragung und programmierte verschiedene Kommandos,<br> 
-                mit denen man Daten fehlerfrei austauschen konnte.<br>
-                Ab 1985 kam eine Neuentwicklung heraus: das TNC2. Es hatte den Z80 Mikroprozessor, 8 kByte RAM, 32 kByte EPROM und verwendete<br> 
-                größtenteils HCMOS IC um den Stromverbrauch in Grenzen zu halten. Mit dem TNC2 hielt auch die Betriebsart Packet-Radio Einzug in<br> 
-                Deutschland.<br>
-                Es folgten verschiedene Weiterentwicklungen des TNC2, die sich jedoch stark an das von TAPR entwickelte TNC2 anlehnten. Da der<br> 
-                Quellcode (Source) des Z80-Programms nicht veröffentlicht wurde, war man darauf angewiesen, TNC-Nachbauten mit gleichen Programmen<br> 
-                (EPROM's) zu betreiben wie das Original. Insbesonders das Modem wurde verbessert, indem man die XR2211/2206 gegen ein TCM 3105<br> 
-                austauschte und somit auf den Abgleich der Modemfrequenzen verzichten konnte. Die sehr verbreiteten TNC2C begnügen sich mit 5 Volt<br> 
-                Versorgungsspannung und haben einen Leistungsbedarf von weit unter 1 Watt, wovon der größte Teil für den Betrieb der Leuchtdioden<br> 
-                benötigt wurde.<br>
-                Als neuen Meilenstein der TNC-Hardware wurde 1993 das TNC3S von auf den Markt gebracht. Durch Einsatz eines 16/32 Bit Prozessors mit<br> 
-                RISC-Architektur kann dieses TNC die HDLC-Packet-Daten auf zwei Kanälen gleichzeitig und hundertmal schneller verarbeiten als ein TNC2.<br>
-                Da das TNC3S bis zu 1 MByte (also das 32-fache des TNC2) RAM-Speicher und 256 kByte EPROM besitzt, eignet sich dieses TNC auch für<br> 
-                anspruchsvolle Aufgaben (Digipeater, Mailbox etc.) Der eingesetzte 68302-Prozessor eignet sich für Multitasking-Betrieb,<br> 
-                die Anwendungsprogramme können ohne großen Aufwand in C geschrieben werden.<br>
-                Der Packet-Radio-Betrieb fand in den Anfangszeiten vorwiegend auf dem 2 m Band statt. Die Frequenz 144.675 war in den
-                Ballungsgebieten<br> 
-                häufig stark überlastet und der Verkehr über mehrere Digipeater hinweg war nur in den ruhigen Stunden des Tages möglich. Ende 1986<br> 
-                wurden dann die ersten offiziellen Digipeater genehmigt. Diese Umsetzer arbeiten vollduplex im 70cm Band, das heißt, sie können<br> 
-                gleichzeitig senden und empfangen. Durch den großen Einzugsbereich dieser Umsetzer war es nun auch mit geringem Stationsaufwand<br> 
-                möglich, sichere Packet-Verbindungen über große Entfernungen herzustellen.<br>
-                Eine Gruppe von Frankfurter Funkamateuren entwickelte einen Steckkartenrechner, der eine Vermittlung der Datenpakete möglich machte.<br>
-                An den RMNC (Rhein-Main-Network-Controller) konnten mehrere Funkgeräte angeschlossen werden und die ankommenden Datenpakete wurden<br> 
-                je nach dem Ziel auf dem entsprechenden Sender ausgegeben. Die Digipeater verfügten meist über einen Duplexkanal (Benutzerzugang)<br> 
-                und einen oder mehrere Simplexkanäle (Links), mit denen sie im 23cm-Band mit den benachbarten Digipeatern verbunden waren.<br> 
-                Der RMNC hat sich wegen seiner Leistungsfähigkeit bei niedrigen Gerätekosten in DL weit verbreitet.<br>
-                Eine einfache und billige Möglichkeit, einen Netzknoten aufzubauen, war das NET-ROM. Mithilfe dieses Programms (im EPROM) konnte man<br>
-                mehrere Standard-TNC zu einem Netzknoten zusammenschalten. Der Benutzer des Knotens konnte die Liste der erreichbaren Nachbarknoten<br> 
-                abfragen und zu diesen Knoten weiterconnecten. Das NET-ROM war eine kommerzielle Entwicklung aus den USA und verbreitete sich aufgrund<br> 
-                der Beschaffungsprobleme nur zögernd. Später wurde ein kompatibles Programm 'TheNet' in Deutschland entwickelt, das für die kostenlose<br> 
-                Nutzung durch Funkamateure freigegeben war und sich rasch verbreitete.<br>
-                Ab 1987 wurden große Anstrengungen unternommen, ein Datennetz aufzubauen, das über 23cm-Richtfunkstrecken die Verbindung aller<br> 
-                Digipeater ermöglicht. Mit großem persönlichen Einsatz und erheblichem finanziellem Aufwand wurden an zentralen Stellen Digipeater<br> 
-                gebaut und, soweit möglich über 23cm Richtfunkstrecken an das Netz angebunden.<br>
-                Als sehr nützliche Einrichtung kamen nun zahlreiche Mailboxen ans Netz. In diesen Mailboxen konnten allgemein interessierende<br> 
-                Informationen, sowie Nachrichten an bestimmte Funkamateure ('persönliche Mail') abgelegt bzw. abgerufen werden. Die Mailboxen stehen <br>
-                über 'store and forward' miteinander in Verbindung und tauschen Nachrichten untereinander aus. Ein Brief (Mail), der z.B. in Kiel<br> 
-                in eine Mailbox eingegeben wird, wird von Box zu Box weitergereicht, bis er in der Zielbox z.B. in Stuttgart ankommt.<br> 
-                Dort ruft ihn der Adressat dann gelegentlich ab.<br>
-                Die Verbindung zu Packet-Stationen außerhalb Deutschlands erfolgt durch Gateways, das sind Packet-Digipeater, die Nachrichten<br> 
-                von Kurzwelle aufnehmen und in das deutsche Netz einspeisen. Auf diese Weise kommen Nachrichten aus der ganzen Welt in jede<br> 
-                lokale Mailbox. Momentan (1991) werden täglich etwa 20 bis 50 Nachrichten mit durchschnittlich 2 kByte in einer Mailbox gespeichert.<br> 
-                In manchen Mailboxen hat man Zugriff auf einige zehntausend Meldungen, die zum Teil noch aus den Anfangszeiten der Mailbox-Zeit<br> 
-                Ende 1987 stammen.<br>
-                Ende 1988 wurden erste Versuche mit Modulationsarten unternommen, die mehr als 1200 Baud erlaubten. (z.B. G3RUH-Modem) Diese Modems<br> 
-                wurden bevorzugt für die Verbindung der Digipeater untereinander verwendet.<br>
-                Der Weg der Datenpakete durch das Digipeaternetz mußte man beim Verbindungsaufbau selbst angeben. Ab Mitte 1987 wurde in Stuttgart<br> 
-                ein Knotenrechner in Betrieb genommen, der die Wege zu den empfangenen Stationen speicherte und die notwendigen<br> 
-                Digipeaterrufzeichen automatisch in die Pakete einfügte. Dies vereinfachte die Benutzung des Digipeaters wesentlich, da man die<br> 
-                Vermittlung der Daten dem Knotenrechner überlassen konnte. (Autorouting) Einige Zeit später wurden ähnliche Autorouter-Programme<br> 
-                auch in den RMNC und OE5XDL Knotenrechnern eingebaut.<br>
-                Grundsätzlich kann bei Packet-Radio nur eine Verbindung zwischen zwei Stationen bestehen. Um Rundgespräche zu ermöglichen,<br> 
-                wurden sog. CONVERS-Programme installiert, die eine schriftliche Unterhaltung mehrerer Stationen ermöglichen. Dabei sind alle<br> 
-                Stationen mit einem Knotenrechner verbunden, der die Nachrichten empfängt und an alle Stationen (die am CONVERS-Betrieb teilnehmen)<br> 
-                weitergibt.<br>
-                Außer AX.25 werden von einigen Digipeatern auch TCP/IP-Verbindungen unterstützt. Dieses Protokoll eignet sich sehr gut zum<br> 
-                automatischen Datenaustausch von Computern. Digipeater vom Typ' WAMPES' (=Württemberger Amateur MultiProtokoll Experimentelle Software)<br> 
-                können connected werden und gestatten jedem Amateur, in das unix-System des Rechners einzuloggen und mit dem Rechner zu arbeiten,<br> 
-                Programme zu erstellen und zu speichern. Es können viele Benutzer gleichzeitig diese Eigenschaft der WAMPES-Knoten in Anspruch nehmen.<br>
-                Als sehr nützliche Einrichtung für den Kurzwellen-DX'er sind überall sogenannte DX-Cluster eingerichtet worden. Diese Rechner sind eine<br> 
-                Mischung von CONVERS-Knoten und Datenbank. Wenn man solch ein DX-Cluster connected, bekommt man brandaktuelle DX-Informationen<br> 
-                (Call, Frequenz, Uhrzeit etc.) laufend auf dem Bildschirm angezeigt. Hat man selbst einen seltenen Fisch auf Kurzwelle geangelt,<br> 
-                dann gibt man die Daten in den Clusterrechner ein, der die Meldung sofort an alle angeschlossenen Interessenten weitergibt.<br> 
-                Zusätzlich steht eine Datenbank für Prefixe oder QSL-Manager-Adressen zur Verfügung.<br>
-                Die weitere Entwicklung bei Packet-Radio wird im weiteren Ausbau des Netzes bestehen. Benutzerzugänge mit 9600 Baud werden bestimmt<br> 
-                bald die Regel, spezielle Packet-Transceiver für den 9600 oder 19200 Baud-Betrieb werden gebraucht. Immer mehr werden grafische Daten<br> 
-                (Bilder etc.) oder digitalisierte Sprache übertragen, was das Datenaufkommen vergrößert. Dies führt natürlich zu einem enormen<br> 
-                Bedarf an schnellen Verbindungen zwischen den Digipeatern. Die Knotenrechner werden in Bezug auf Komfort und Geschwindigkeit<br> 
-                weiterentwickelt werden. Was die Linkstrecken betrifft bestehen mittlerweile Probleme mit der Genehmigung der 23cm Frequenzen,<br> 
-                da Amateurfunk auf 23cm nur auf sekundärer Basis erlaubt ist und z.B. die militärische Nutzung des Bandes dem Frequenzbedarf der<br> 
-                Amateure gewisse Grenzen setzt. Linkstrecken auf höheren Frequenzen (6cm, 3cm) mit fest ausgerichteten Spiegelantennen werden versucht,<br> 
-                allerdings gibt es hier Probleme mit dem betriebssicheren und temperaturstabilen Aufbau der Geräte und der für ausreichende<br> 
-                Reichweite erforderlichen Sendeleistung. Da auf diesen Bändern bisher keine Frequenzknappheit herrscht, lassen sich hier<br> 
-                Übertragungsverfahren mit sehr hoher Baudrate realisieren.
-            </p>
+            <div class="w-50">
+                <h2>Die Entstehung von Paket Radio</h2>
+
+                <p>
+                    Bereits seit langer Zeit ist das Funkfernschreiben im Amateurfunk gebräuchlich (RTTY). Mechanische Fernschreibmaschinen
+                    (Siemens T100, Lorenz Lo15) waren für Amateure billig erhältlich und ließen sich mit einem Konverter ohne Aufwand an einen
+                    Transceiver anschließen. Die übliche Geschwindigkeit war 45 Baud, das entspricht ca. 6 Buchstaben pro Sekunde.
+                    Durch Verwendung von Terminals sowie Hobbycomputern wurde es für Amateure möglich, wesentlich schnellere Übertragungsverfahren 
+                    zu verwenden. Mit geringem Aufwand konnten Konverter über eine serielle Schnittstelle an einen Computer angeschlossen werden 
+                    und ermöglichten Übertragungsgeschwindigkeiten bis zu 2400 Baud (ca. 200 Buchstaben pro Sekunde). Eine Datensicherung 
+                    (Fehlererkennung bzw. Fehlerkorrektur) fand nicht statt, ein 'Protokoll' existierte nicht.
+                    Aus dem kommerziellen Funkfernschreibverkehr wurde das AMTOR-Verfahren übernommen. Hier werden kleinste Datenpakete mit nur wenigen
+                    Buchstaben gesendet und jedesmal die Empfangsbestätigung abgewartet. Bei negativer oder fehlender Empfangsbestätigung wird das Paket 
+                    wiederholt. Die erzielbare Geschwindigkeit liegt, wie bei RTTY bei etwa 6 Buchstaben pro Sekunde, jedoch sind Übertragungsfehler 
+                    unwahrscheinlich.
+                    Der Begriff Packet-Radio wurde Ende 1981 in Tucson, Arizona geprägt. Eine Gruppe von Funkamateuren hatte sich zur TAPR 
+                    (=Tucson Amateur Packet Radio) zusammengeschlossen und plante, ein lokales Datennetz auf Amateurfunkfrequenzen aufzubauen. Dabei war 
+                    jedoch vorgesehen, dieses Datennetz später international auszuweiten.
+                    Der erste Schritt wurde im Oktober 1982 unternommen. Bei der AMSAT in Washington trafen sich verschiedene Gruppen von Funkamateuren, 
+                    und legten ein Protokoll für eine Paketdatenvermittlung fest. Hauptzielrichtung war es, ein einheitliches Verfahren zur 
+                    Datenübertragung von und zu den geplanten Phase III B Satelliten (OSCAR 10) zu entwickeln.
+                    Für die Datenübertragung innerhalb der postalischen Netze war das X.25 Protokoll bereits eingeführt, bei uns ist es unter der 
+                    Bezeichnung 'Datex-P' gebräuchlich. So lag es nahe, auch für den Amateurfunk ein ähnliches Verfahren zu verwenden. Im Gegensatz zum 
+                    postalischen Netz, das speziell für Punkt-zu-Punkt-Verbindungen ausgelegt ist, hört ein Funkempfänger alle benachbarten Sender und 
+                    wird auch von allen Nachbarn gestört. Außerdem ist es beim Amateurfunk wichtig, daß die Rufzeichen der beteiligten Stationen mit 
+                    ausgesendet werden.
+                    Das erweiterte X.25 Protokoll, das alle Anforderungen für den Amateurfunkbetrieb aufweist, wurde festgelegt und AX.25 
+                    (A=Amateur) genannt. AX.25 definiert die Stufe 2 des OSI-ISO-Modells.
+                    Die TAPR entwickelte 1983 eine Rechnerkarte 'TNC1', die die Daten in dem AX.25 Protokoll senden und empfangen konnte. 
+                    Der Bausatz kostete damals 240 $ und umfaßte eine 16x27 cm große Leiterplatte mit dem Motorola Mikroprozessor 6809 und 
+                    den Modem-IC XR2211 und XR2201. Die Stromversorgung war auf der Platine enthalten, bei +12, +5 und -12 Volt betrug die 
+                    Leistungsaufnahme einige Watt.
+                    Während sich das TNC1 in den USA langsam verbreitete, gab es in der Bundesrepublik nur wenige Anwender für diese Betriebsart. 
+                    Eine Stuttgarter Gruppe machte 1982 Versuche mit 1200 Baud ASCII Übertragung und programmierte verschiedene Kommandos, 
+                    mit denen man Daten fehlerfrei austauschen konnte.
+                    Ab 1985 kam eine Neuentwicklung heraus: das TNC2. Es hatte den Z80 Mikroprozessor, 8 kByte RAM, 32 kByte EPROM und verwendete 
+                    größtenteils HCMOS IC um den Stromverbrauch in Grenzen zu halten. Mit dem TNC2 hielt auch die Betriebsart Packet-Radio Einzug in 
+                    Deutschland.
+                    Es folgten verschiedene Weiterentwicklungen des TNC2, die sich jedoch stark an das von TAPR entwickelte TNC2 anlehnten. Da der 
+                    Quellcode (Source) des Z80-Programms nicht veröffentlicht wurde, war man darauf angewiesen, TNC-Nachbauten mit gleichen Programmen 
+                    (EPROM's) zu betreiben wie das Original. Insbesonders das Modem wurde verbessert, indem man die XR2211/2206 gegen ein TCM 3105 
+                    austauschte und somit auf den Abgleich der Modemfrequenzen verzichten konnte. Die sehr verbreiteten TNC2C begnügen sich mit 5 Volt 
+                    Versorgungsspannung und haben einen Leistungsbedarf von weit unter 1 Watt, wovon der größte Teil für den Betrieb der Leuchtdioden 
+                    benötigt wurde.
+                    Als neuen Meilenstein der TNC-Hardware wurde 1993 das TNC3S von auf den Markt gebracht. Durch Einsatz eines 16/32 Bit Prozessors mit 
+                    RISC-Architektur kann dieses TNC die HDLC-Packet-Daten auf zwei Kanälen gleichzeitig und hundertmal schneller verarbeiten als ein TNC2.
+                    Da das TNC3S bis zu 1 MByte (also das 32-fache des TNC2) RAM-Speicher und 256 kByte EPROM besitzt, eignet sich dieses TNC auch für 
+                    anspruchsvolle Aufgaben (Digipeater, Mailbox etc.) Der eingesetzte 68302-Prozessor eignet sich für Multitasking-Betrieb, 
+                    die Anwendungsprogramme können ohne großen Aufwand in C geschrieben werden.
+                    Der Packet-Radio-Betrieb fand in den Anfangszeiten vorwiegend auf dem 2 m Band statt. Die Frequenz 144.675 war in den
+                    Ballungsgebieten 
+                    häufig stark überlastet und der Verkehr über mehrere Digipeater hinweg war nur in den ruhigen Stunden des Tages möglich. Ende 1986 
+                    wurden dann die ersten offiziellen Digipeater genehmigt. Diese Umsetzer arbeiten vollduplex im 70cm Band, das heißt, sie können 
+                    gleichzeitig senden und empfangen. Durch den großen Einzugsbereich dieser Umsetzer war es nun auch mit geringem Stationsaufwand 
+                    möglich, sichere Packet-Verbindungen über große Entfernungen herzustellen.
+                    Eine Gruppe von Frankfurter Funkamateuren entwickelte einen Steckkartenrechner, der eine Vermittlung der Datenpakete möglich machte.
+                    An den RMNC (Rhein-Main-Network-Controller) konnten mehrere Funkgeräte angeschlossen werden und die ankommenden Datenpakete wurden 
+                    je nach dem Ziel auf dem entsprechenden Sender ausgegeben. Die Digipeater verfügten meist über einen Duplexkanal (Benutzerzugang) 
+                    und einen oder mehrere Simplexkanäle (Links), mit denen sie im 23cm-Band mit den benachbarten Digipeatern verbunden waren. 
+                    Der RMNC hat sich wegen seiner Leistungsfähigkeit bei niedrigen Gerätekosten in DL weit verbreitet.
+                    Eine einfache und billige Möglichkeit, einen Netzknoten aufzubauen, war das NET-ROM. Mithilfe dieses Programms (im EPROM) konnte man
+                    mehrere Standard-TNC zu einem Netzknoten zusammenschalten. Der Benutzer des Knotens konnte die Liste der erreichbaren Nachbarknoten 
+                    abfragen und zu diesen Knoten weiterconnecten. Das NET-ROM war eine kommerzielle Entwicklung aus den USA und verbreitete sich aufgrund 
+                    der Beschaffungsprobleme nur zögernd. Später wurde ein kompatibles Programm 'TheNet' in Deutschland entwickelt, das für die kostenlose 
+                    Nutzung durch Funkamateure freigegeben war und sich rasch verbreitete.
+                    Ab 1987 wurden große Anstrengungen unternommen, ein Datennetz aufzubauen, das über 23cm-Richtfunkstrecken die Verbindung aller 
+                    Digipeater ermöglicht. Mit großem persönlichen Einsatz und erheblichem finanziellem Aufwand wurden an zentralen Stellen Digipeater 
+                    gebaut und, soweit möglich über 23cm Richtfunkstrecken an das Netz angebunden.
+                    Als sehr nützliche Einrichtung kamen nun zahlreiche Mailboxen ans Netz. In diesen Mailboxen konnten allgemein interessierende 
+                    Informationen, sowie Nachrichten an bestimmte Funkamateure ('persönliche Mail') abgelegt bzw. abgerufen werden. Die Mailboxen stehen 
+                    über 'store and forward' miteinander in Verbindung und tauschen Nachrichten untereinander aus. Ein Brief (Mail), der z.B. in Kiel 
+                    in eine Mailbox eingegeben wird, wird von Box zu Box weitergereicht, bis er in der Zielbox z.B. in Stuttgart ankommt. 
+                    Dort ruft ihn der Adressat dann gelegentlich ab.
+                    Die Verbindung zu Packet-Stationen außerhalb Deutschlands erfolgt durch Gateways, das sind Packet-Digipeater, die Nachrichten 
+                    von Kurzwelle aufnehmen und in das deutsche Netz einspeisen. Auf diese Weise kommen Nachrichten aus der ganzen Welt in jede 
+                    lokale Mailbox. Momentan (1991) werden täglich etwa 20 bis 50 Nachrichten mit durchschnittlich 2 kByte in einer Mailbox gespeichert. 
+                    In manchen Mailboxen hat man Zugriff auf einige zehntausend Meldungen, die zum Teil noch aus den Anfangszeiten der Mailbox-Zeit 
+                    Ende 1987 stammen.
+                    Ende 1988 wurden erste Versuche mit Modulationsarten unternommen, die mehr als 1200 Baud erlaubten. (z.B. G3RUH-Modem) Diese Modems 
+                    wurden bevorzugt für die Verbindung der Digipeater untereinander verwendet.
+                    Der Weg der Datenpakete durch das Digipeaternetz mußte man beim Verbindungsaufbau selbst angeben. Ab Mitte 1987 wurde in Stuttgart 
+                    ein Knotenrechner in Betrieb genommen, der die Wege zu den empfangenen Stationen speicherte und die notwendigen 
+                    Digipeaterrufzeichen automatisch in die Pakete einfügte. Dies vereinfachte die Benutzung des Digipeaters wesentlich, da man die 
+                    Vermittlung der Daten dem Knotenrechner überlassen konnte. (Autorouting) Einige Zeit später wurden ähnliche Autorouter-Programme 
+                    auch in den RMNC und OE5XDL Knotenrechnern eingebaut.
+                    Grundsätzlich kann bei Packet-Radio nur eine Verbindung zwischen zwei Stationen bestehen. Um Rundgespräche zu ermöglichen, 
+                    wurden sog. CONVERS-Programme installiert, die eine schriftliche Unterhaltung mehrerer Stationen ermöglichen. Dabei sind alle 
+                    Stationen mit einem Knotenrechner verbunden, der die Nachrichten empfängt und an alle Stationen (die am CONVERS-Betrieb teilnehmen) 
+                    weitergibt.
+                    Außer AX.25 werden von einigen Digipeatern auch TCP/IP-Verbindungen unterstützt. Dieses Protokoll eignet sich sehr gut zum 
+                    automatischen Datenaustausch von Computern. Digipeater vom Typ' WAMPES' (=Württemberger Amateur MultiProtokoll Experimentelle Software) 
+                    können connected werden und gestatten jedem Amateur, in das unix-System des Rechners einzuloggen und mit dem Rechner zu arbeiten, 
+                    Programme zu erstellen und zu speichern. Es können viele Benutzer gleichzeitig diese Eigenschaft der WAMPES-Knoten in Anspruch nehmen.
+                    Als sehr nützliche Einrichtung für den Kurzwellen-DX'er sind überall sogenannte DX-Cluster eingerichtet worden. Diese Rechner sind eine 
+                    Mischung von CONVERS-Knoten und Datenbank. Wenn man solch ein DX-Cluster connected, bekommt man brandaktuelle DX-Informationen 
+                    (Call, Frequenz, Uhrzeit etc.) laufend auf dem Bildschirm angezeigt. Hat man selbst einen seltenen Fisch auf Kurzwelle geangelt, 
+                    dann gibt man die Daten in den Clusterrechner ein, der die Meldung sofort an alle angeschlossenen Interessenten weitergibt. 
+                    Zusätzlich steht eine Datenbank für Prefixe oder QSL-Manager-Adressen zur Verfügung.
+                    Die weitere Entwicklung bei Packet-Radio wird im weiteren Ausbau des Netzes bestehen. Benutzerzugänge mit 9600 Baud werden bestimmt 
+                    bald die Regel, spezielle Packet-Transceiver für den 9600 oder 19200 Baud-Betrieb werden gebraucht. Immer mehr werden grafische Daten 
+                    (Bilder etc.) oder digitalisierte Sprache übertragen, was das Datenaufkommen vergrößert. Dies führt natürlich zu einem enormen 
+                    Bedarf an schnellen Verbindungen zwischen den Digipeatern. Die Knotenrechner werden in Bezug auf Komfort und Geschwindigkeit 
+                    weiterentwickelt werden. Was die Linkstrecken betrifft bestehen mittlerweile Probleme mit der Genehmigung der 23cm Frequenzen, 
+                    da Amateurfunk auf 23cm nur auf sekundärer Basis erlaubt ist und z.B. die militärische Nutzung des Bandes dem Frequenzbedarf der 
+                    Amateure gewisse Grenzen setzt. Linkstrecken auf höheren Frequenzen (6cm, 3cm) mit fest ausgerichteten Spiegelantennen werden versucht, 
+                    allerdings gibt es hier Probleme mit dem betriebssicheren und temperaturstabilen Aufbau der Geräte und der für ausreichende 
+                    Reichweite erforderlichen Sendeleistung. Da auf diesen Bändern bisher keine Frequenzknappheit herrscht, lassen sich hier 
+                    Übertragungsverfahren mit sehr hoher Baudrate realisieren.
+                </p>
+            </div>    
         </div>  
     
     <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">

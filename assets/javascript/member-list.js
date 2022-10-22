@@ -54,15 +54,19 @@ function openDetailview(i){
 }
 
 function generateTableCurrentCountry(){
-    allMemberList.innerHTML = `
-                                <table id="currentMemberList" class="txt-center">
-                                    <tr>
-                                        <th>Rufzeichen</th>
-                                        <th>Name</th>
-                                        <th>Stadt</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </table>  `;
+    allMemberList.innerHTML = ` <div class="w-50">
+                                    <table class="txt-center mobile-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Rufzeichen</th>
+                                                <th>Name</th>
+                                                <th>Stadt</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="currentMemberList"></tbody>    
+                                    </table>  
+                                </div>`;
                              
                     
 }
