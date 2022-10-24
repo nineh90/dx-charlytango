@@ -6,14 +6,18 @@ async function init(){
     let responseFromJSON = await fetch(JSON);
     loadedData = await responseFromJSON.json();
     setTimeout(forLoopCountryList, 500);
-    setTimeout(renderHeadLine, 1000); 
+    renderHeadLine(); 
 }
 
 function renderHeadLine(){
-    let headLine = document.getElementById('headLine');
-    if (headLine){
-        headLine.innerHTML = `Mitgliederliste`;
-    }
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Mitgliederliste`;
+            clearInterval(intervall)
+            }
+       });
+    
 } 
 
 function forLoopCountryList(){ 
@@ -54,11 +58,31 @@ function openDetailview(i){
         const name = memberJSON[j]['name'];
         const city = memberJSON[j]['city'];
         const status = memberJSON[j]['status'];
-        renderMemberListCurrentCountry(callsign, name, city, status);        
-
+        renderMemberListCurrentCountry(callsign, name, city, status, j);
+               
     }
-
+     
 }
+
+function checkForCbStatus(status, j){
+    if(status == 'unknown'){
+        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        statusColor.style.color = "orange";
+    }
+    if(status == 'active'){
+        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        statusColor.style.color = "lime";
+    }
+    if(status == 'inactive'){
+        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        statusColor.style.color = "red";
+    }
+  
+    if(status == 'dead'){
+        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        statusColor.style.color = "black";
+    } 
+    }
 
 function generateTableCurrentCountry(){
     allMemberList.innerHTML = ` <div class="w-50">
@@ -78,11 +102,13 @@ function generateTableCurrentCountry(){
                     
 }
 
-function renderMemberListCurrentCountry(callsign, name, city, status){
+function renderMemberListCurrentCountry(callsign, name, city, status, j ){
     currentMemberList.innerHTML += `<tr>
                                         <td>${callsign}</td>
                                         <td>${name.toUpperCase()}</td>
                                         <td>${city.toUpperCase()}</td>
-                                        <td>${status.toUpperCase()}</td>
+                                        <td id="CBSTATUS${j}">${status.toUpperCase()}</td>
                                     </tr>`
+    checkForCbStatus(status,j)
+                                                                   
 }

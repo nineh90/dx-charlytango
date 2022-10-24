@@ -3,32 +3,48 @@ let headLineText;
 window.addEventListener('scroll', fixBanner);
 
 function initCtToday(){
-    let headLine = document.getElementById('headLine');
-    if (headLine){
-        headLine.innerHTML = `CharlyTango Heute`;
-    }    
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CharlyTango Heute`;
+            clearInterval(intervall)
+            }
+       }); 
 }
 
 function initInMemorian(){
-    let headLine = document.getElementById('headLine');
-    if (headLine){
-        headLine.innerHTML = `In Gedenken`;
-    }
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `In Gedenken`;
+            clearInterval(intervall)
+            }
+       });
 }
 
 function initNewMember(){
-    let headLine = document.getElementById('headLine');
-    if (headLine){
-        headLine.innerHTML = `Kontakt &<br> neues Mitglied werden`;
-    }
-}    
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Kontakt &<br> neues Mitglied werden`;
+            clearInterval(intervall)
+            }
+       });
+}  
+
+function initQSL(){
+    let intervall = setInterval(function(){
+    let headline = document.getElementById('headLine');
+    if (headline){
+        headline.innerHTML = `CharlyTango QSL-Karten`;
+        clearInterval(intervall)
+        }
+   });
+}
 
 
 function loadHeader(){
     setTimeout(showSecondImage, 2000);
-    
-
-    
 }
 
 
@@ -61,27 +77,6 @@ async function includeHTML(link) {
             element.innerHTML = await resp.text(); 
         } 
     }
-    // setTimeout(switchHeadLine, 1000)
-    // switchHeadLine();
-}
-
-function switchHeadLine(){
-    // if('index.html' && 'header.html'){
-    //     headLine.innerHTML = 'Deine Mudda'
-    // } else {
-    //     headLine.innerHTML = 'Sie schwitzt beim kacken'
-    // }
-
-        switch (headLine) {
-        case  './index.html':
-            headLineText = "Hallo";
-            break;
-        case './ct-today.html':
-            headLineText = "Heute";
-            break;
-        
-        }
-document.getElementById('headLine').innerHTML = headLineText;
 }
 
 function openCtMenu(){
@@ -112,19 +107,6 @@ function openNavEntry(e) {
     activeEntry.classList.add("active");
  
 }
-
-// function initQSL(){
-//     setTimeout()     
-
-//     let headline = document.getElementById('headLine');
-//     if (headline){
-//         headline.innerHTML = `CharlyTango QSL-Karten`;
-//     } else if(headline){
-//         initQSL();
-//     }
-// }
-
-
 
 function fixBanner(){
     let img = document.getElementById('navImg');

@@ -1,0 +1,11 @@
+{"callsign" : "161CT0002", "name" :	"Tadeusz", "city" : "Warschau", "status" : "unknown"},
+[ 
+    {"callsign" : "178CT0011", "name" :	"Nasko", "city" : "Kasanlak", "status" : "unknown"},	 
+    {"callsign" : "178CT0036", "name" :	"Chiko", "city" : "Vratza", "status" : "unknown"},	 
+    {"callsign" : "178CT0048", "name" :	"Rumen", "city" : "Vratza", "status" : "unknown"},	 
+    {"callsign" : "178CT0101", "name" :	"Mustafa", "city" : "Omurtag", "status" : "unknown"},	 
+    {"callsign" : "178CT0102", "name" :	"Donka", "city" : "Russe", "status" : "unknown"},	 
+    {"callsign" : "178CT0103", "name" :	"Harry", "city" : "Targovisite", "status" : "unknown"},	  
+    {"callsign" : "178CT0104", "name" :	"Ivo", "city" : "Sovia", "status" : "unknown"}	  
+    
+]

@@ -1,8 +1,9 @@
 function initAboutUS(){
-    setTimeout(renderHeadLine, 1000);
-}
-
-function renderHeadLine(){
-    let headLine = document.getElementById('headLine');
-    headLine.innerHTML = 'Über Uns';
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Über Uns`;
+            clearInterval(intervall)
+            }
+       });
 }
