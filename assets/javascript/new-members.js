@@ -3,11 +3,17 @@ async function init(){
     let responseFromJSON = await fetch(JSON);
     let loadedData = await responseFromJSON.json();
     renderMemberList(loadedData);
-    setTimeout(showWelcomeText, 1000)
+    showWelcomeText()
 }
 
 function showWelcomeText(){
-    headLine.innerHTML = 'Neue Mitglieder';  
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Neue Mitglieder`;
+            clearInterval(intervall)
+            }
+       }); 
 }
 
 function renderMemberList(loadedData){ 
@@ -18,7 +24,6 @@ function renderMemberList(loadedData){
         const locator = loadedData[i]['locator'];
         const placeOfResidence = loadedData[i]['placeOfResidence'];
         generateMemberTable(date, member, name, locator, placeOfResidence);
-        console.log(date, member, name, placeOfResidence);
     }    
 }    
 

@@ -26,8 +26,18 @@ const PREFIXLIST = [
 ]
 
 function initPrefix(){
-    renderPrefixList();     
-    
+    renderPrefixList();
+    renderPrefixHeadLine();
+}
+
+function renderPrefixHeadLine(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Prefix - Liste`;
+            clearInterval(intervall)
+            }
+       });
 }
 
 function renderPrefixList(){

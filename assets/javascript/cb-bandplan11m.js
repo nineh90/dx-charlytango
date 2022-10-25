@@ -5,8 +5,19 @@ async function initCbBandplan(){
     let responseFromJSON = await fetch(JSON);
     loadedDataBandPlan = await responseFromJSON.json();
     renderCbBandPlan();
+    renderCbBandPlanHeadLine();
     console.log(loadedDataBandPlan);
 }        
+
+function renderCbBandPlanHeadLine(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CB-Funk Frequenzen`;
+            clearInterval(intervall)
+            }
+       });
+}
 
 function renderCbBandPlan(){
     let bandPlanTable = document.getElementById('cbChannelList');

@@ -67,7 +67,7 @@ let ctFrequenz = [
 ]
 
 function initFrequenzList(){
-    setTimeout(showHeadLineFqz, 1500);
+    showHeadLineFqz();
     renderFrequenzList();
 }
 
@@ -87,10 +87,11 @@ function renderFrequenzList(){
 }
 
 function showHeadLineFqz(){
-    let headline = document.getElementById('headLine');
-    if(headline){
-        headline.innerHtml = `DEINE MAMA`;
-    } else {
-        showHeadLineFqz();
-    }
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CT-Frequenzen`;
+            clearInterval(intervall)
+            }
+       });
 }

@@ -6,6 +6,17 @@ function initCbSWR(){
     forLoopSwr();
     forLoopRg58c();
     forLoopRg213();
+    renderCbSwrHeadLine();
+}
+
+function renderCbSwrHeadLine(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `SWR - Dämpfung - Verlust`;
+            clearInterval(intervall)
+            }
+       });
 }
 
 function forLoopSwr(){

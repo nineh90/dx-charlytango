@@ -1,6 +1,6 @@
 let headLineText;
 
-window.addEventListener('scroll', fixBanner);
+// window.addEventListener('scroll', fixBanner);
 
 function initCtToday(){
     let intervall = setInterval(function(){
@@ -42,6 +42,178 @@ function initQSL(){
    });
 }
 
+function initFreieFunknetze(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Freie Funknetze`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initCbHistory(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CB-Geschichte`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initFreenet(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Freenet Bandplan`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initPmrBandplan(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `PMR Bandplan`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initEinsatzgebiete(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CB-Funk Einsatzgebiete`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function cbBetriebsarten(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CB-Funk Betriebsarten`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initCbShortCuts(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Abkürzungen im CB-Funk`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initCbSpeech(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CB-Funk Sprache`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initCbRegeln(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Regeln CB-Funk Betrieb`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initCbEmergency(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Durchführung eines Notrufs`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initHeadlineHW(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Hochfrequenzwellen`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initHfStoerungen(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Störungen`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initTeamspeakInstHelp(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Teamspeak Installations Hilfe`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initGwInterFace(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `GW-Interface`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initPmrLpd(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `PMR / LPD und Freenet Belegung`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initPrHistory(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Die Entstehung von Paket Radio`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initWhatIsPMR(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Was ist PMR`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+
+
 
 function loadHeader(){
     setTimeout(showSecondImage, 2000);
@@ -51,7 +223,7 @@ function loadHeader(){
 
 function showSecondImage(){
     let image = document.getElementById('headerImageContainer');
-        image.style.backgroundImage = "url('./assets/img/aftstation.png')";
+        image.style.backgroundImage = "url('./assets/img/antenne3.png')";
     setTimeout(showThirdImage, 2000);
 }
 
@@ -108,14 +280,14 @@ function openNavEntry(e) {
  
 }
 
-function fixBanner(){
-    let img = document.getElementById('navImg');
-    if (img){
-        img.classList.remove('d-none');
-        img.classList.add('w3-animate-top');
-    }
-    if(window.scrollY == 0){
-        img.classList.add('d-none');
-    }
-}
+// function fixBanner(){
+//     let img = document.getElementById('navImg');
+//     if (img){
+//         img.classList.remove('d-none');
+//         img.classList.add('w3-animate-top');
+//     }
+//     if(window.scrollY == 0){
+//         img.classList.add('d-none');
+//     }
+// }
 

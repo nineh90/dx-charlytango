@@ -11100,7 +11100,11 @@
               "name": "Martin",
               "city": "Dassel",
               "status": "unknown"
-              }]
+              }
+            
+            
+            
+            ]
           },
     {
         "country" : "FRANCE",
@@ -14411,8 +14415,7 @@
           {"callsign" : "178CT0101", "name" :	"Mustafa", "city" : "Omurtag", "status" : "unknown"},	 
           {"callsign" : "178CT0102", "name" :	"Donka", "city" : "Russe", "status" : "unknown"},	 
           {"callsign" : "178CT0103", "name" :	"Harry", "city" : "Targovisite", "status" : "unknown"},	  
-          {"callsign" : "178CT0104", "name" :	"Ivo", "city" : "Sovia", "status" : "unknown"}	  
-          
+          {"callsign" : "178CT0104", "name" :	"Ivo", "city" : "Sovia", "status" : "unknown"}   
       ]
     },
     {
@@ -14420,10 +14423,10 @@
         "flag" : "gd",
         "prefix": "195 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "195CT0502",
+            "name": "Arthur",
+            "city": "ST-Georges",
+            "status": "unknown"
         }]
     },
     {
@@ -14431,10 +14434,15 @@
         "flag" : "gp",
         "prefix": "196 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "196CT0101",
+            "name": "Ohny",
+            "city": "Baillif",
+            "status": "unknown"
+        },{
+            "callsign": "196CT0103",
+            "name": "Christian",
+            "city": "Goyave",
+            "status": "unknown"
         }]
     },
     {
@@ -14442,10 +14450,20 @@
         "flag" : "pf",
         "prefix": "201 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "201CT0102",
+            "name": "Pierre",
+            "city": "Papeete-Tahite",
+            "status": "unknown"
+        },{
+            "callsign": "201CT0108",
+            "name": "Peter",
+            "city": "Tahiti",
+            "status": "unknown"
+        },{
+            "callsign": "201CT0120",
+            "name": "Fred",
+            "city": "Bora-Bora",
+            "status": "unknown"
         }]
     },
     {
@@ -14453,10 +14471,10 @@
         "flag" : "cn",
         "prefix": "203 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "203CT0102",
+            "name": "Chen",
+            "city": "Nanjing",
+            "status": "unknown"
         }]
     },
     {
@@ -14464,10 +14482,20 @@
         "flag" : "vc",
         "prefix": "220 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "127CT0101",
+            "name": "Martin",
+            "city": "King-Hill",
+            "status": "unknown"
+        },{
+            "callsign": "127CT0102",
+            "name": "Alfred",
+            "city": "St.Thomas",
+            "status": "unknown"
+        },{
+            "callsign": "127CT0104",
+            "name": "Ali",
+            "city": "St.Thomas",
+            "status": "unknown"
         }]
     },
     {
@@ -14475,32 +14503,46 @@
         "flag" : "aw",
         "prefix": "232 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "232CT0001",
+            "name": "Leo",
+            "city": "Aruba",
+            "status": "unknown"
+        },{
+            "callsign": "232CT0101",
+            "name": "Hilario",
+            "city": "San Nicolas Aruba",
+            "status": "unknown"
         }]
     },
     {
         "country" : "ROMANIA",
         "flag" : "ro",
         "prefix": "233 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member": [ 
+          {"callsign" : "233CT0001", "name":	"Anton", "city" : "", "status" : "unknown"}, 	 
+          {"callsign" : "233CT0002", "name":	"Tavi", "city" : "Buftea", "status" : "unknown"},	 
+          {"callsign" : "233CT0003", "name":	"Radu", "city" : "Caras-Severin", "status" : "unknown"},	 
+          {"callsign" : "233CT0011", "name":	"Petricia-Gabrie", "city" : "Suceava", "status" : "unknown"},	 
+          {"callsign" : "233CT0012", "name":	"Christian", "city" : "Bucarest", "status" : "unknown"},	 
+          {"callsign" : "233CT0044", "name":	"Liviu", "city" : "Suceava", "status" : "unknown"},	 
+          {"callsign" : "233CT0101", "name":	"Victor", "city" : "Fagaras", "status" : "unknown"},	 
+          {"callsign" : "233CT0102", "name":	"Roxana", "city" : "Fagaras", "status" : "unknown"}	    
+      ]
     },
     {
         "country" : "ST.KITT & NEVIS",
         "flag" : "kn",
         "prefix": "283 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "283CT0101",
+            "name": "Andrew",
+            "city": "St. Kitts",
+            "status": "unknown"
+        },{
+            "callsign": "283CT0102",
+            "name": "Cris",
+            "city": "St. Kitts",
+            "status": "unknown"
         }]
     },
     {
@@ -14508,10 +14550,10 @@
         "flag" : "am",
         "prefix": "301 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "301CT0104",
+            "name": "Walter",
+            "city": "Yerevan-City",
+            "status": "unknown"
         }]
     },
     {
@@ -14519,10 +14561,10 @@
         "flag" : "ee",
         "prefix": "304 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "304CT0101",
+            "name": "Tom",
+            "city": "Ee3006",
+            "status": "unknown"
         }]
     },
     {
@@ -14530,10 +14572,15 @@
         "flag" : "ge",
         "prefix": "306 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "306CT0003",
+            "name": "Eka",
+            "city": "Tbilisi",
+            "status": "unknown"
+        },{
+            "callsign": "306CT0101",
+            "name": "Mike",
+            "city": "Tbilisi",
+            "status": "unknown"
         }]
     },
     {
@@ -14541,10 +14588,10 @@
         "flag" : "kz",
         "prefix": "308 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "308CT0101",
+            "name": "Andy",
+            "city": "Alma-Ata",
+            "status": "unknown"
         }]
     },
     {
@@ -14552,10 +14599,10 @@
         "flag" : "lv",
         "prefix": "310 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "310CT0106",
+            "name": "Wilis",
+            "city": "Riga",
+            "status": "unknown"
         }]
     },
     {
@@ -14563,87 +14610,127 @@
         "flag" : "lt",
         "prefix": "311 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "311CT0101",
+            "name": "Arturas",
+            "city": "Vilnius",
+            "status": "unknown"
+        },{
+            "callsign": "311CT0102",
+            "name": "Eddy",
+            "city": "Alytus",
+            "status": "unknown"
         }]
     },
     {
         "country" : "UKRAINE",
         "flag" : "ua",
         "prefix": "315 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member":[ 
+          {"callsign" : "315CT0001", "name" :	"Boby", "city" : "Lisichansk", "status" : "unknown"},	
+          {"callsign" : "315CT0005", "name" :	"Vitaly", "city" : "Melitobol", "status" : "unknown"},	
+          {"callsign" : "315CT0101", "name" :	"alex", "city" : "Kharkov Barvenkovo", "status" : "unknown"},	
+          {"callsign" : "315CT0102", "name" :	"Boris", "city" : "Yalta Crimea", "status" : "unknown"},	
+          {"callsign" : "315CT0115", "name" :	"Alex", "city" : "Doretsk", "status" : "unknown"},	
+          {"callsign" : "315CT0116", "name" :	"Victor", "city" : "Vinnitsa", "status" : "unknown"},	
+          {"callsign" : "315CT0117", "name" :	"Nikolaj", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0124", "name" :	"Luba", "city" : "Odessa", "status" : "unknown"},	
+          {"callsign" : "315CT0125", "name" :	"Tom", "city" : "Lvov", "status" : "unknown"},	
+          {"callsign" : "315CT0127", "name" :	"Mickel", "city" : "Lvov", "status" : "unknown"},	
+          {"callsign" : "315CT0200", "name" :	"Nikolaj", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0201", "name" :	"Kozimir", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0202", "name" :	"Wladimir", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0203", "name" :	"Bohdan", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0204", "name" :	"Bohdan", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0205", "name" :	"Anna", "city" : "Ternopol", "status" : "unknown"},	
+          {"callsign" : "315CT0206", "name" :	"Igor", "city" : "Donezk", "status" : "unknown"},	
+          {"callsign" : "315CT0207", "name" :	"Vasilij", "city" : "Inano-Frankivsk", "status" : "unknown"},	
+          {"callsign" : "315CT0208", "name" :	"Tamara", "city" : "Ternopil", "status" : "unknown"},	
+          {"callsign" : "315CT0209", "name" :	"Omelian", "city" : "Ivono-Frankivsk", "status" : "unknown"},	
+          {"callsign" : "315CT0210", "name" :	"Vtalij", "city" : "Ternopil", "status" : "unknown"},	
+          {"callsign" : "315CT0211", "name" :	"Jurij", "city" : "Chmelnyzkyj", "status" : "unknown"},	
+          {"callsign" : "315CT0212", "name" :	"Anatolij", "city" : "Ivano-Frankivsk", "status" : "unknown"},	
+          {"callsign" : "315CT0213", "name" :	"Oleg", "city" : "Ivano-Frankivsk", "status" : "unknown"},	
+          {"callsign" : "315CT0214", "name" :	"Oleg", "city" : "Ternopil", "status" : "unknown"},	
+          {"callsign" : "315CT0215", "name" :	"Ivan", "city" : "Ternopil", "status" : "unknown"},	
+          {"callsign" : "315CT0445", "name" :	"Dima", "city" : "Kyiv", "status" : "unknown"}	   
+      ]
     },
     {
         "country" : "BELARUS",
         "flag" : "by",
         "prefix": "317 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member": [ 
+          {"callsign" : "317CT0102", "name" :	"Vitali", "city" : "Pinsk-8", "status" : "unknown"},	 
+          {"callsign" : "317CT0103", "name" :	"Sergey", "city" : "Minsk", "status" : "unknown"},	 
+          {"callsign" : "317CT0108", "name" :	"Vitalik", "city" : "Minsk", "status" : "unknown"},	 
+          {"callsign" : "317CT0110", "name" :	"Alexey", "city" : "Minsk", "status" : "unknown"},	 
+          {"callsign" : "317CT0124", "name" :	"Sergej", "city" : "Bobruisk", "status" : "unknown"},	 
+          {"callsign" : "317CT0471", "name" :	"Valentin", "city" : "Pinsk", "status" : "unknown"}	      
+      ]
     },
     {
         "country" : "SLOVENIA",
         "flag" : "si",
         "prefix": "327 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member": [ 
+          {"callsign" : "327CT0022", "name" :	"Rudi", "city" :	"Maribor-Studenci", "status" : "unknown"},	   
+          {"callsign" : "327CT0115", "name" :	"Ecio", "city" :	"Zg.Korena", "status" : "unknown"},	 
+          {"callsign" : "327CT0155", "name" :	"Mitja", "city" :	"Nova Gorica", "status" : "unknown"},	 
+          {"callsign" : "327CT0117", "name" :	"Vojko", "city" :	"Nova Gorica", "status" : "unknown"}	 
+              
+      ]
     },
     {
         "country" : "CROATIA",
         "flag" : "hr",
         "prefix": "328 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member": [   
+          {"callsign" : "328CT0015", "name" :	"Postar", "city" : "Slavonski-Brod", "status" : "unknown"},	 
+          {"callsign" : "328CT0025", "name" :	"Franio", "city" : "Privlaka", "status" : "unknown"},	 
+          {"callsign" : "328CT0045", "name" :	"Billi", "city" : "Slavonskibrod", "status" : "unknown"},	 
+          {"callsign" : "328CT0115", "name" :	"Carlo", "city" : "Solin", "status" : "unknown"},	 
+          {"callsign" : "328CT0118", "name" :	"Ivan", "city" : "Soljani", "status" : "unknown"}	 
+          
+      ]
     },
     {
         "country" : "CZECH REPUBLIC",
         "flag" : "cz",
         "prefix": "329 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member": [
+          {"callsign" : "329CT0049", "name" :	"Edward", "city" : "", "status" : "unknown"}, 	 
+          {"callsign" : "329CT0102", "name" :	"Peter", "city" : "Trencin", "status" : "unknown"},	 
+          {"callsign" : "329CT0103", "name" :	"Zbynek", "city" : "Havirov", "status" : "unknown"},	 
+          {"callsign" : "329CT0104", "name" :	"Jura", "city" : "Orona", "status" : "unknown"},	 
+          {"callsign" : "329CT0111", "name" :	"Pavel", "city" : "Plzen", "status" : "unknown"},	 
+          {"callsign" : "329CT0117", "name" :	"Candy", "city" : "Brno", "status" : "unknown"},	 
+          {"callsign" : "329CT0127", "name" :	"Tomas", "city" : "Karvina-Raj", "status" : "unknown"},	 
+          {"callsign" : "329CT0128", "name" :	"Erich", "city" : "Orlova-Lutyne", "status" : "unknown"},	 
+          {"callsign" : "329CT0129", "name" :	"Jarda", "city" : "Hradec Kralove", "status" : "unknown"},	 
+          {"callsign" : "329CT0216", "name" :	"Kamil", "city" : "Karvina", "status" : "unknown"}	 
+       
+      ]
     },
     {
         "country" : "SLOVAKIA",
         "flag" : "sk",
         "prefix": "330 CT...",
-        "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
-        }]
+        "member": [ 
+          {"callsign" : "330CT0021", "name" : "Lubo", "city" : "Handlova", "status" : "unknown"},	 
+          {"callsign" : "330CT0050", "name" : "Jarka", "city" : "Handlova", "status" : "unknown"},	 
+          {"callsign" : "330CT0101", "name" : "Jürgen", "city" : "Banska Byitrica", "status" : "unknown"},	 
+          {"callsign" : "330CT0126", "name" : "Octoppus", "city" : "Vlado Prievidza", "status" : "unknown"}  
+      ]
     },
     {
         "country" : "BOSNIA",
         "flag" : "ba",
         "prefix": "331 CT...",
         "member": [{
-            "callsign": "",
-            "name": "",
-            "city": "",
-            "status": ""
+            "callsign": "80CT0001",
+            "name": "Salvador",
+            "city": "La Paz",
+            "status": "unknown"
         }]
     },
     {

@@ -1,11 +1,1514 @@
-{"callsign" : "161CT0002", "name" :	"Tadeusz", "city" : "Warschau", "status" : "unknown"},
 [ 
-    {"callsign" : "178CT0011", "name" :	"Nasko", "city" : "Kasanlak", "status" : "unknown"},	 
-    {"callsign" : "178CT0036", "name" :	"Chiko", "city" : "Vratza", "status" : "unknown"},	 
-    {"callsign" : "178CT0048", "name" :	"Rumen", "city" : "Vratza", "status" : "unknown"},	 
-    {"callsign" : "178CT0101", "name" :	"Mustafa", "city" : "Omurtag", "status" : "unknown"},	 
-    {"callsign" : "178CT0102", "name" :	"Donka", "city" : "Russe", "status" : "unknown"},	 
-    {"callsign" : "178CT0103", "name" :	"Harry", "city" : "Targovisite", "status" : "unknown"},	  
-    {"callsign" : "178CT0104", "name" :	"Ivo", "city" : "Sovia", "status" : "unknown"}	  
-    
+{"callsign" : "13CT1474", "name":"Marc"	    , "city":"Dortmund", "status" : "active"},	 
+{"callsign" : "13CT1475", "name":"Thomas"	, "city":"Neustadt bei Coburg", "status" : "active"},	 
+{"callsign" : "13CT1476", "name":"Marc"	    , "city":"Stuttgart", "status" : "unknown"},	 
+{"callsign" : "13CT1477", "name":"Jürgen"	, "city":"Borken", "status" : "unknown"},	 
+{"callsign" : "13CT1478", "name":"Sepp"	    , "city":"Neustadt", "status" : "unknown"},	 
+{"callsign" : "13CT1479", "name":"Ralf"	    , "city":"Hilwardshausen", "status" : "unknown"},	 
+{"callsign" : "13CT1480", "name":"Bärbel"	, "city":"Goch", "status" : "unknown"},	 
+{"callsign" : "13CT1481", "name":"Stefan"	, "city":"Hamminkeln", "status" : "unknown"},	 
+{"callsign" : "13CT1482", "name":"Thomas"	, "city":"Kalkar", "status" : "unknown"},	 
+{"callsign" : "13CT1483", "name":"Heinz"	, "city":"Wertherbruch", "status" : "unknown"},	 
+{"callsign" : "13CT1484", "name":"Frank"	, "city":"Zittau", "status" : "active"},	
+{"callsign" : "13CT1485", "name":"Gabriele"	, "city":"Rees", "status" : "unknown"},	 
+{"callsign" : "13CT1486", "name":"Joerg"	, "city":"Isselburg", "status" : "unknown"},	 
+{"callsign" : "13CT1487", "name":"Josef"	, "city":"Hamminkeln", "status" : "unknown"},	 
+{"callsign" : "13CT1488", "name":"Lothar"	, "city":"Kevelaer", "status" : "unknown"},	 
+{"callsign" : "13CT1489", "name":"Birgit"	, "city":"Isselburg", "status" : "unknown"},	 
+{"callsign" : "13CT1490", "name":"D.Errigo"	, "city":"Kornwestheim", "status" : "unknown"},	 
+{"callsign" : "13CT1491", "name":"Andreas"	, "city":"Menslagen", "status" : "unknown"},	 
+{"callsign" : "13CT1492", "name":"Klaus"	, "city":"Essen", "status" : "unknown"},	
+{"callsign" : "13CT1493", "name":"Ruth"	    , "city":"Essen", "status" : "unknown"},	 
+{"callsign" : "13CT1494", "name":"Michael"	, "city":"Geldern", "status" : "unknown"},	 
+{"callsign" : "13CT1495", "name":"Frank"	, "city":"Ploringen", "status" : "unknown"},	 
+{"callsign" : "13CT1496", "name":"Antonio"	, "city":"Stuttgart", "status" : "unknown"},	 
+{"callsign" : "13CT1497", "name":"Michael"	, "city":"Dorsten", "status" : "unknown"},	 
+{"callsign" : "13CT1498", "name":"Wolfgang"	, "city":"Stolberg", "status" : "unknown"},	 
+{"callsign" : "13CT1499", "name":"Holger"	, "city":"Garrel", "status" : "unknown"},	 
+{"callsign" : "13CT1500", "name":"Siegfried", "city":"Gelsenkirchen", "status" : "unknown"},	 
+{"callsign" : "13CT1501", "name":"Alexander", "city":"Marburg", "status" : "unknown"},	 
+{"callsign" : "13CT1502", "name":"Brigitte"	, "city":"Düren", "status" : "unknown"},
+{"callsign" : "13CT1503", "name":"Thomas"	, "city":"Weidhausen", "status" : "unknown"},	 
+{"callsign" : "13CT1504", "name":"Stefan"	, "city":"Borken", "status" : "unknown"},	 
+{"callsign": "13CT1505", "name":"Eddi", "city":"Borken", "status" : "unknown"},
+{"callsign": "13CT1506", "name":"Dieter", "city":"Marl", "status" : "unknown"},	 
+{"callsign": "13CT1507", "name":"Peter", "city":"Marl", "status" : "unknown"},	 
+{"callsign": "13CT1508", "name":"Werner", "city":"Lüdinghausen", "status" : "unknown"},	 
+{"callsign": "13CT1509", "name":"Elmar", "city":"Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1510", "name":"Norbert", "city":"Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1511", "name":"Jürgen", "city":"Braunschweig", "status" : "unknown"},	 
+{"callsign": "13CT1512", "name":"Roland", "city":"Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1513", "name":"Dave", "city":"Osnabrück", "status" : "unknown"},	 
+{"callsign": "13CT1514", "name":"Erich", "city":"Barbing", "status" : "active"},	 
+{"callsign": "13CT1515", "name":"Uwe", "city":"Wesel", "status" : "unknown"},	 
+{"callsign": "13CT1516", "name":"Albert", "city":"Essen", "status" : "unknown"},	 
+{"callsign": "13CT1517", "name":"Josef", "city":"Penzberg", "status" : "unknown"},	 
+{"callsign": "13CT1518", "name":"Stefan", "city":"Hambergen", "status" : "unknown"},	 
+{"callsign": "13CT1519", "name":"Frank", "city":"Gelsenkirchen", "status" : "unknown"},	 
+{"callsign": "13CT1520", "name":"Heinz", "city":"Borken", "status" : "unknown"},	 
+{"callsign": "13CT1521", "name":"Birgit", "city":"Borken", "status" : "unknown"},	 
+{"callsign": "13CT1522", "name":"Berthold", "city":"Gelsenkirchen", "status" : "unknown"},	 
+{"callsign": "13CT1523", "name":"Oliver", "city":"Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1524", "name":"Hugo", "city":"Billerbeck", "status" : "unknown"},	 
+{"callsign": "13CT1525", "name":"Jürgen", "city":"Bayreuth", "status" : "active"},	 
+{"callsign": "13CT1526", "name":"Peter", "city":"Escheburg", "status" : "unknown"},	 
+{"callsign": "13CT1527", "name":"Werner", "city":"Strasskirchen", "status" : "unknown"},	 
+{"callsign": "13CT1528", "name":"Frank", "city":"Bochum", "status" : "unknown"}, 
+{"callsign": "13CT1529", "name":"Andreas", "city":"Gelsenkirchen", "status" : "unknown"},	 
+{"callsign": "13CT1530", "name":"Hilmar-Hans", "city":"Wiesbaden", "status" : "unknown"},	 
+{"callsign": "13CT1531", "name":"Joerg", "city":"Bottrop", "status" : "unknown"},	 
+{"callsign": "13CT1532", "name":"Uwe", "city":"Donaueschingen", "status" : "unknown"},	 
+{"callsign": "13CT1533", "name":"Roland", "city":"Runersberg", "status" : "unknown"},	 
+{"callsign": "13CT1534", "name":"Pietro", "city":"Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1535", "name":"Alfonso", "city":"Waiblingen", "status" : "unknown"},	 
+{"callsign": "13CT1536", "name":"Friedrich", "city":"Barsinghausen", "status" : "unknown"},	 
+{"callsign": "13CT1537", "name":"Lars", "city":"Barsinghausen", "status" : "unknown"},	 
+{"callsign": "13CT1538", "name":"Martin", "city":"Barsinghausen", "status" : "unknown"},	 
+{"callsign": "13CT1539", "name":"Oliver", "city":"Ennepetal", "status" : "unknown"},	 
+{"callsign": "13CT1540", "name" : "Anja", "city" : "Gladbeck", "status" : "active"},	
+{"callsign": "13CT1541", "name" : "Antonio", "city" : "Eslingen", "status" : "unknown"},	 
+{"callsign": "13CT1542", "name" : "Ralf", "city" : "Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1543", "name" : "Siegfried", "city" : "Velen", "status" : "unknown"},	 
+{"callsign": "13CT1544", "name" : "Siegfried", "city" : "Velen", "status" : "unknown"},	 
+{"callsign": "13CT1545", "name" : "Rolf", "city" : "Waiblingen", "status" : "unknown"},	 
+{"callsign": "13CT1546", "name" : "Andreas", "city" : "Toeging", "status" : "unknown"},	 
+{"callsign": "13CT1547", "name" : "Torsten", "city" : "Ennepetal", "status" : "unknown"},	 
+{"callsign": "13CT1548", "name" : "Peter", "city" : "Grafenwöhr", "status" : "unknown"},	 
+{"callsign": "13CT1549", "name" : "Micha", "city" : "Gladbeck", "status" : "active"},	 
+{"callsign": "13CT1550", "name" : "Uwe", "city" : "Borken", "status" : "unknown"},	 
+{"callsign": "13CT1551", "name" : "Anja", "city" : "Wiefelstede", "status" : "unknown"},	 
+{"callsign": "13CT1552", "name" : "Reiner", "city" : "Alpen", "status" : "unknown"}, 
+{"callsign": "13CT1553", "name" : "Thekla", "city" : "Alpen", "status" : "unknown"},	 
+{"callsign": "13CT1554", "name" : "Ingo", "city" : "Köln", "status" : "active"},	
+{"callsign": "13CT1555", "name" : "Chris", "city" : "Ehrenfeld", "status" : "active"}, 	
+{"callsign": "13CT1556", "name" : "Bjön", "city" : "Tann-Rhoen", "status" : "unknown"},	 
+{"callsign": "13CT1557", "name" : "Stefan", "city" : "Deggendorf", "status" : "unknown"},	 
+{"callsign": "13CT1558", "name" : "Ingo", "city" : "Borken", "status" : "unknown"},	 
+{"callsign": "13CT1559", "name" : "Stefan", "city" : "Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1560", "name" : "Frank", "city" : "Leverkusen", "status" : "active"},	
+{"callsign": "13CT1561", "name" : "Christian", "city" : "Strub", "status" : "unknown"},	 
+{"callsign": "13CT1562", "name" : "Michael", "city" : "Neustadt", "status" : "unknown"},	 
+{"callsign": "13CT1563", "name" : "Michael", "city" : "Wesel", "status" : "unknown"},	 
+{"callsign": "13CT1564", "name" : "Christian", "city" : "Burgberg", "status" : "active"},	
+{"callsign": "13CT1565", "name" : "Volker", "city" : "Lengerich", "status" : "active"},	 
+{"callsign": "13CT1566", "name" : "Bernd", "city" : "Dorsten", "status" : "unknown"},	 
+{"callsign": "13CT1567", "name" : "Franco", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1568", "name" : "Pietro", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1569", "name" : "Carlo", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1570", "name" : "Rocco", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1571", "name" : "Silvio", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1572", "name" : "Giovonni", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1573", "name" : "Mario", "city" : "Stuttgart", "status" : "unknown"},	 
+{"callsign": "13CT1574", "name" : "Nicole", "city" : "Reken", "status" : "unknown"},	 
+{"callsign": "13CT1575", "name" : "Heinz", "city" : "Lutherstadt Mansfeld", "status" : "active"},	
+{"callsign": "13CT1576", "name" : "Gerhard", "city" : "Barsinghausen", "status" : "unknown"},	 
+{"callsign": "13CT1577", "name" : "Günter", "city" : "Pressath", "status" : "unknown"},	 
+{"callsign": "13CT1578", "name" : "Tim-Oliver", "city" : "Goch", "status" : "unknown"},	 
+{"callsign": "13CT1579", "name" : "Sabine", "city" : "Essen", "status" : "unknown"},	 
+{"callsign": "13CT1580", "name" : "Rainer", "city" : "Essen", "status" : "unknown"},	 
+{"callsign": "13CT1581", "name" : "Stefan", "city" : "Essen", "status" : "unknown"},	 
+{"callsign": "13CT1582", "name" : "Klaus", "city" : "Kalkar", "status" : "unknown"},	 
+{"callsign": "13CT1583", "name" : "Thomas", "city" : "Kalkar-Grieth", "status" : "unknown"},	 
+{"callsign": "13CT1584", "name" : "Heinrich", "city" : "Bocholt", "status" : "unknown"},	 
+{"callsign": "13CT1585", "name" : "Elke", "city" : "Xanten", "status" : "unknown"},	 
+{"callsign": "13CT1586", "name" : "Heinz", "city" : "Xanten", "status" : "unknown"},	 
+{"callsign": "13CT1587", "name" : "Artur", "city" : "Dortmund", "status" : "active"},	 
+{"callsign": "13CT1588", "name" : "Jörg", "city" : "Kurort Jonsdorf", "status" : "active"},	
+{"callsign": "13CT1589", "name" : "Petra", "city" : "Goch", "status" : "unknown"},	 
+{"callsign": "13CT1590", "name" : "Wolfgang", "city" : "Goch", "status" : "unknown"},	 
+{"callsign": "13CT1591", "name" : "Mathias", "city" : "Hamburg", "status" : "active"},	
+{"callsign": "13CT1592", "name" : "Rafael", "city" : "Bergen", "status" : "active"},	
+{"callsign": "13CT1593", "name" : "Erik", "city" : "Rees", "status" : "unknown"},	 
+{"callsign": "13CT1594", "name" : "Heinz", "city" : "Oberhausen", "status" : "unknown"},	 
+{"callsign": "13CT1595", "name" : "Heiko", "city" : "Alpen", "status" : "unknown"},	 
+{"callsign": "13CT1596", "name" : "Heidi", "city" : "Xanten", "status" : "unknown"},	 
+{"callsign": "13CT1597", "name" : "Uwe", "city" : "Xanten", "status" : "unknown"},	 
+{"callsign": "13CT1598", "name" : "Heiko", "city" : "Dachsbach", "status" : "active"},	
+{"callsign": "13CT1599", "name" : "Dirk", "city" : "Gelsenkirchen", "status" : "unknown"},	 
+{"callsign": "13CT1600", "name" : "Werner", "city" : "Dortmund", "status" : "unknown"},	 
+{"callsign": "13CT1601", "name" : "Martin", "city" : "Hamminkeln", "status" : "unknown"},	 
+{"callsign": "13CT1603", "name" : "Fritz", "city" : "", "status" : "active"}, 	
+{"callsign": "13CT1604", "name" : "Carlo", "city" : "Borken", "status" : "unknown"},	 
+{"callsign": "13CT1605", "name" : "Uwe", "city" : "Borken", "status" : "unknown"},	 
+{"callsign": "13CT1606", "name" : "Reinhold", "city" : "Reken", "status" : "unknown"},	 
+{"callsign": "13CT1607", "name" : "Frank", "city" : "Dorsten", "status" : "unknown"},	 
+    {"callsign": "13CT1608", "name" : "Stephan", "city" : "Haltern", "status" : "unknown"},	 
+    {"callsign": "13CT1609", "name" : "Daniel", "city" : "Teisendorf", "status" : "unknown"},	 
+    {"callsign": "13CT1610", "name" : "Tanja", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1611", "name" : "Ralf", "city" : "Velen", "status" : "unknown"},	 
+    {"callsign": "13CT1612", "name" : "Detlef", "city" : "Kevelaer", "status" : "unknown"},	 
+    {"callsign": "13CT1613", "name" : "Sascha", "city" : "Bottrop", "status" : "unknown"},	 
+    {"callsign": "13CT1614", "name" : "Hubert", "city" : "Hagen", "status" : "unknown"},	 
+    {"callsign": "13CT1615", "name" : "Manfred", "city" : "Südlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1616", "name" : "Robert", "city" : "Osnabrück", "status" : "active"},	 
+    {"callsign": "13CT1617", "name" : "Ulrich", "city" : "Olfen", "status" : "unknown"},	 
+    {"callsign": "13CT1618", "name" : "Helene", "city" : "Kamp-Lintfort", "status" : "unknown"},	 
+    {"callsign": "13CT1619", "name" : "Michael", "city" : "Hattingen", "status" : "active"},	
+    {"callsign": "13CT1620", "name" : "Marianne", "city" : "Moers", "status" : "unknown"},	 
+    {"callsign": "13CT1621", "name" : "Rainer", "city" : "Kamp-Lintfort", "status" : "unknown"},	 
+    {"callsign": "13CT1622", "name" : "Daniel", "city" : "Kamp-Lintfort", "status" : "unknown"},	 
+    {"callsign": "13CT1623", "name" : "Magarete", "city" : "Moers", "status" : "unknown"},	 
+    {"callsign": "13CT1624", "name" : "Kerstin", "city" : "Moers", "status" : "unknown"},	 
+    {"callsign": "13CT1625", "name" : "Gerhard", "city" : "Mühldorf", "status" : "unknown"},	 
+    {"callsign": "13CT1626", "name" : "Hans-Peter", "city" : "Rendsburg", "status" : "unknown"},	 
+    {"callsign": "13CT1627", "name" : "Ingo", "city" : "Ratzeburg", "status" : "active"},	
+    {"callsign": "13CT1628", "name" : "Karl-Heinz", "city" : "Tauberbischofsheim", "status" : "active"},	
+    {"callsign": "13CT1629", "name" : "Alexander", "city" : "Kronshagen", "status" : "active"},	
+    {"callsign": "13CT1630", "name" : "Chris", "city" : "Hoerstgen", "status" : "active"},	
+    {"callsign": "13CT1631", "name" : "Wolfram", "city" : "Saarlouis", "status" : "unknown"},	 
+    {"callsign": "13CT1632", "name" : "Roland", "city" : "Kevelaer", "status" : "unknown"},	 
+    {"callsign": "13CT1633", "name" : "Herbert", "city" : "Neuburg an der Donau", "status" : "active"},	
+    {"callsign": "13CT1634", "name" : "Ritschie", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1635", "name" : "Dirk", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1636", "name" : "Werner", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1637", "name" : "Ludger", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1638", "name" : "Jörg", "city" : "Duisburg", "status" : "active"},	 
+    {"callsign": "13CT1639", "name" : "Dirk", "city" : "Gelsenkirchen", "status" : "unknown"},	 
+    {"callsign": "13CT1640", "name" : "Sascha", "city" : "Gelsenkirchen", "status" : "unknown"},	 
+    {"callsign": "13CT1641", "name" : "Christian", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1642", "name" : "Helmut", "city" : "Simmerath", "status" : "active"},	
+    {"callsign": "13CT1643", "name" : "Wilhelm", "city" : "Steinhagen", "status" : "active"},	
+    {"callsign": "13CT1644", "name" : "Hildegard", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1645", "name" : "Monika", "city" : "Moers", "status" : "unknown"},	 
+    {"callsign": "13CT1646", "name" : "Gertrud", "city" : "Kamp-Lintfort", "status" : "unknown"},	 
+    {"callsign": "13CT1647", "name" : "Thorsten", "city" : "Gm-Hütte", "status" : "unknown"},	 
+    {"callsign": "13CT1648", "name" : "Robert", "city" : "Rendsburg", "status" : "unknown"},	 
+    {"callsign": "13CT1649", "name" : "Ulrich", "city" : "Alpen", "status" : "unknown"},	 
+    {"callsign": "13CT1650", "name" : "Thomas K.", "city" : "Moers", "status" : "unknown"},	 
+    {"callsign": "13CT1651", "name" : "Sabine", "city" : "Gelsenkirchen", "status" : "unknown"},	 
+    {"callsign": "13CT1652", "name" : "Stephan", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1653", "name" : "Harry", "city" : "Herne", "status" : "unknown"},	 
+    {"callsign": "13CT1654", "name" : "Volker", "city" : "Brilon", "status" : "active"},	
+    {"callsign": "13CT1655", "name" : "Karl-Heinz", "city" : "Billerbeck", "status" : "unknown"},	 
+    {"callsign": "13CT1656", "name" : "Reiner", "city" : "Kamp-Lintfort", "status" : "unknown"},	 
+    {"callsign": "13CT1657", "name" : "Kay", "city" : "Herne", "status" : "unknown"},	 
+    {"callsign": "13CT1658", "name" : "Steve", "city" : "Bad Langensalza", "status" : "active"},	
+    {"callsign": "13CT1659", "name" : "Wolfgang", "city" : "Lam", "status" : "unknown"},	 
+    {"callsign": "13CT1660", "name" : "Heinz-Peter", "city" : "Gescher", "status" : "unknown"},	 
+    {"callsign": "13CT1661", "name" : "Peter", "city" : "Nabburg", "status" : "unknown"},	 
+    {"callsign": "13CT1662", "name" : "Andreas", "city" : "Rethem", "status" : "active"},	 
+    {"callsign": "13CT1663", "name" : "Günter", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1664", "name" : "Hans-Jürgen", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1665", "name" : "Achim", "city" : "Datteln", "status" : "unknown"},	 
+    {"callsign": "13CT1666", "name" : "Andreas", "city" : "Lengerich", "status" : "active"},	 
+    {"callsign": "13CT1667", "name" : "Reinhard", "city" : "Hahnbach", "status" : "unknown"},	 
+    {"callsign": "13CT1668", "name" : "Harald", "city" : "Wesel", "status" : "active"},	
+    {"callsign": "13CT1669", "name" : "Michaela", "city" : "Wesel", "status" : "active"},	
+    {"callsign": "13CT1670", "name" : "Michael", "city" : "Hünxe", "status" : "unknown"},	 
+    {"callsign": "13CT1671", "name" : "Andreas", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1672", "name" : "Willi", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1673", "name" : "Rainer", "city" : "Bottrop", "status" : "unknown"},	 
+    {"callsign": "13CT1674", "name" : "Bethina", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1675", "name" : "Markus", "city" : "Bottrop", "status" : "unknown"},	 
+    {"callsign": "13CT1676", "name" : "Sigmar", "city" : "Teltow", "status" : "active"},	 
+    {"callsign": "13CT1677", "name" : "Stefan", "city" : "Heidelberg", "status" : "unknown"},	 
+    {"callsign": "13CT1678", "name" : "Manfred", "city" : "Bottrop", "status" : "unknown"},	 
+    {"callsign": "13CT1679", "name" : "Timo", "city" : "Karlsruhe", "status" : "unknown"},	 
+    {"callsign": "13CT1680", "name" : "Michael", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1681", "name" : "Sönke", "city" : "Böklund", "status" : "unknown"},	 
+    {"callsign": "13CT1682", "name" : "Werner", "city" : "Marl", "status" : "unknown"},	 
+    {"callsign": "13CT1683", "name" : "Ralf", "city" : "Kleve", "status" : "unknown"},	 
+    {"callsign": "13CT1684", "name" : "Heiko", "city" : "Auenwald-Oberhausen", "status" : "unknown"},	 
+    {"callsign": "13CT1685", "name" : "Tommy", "city" : "Geldern", "status" : "unknown"},	 
+    {"callsign": "13CT1686", "name" : "Jürgen", "city" : "Geldern", "status" : "unknown"},	 
+    {"callsign": "13CT1687", "name" : "Stefan", "city" : "Rhede", "status" : "unknown"},	 
+    {"callsign": "13CT1688", "name" : "Lothar", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1689", "name" : "Horst", "city" : "Wuppertal", "status" : "unknown"},	 
+    {"callsign": "13CT1690", "name" : "Oliver", "city" : "Mülheim-Ruhr", "status" : "unknown"},	 
+    {"callsign": "13CT1691", "name" : "Heinz", "city" : "Brake / UTW", "status" : "unknown"},	 
+    {"callsign": "13CT1692", "name" : "Erik", "city" : "Dorf Zechlin/ot.Rheinsberg", "status" : "active"},	
+    {"callsign": "13CT1693", "name" : "Jörg", "city" : "Berlin", "status" : "active"},	
+    {"callsign": "13CT1694", "name" : "Emil", "city" : "Dorf Zechlin/ot.Rheinsberg", "status" : "active"}, 	
+    {"callsign": "13CT1695", "name" : "Christina", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1696", "name" : "Heinz", "city" : "Mönchengladbach", "status" : "unknown"},	 
+    {"callsign": "13CT1697", "name" : "Ralf", "city" : "Zettlitz", "status" : "active"},	
+    {"callsign": "13CT1698", "name" : "Colin", "city" : "Zettlitz", "status" : "active"},	
+    {"callsign": "13CT1699", "name" : "Axel", "city" : "Dorsten", "status" : "unknown"},	 
+    {"callsign": "13CT1700", "name" : "Hans-Werner", "city" : "Castrop-Rauxel", "status" : "unknown"},	 
+    {"callsign": "13CT1701", "name" : "Ludwig", "city" : "Uelsen", "status" : "unknown"},	 
+    {"callsign": "13CT1702", "name" : "Brigitte", "city" : "Gescher", "status" : "unknown"},	 
+    {"callsign": "13CT1703", "name" : "Markus", "city" : "Gescher", "status" : "unknown"},	 
+    {"callsign": "13CT1704", "name" : "Wolfgang", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1705", "name" : "Karl-Heinz", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1706", "name" : "Klaus", "city" : "Rostock", "status" : "unknown"}, 
+    {"callsign": "13CT1707", "name" : "Joe", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1708", "name" : "Tanja", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1709", "name" : "Franz-Josef", "city" : "Bottrop", "status" : "unknown"},	 
+    {"callsign": "13CT1710", "name" : "Ulrich", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1711", "name" : "Torsten", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1712", "name" : "Robert", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1713", "name" : "Thomas", "city" : "Tuttlingen", "status" : "unknown"},	 
+    {"callsign": "13CT1714", "name" : "Helmut", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1715", "name" : "Jose", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1716", "name" : "Stefan", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1717", "name" : "Dietmar", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1718", "name" : "Elke", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1719", "name" : "Peter", "city" : "Rhede", "status" : "unknown"},	 
+    {"callsign": "13CT1720", "name" : "Uwe", "city" : "Duisburg", "status" : "unknown"},	 
+    {"callsign": "13CT1721", "name" : "Inge", "city" : "Duisburg", "status" : "unknown"},	 
+    {"callsign": "13CT1722", "name" : "Tex", "city" : "Dortmund", "status" : "unknown"},	 
+    {"callsign": "13CT1723", "name" : "Andreas", "city" : "Duisburg", "status" : "unknown"},	 
+    {"callsign": "13CT1724", "name" : "Markus", "city" : "Castrop-Rauxel", "status" : "active"},	 
+    {"callsign": "13CT1725", "name" : "Markus", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1726", "name" : "Joachim", "city" : "Schw.Gmünd", "status" : "active"},	 
+    {"callsign": "13CT1727", "name" : "Rene", "city" : "Velen", "status" : "unknown"},	 
+    {"callsign": "13CT1728", "name" : "Susanne", "city" : "Bochum", "status" : "unknown"},	 
+    {"callsign": "13CT1729", "name" : "Harry", "city" : "Herbertshofen", "status" : "unknown"},	 
+    {"callsign": "13CT1730", "name" : "Marc", "city" : "Schw.Gmünd", "status" : "unknown"},	 
+    {"callsign": "13CT1731", "name" : "Otto", "city" : "Schw.Gmünd", "status" : "unknown"},	 
+    {"callsign": "13CT1732", "name" : "Michael", "city" : " Dreieich", "status" : "unknown"},	 
+    {"callsign": "13CT1733", "name" : "Rosi", "city" : "Gelsenkirchen", "status" : "unknown"},	 
+    {"callsign": "13CT1734", "name" : "Freddy", "city" : "Saterland", "status" : "unknown"},	 
+    {"callsign": "13CT1735", "name" : "Gerhard", "city" : "Ahaus", "status" : "unknown"},	 
+    {"callsign": "13CT1736", "name" : "Charles", "city" : "Pirmasens", "status" : "unknown"},	 
+    {"callsign": "13CT1737", "name" : "Markus", "city" : "Gescher", "status" : "unknown"},	 
+    {"callsign": "13CT1738", "name" : "Christian", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1739", "name" : "Michael", "city" : "Gescher", "status" : "unknown"},	 
+    {"callsign": "13CT1740", "name" : "Udo", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1741", "name" : "Christoph", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1742", "name" : "Thomas", "city" : "Marl", "status" : "unknown"},	 
+    {"callsign": "13CT1743", "name" : "Jan", "city" : "Bernsdorf", "status" : "unknown"},	 
+    {"callsign": "13CT1744", "name" : "Hermann", "city" : "Essen", "status" : "active"},	 
+    {"callsign": "13CT1745", "name" : "Antonietta", "city" : "Stuttgart", "status" : "unknown"},	 
+    {"callsign": "13CT1746", "name" : "Volker", "city" : "Essen", "status" : "active"},	
+    {"callsign": "13CT1747", "name" : "Daniele", "city" : "Stuttgart", "status" : "unknown"},	 
+    {"callsign": "13CT1748", "name" : "Giuseppe", "city" : "Stuttgart", "status" : "unknown"},	 
+    {"callsign": "13CT1749", "name" : "Jens", "city" : "Ascheberg", "status" : "active"},	
+    {"callsign": "13CT1750", "name" : "Rocco", "city" : "Stuttgart", "status" : "unknown"},	 
+    {"callsign": "13CT1751", "name" : "Andrea", "city" : "Stuttgart", "status" : "unknown"},	 
+    {"callsign": "13CT1752", "name" : "Diethold", "city" : "Castrop-Rauxel", "status" : "active"},	
+    {"callsign": "13CT1754", "name" : "Reinhold", "city" : "Bernau Am Chiemsee", "status" : "active"},	
+    {"callsign": "13CT1755", "name" : "Egon", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1756", "name" : "Erwin", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1757", "name" : "Lothar", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1758", "name" : "Berthold", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1759", "name" : "Iwe", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1760", "name" : "Wilhelm", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1761", "name" : "Heinz-Werner", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1762", "name" : "Stefan", "city" : "Ratingen", "status" : "unknown"},	 
+    {"callsign": "13CT1763", "name" : "Reiner", "city" : "Würselen", "status" : "unknown"},	 
+    {"callsign": "13CT1764", "name" : "Traute", "city" : "Nordenham", "status" : "unknown"},	 
+    {"callsign": "13CT1765", "name" : "Carl", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1766", "name" : "Michael", "city" : "Eutin", "status" : "active"},	
+    {"callsign": "13CT1767", "name" : "Heinz-Dieter", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1768", "name" : "Peter", "city" : "Friedichsthal", "status" : "unknown"},	 
+    {"callsign": "13CT1769", "name" : "Thorsten", "city" : "Maintal", "status" : "active"},	
+    {"callsign": "13CT1770", "name" : "Claudia", "city" : "Hünxe", "status" : "unknown"},	 
+    {"callsign": "13CT1771", "name" : "Ralf", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1772", "name" : "Rolf", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1773", "name" : "Jareck", "city" : "Dillenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1774", "name" : "Manfred", "city" : "Harrislee", "status" : "active"},	 
+    {"callsign": "13CT1775", "name" : "Jacob", "city" : "Halle (Saale)", "status" : "active"},	
+    {"callsign": "13CT1776", "name" : "Heinz", "city" : "Biedenkopf", "status" : "unknown"},	 
+    {"callsign": "13CT1777", "name" : "Hedwig", "city" : "Dillenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1778", "name" : "Sascha", "city" : "Biedenkopf", "status" : "unknown"},	 
+    {"callsign": "13CT1779", "name" : "Hans-Josef", "city" : "Cloppenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1781", "name" : "Hendrik", "city" : "Oldenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1783", "name" : "Michael", "city" : "Minden", "status" : "active"},	
+    {"callsign": "13CT1784", "name" : "Frank", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1785", "name" : "Roland", "city" : "Rietheim", "status" : "unknown"},	 
+    {"callsign": "13CT1786", "name" : "Ludger", "city" : "Reken", "status" : "unknown"},	 
+    {"callsign": "13CT1787", "name" : "Werner", "city" : "Datteln", "status" : "unknown"},	 
+    {"callsign": "13CT1788", "name" : "Gottfried", "city" : "Altenberg", "status" : "unknown"},	 
+    {"callsign": "13CT1789", "name" : "Peter", "city" : "Legden", "status" : "unknown"},	 
+    {"callsign": "13CT1790", "name" : "Jürgen", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1791", "name" : "Guido", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1792", "name" : "Adolf", "city" : "Vreden", "status" : "unknown"},	 
+    {"callsign": "13CT1793", "name" : "Burkhard", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1794", "name" : "Holger", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1795", "name" : "Jutta", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1796", "name" : "Jürgen", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1797", "name" : "Andreas", "city" : "Vreden", "status" : "unknown"},	 
+    {"callsign": "13CT1798", "name" : "Klaus", "city" : "Stadtlohn", "status" : "unknown"},	 
+    {"callsign": "13CT1799", "name" : "Richard", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1800", "name" : "Henry", "city" : "Buxtehude", "status" : "unknown"},	 
+    {"callsign": "13CT1801", "name" : "Sylvia", "city" : "Essen", "status" : "unknown"},	 
+    {"callsign": "13CT1802", "name" : "Rüdiger", "city" : "Haiger", "status" : "unknown"},	 
+    {"callsign": "13CT1803", "name" : "Gerd", "city" : "Wilsum", "status" : "unknown"},	 
+    {"callsign": "13CT1804", "name" : "Antonio", "city" : "Stolberg", "status" : "unknown"},	 
+    {"callsign": "13CT1805", "name" : "Markus", "city" : "Borken", "status" : "unknown"},	 
+    {"callsign": "13CT1806", "name" : "Reinhard", "city" : "Recklinghausen", "status" : "unknown"},	 
+    {"callsign": "13CT1807", "name" : "Dirk", "city" : "Biedenkopf-Wallau", "status" : "unknown"},	 
+    {"callsign": "13CT1808", "name" : "Thomas", "city" : "Hamburg", "status" : "unknown"},	 
+    {"callsign": "13CT1809", "name" : "Rudi", "city" : "Donaueschingen", "status" : "active"},	 
+    {"callsign": "13CT1810", "name" : "Oliver", "city" : "G.M.Hütte", "status" : "unknown"},	 
+    {"callsign": "13CT1811", "name" : "Hans", "city" : "Brake", "status" : "unknown"},	 
+    {"callsign": "13CT1812", "name" : "Klaus-Dieter", "city" : "Basinghausen", "status" : "active"},	 
+    {"callsign": "13CT1813", "name" : "Rainer", "city" : "Lahnau", "status" : "unknown"},	 
+    {"callsign": "13CT1814", "name" : "Josef", "city" : "Cloppenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1815", "name" : "Gerd", "city" : "Eicklingen", "status" : "unknown"},	 
+    {"callsign": "13CT1816", "name" : "Aiko", "city" : "Oldenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1817", "name" : "Karl-Werner", "city" : "Cloppenburg", "status" : "unknown"},	 
+    {"callsign": "13CT1818", "name" : "Karsten", "city" : "Damme", "status" : "active"},	
+    {"callsign": "13CT1819", "name" : "Michael", "city" : "Fröndenberg", "status" : "active"},	
+    {"callsign": "13CT1820", "name" : "Olaf", "city" : "Marl", "status" : "unknown"},	 
+    {"callsign": "13CT1821", "name" : "Petra", "city" : "Marl", "status" : "unknown"},	 
+    {"callsign": "13CT1822", "name" : "Jürgen", "city" : "Remscheid", "status" : "unknown"},	 
+    {"callsign": "13CT1823", "name" : "Ewald", "city" : "Bremerhaven", "status" : "unknown"},	 
+    {"callsign": "13CT1825", "name" : "Stefan", "city" : "Hünxe", "status" : "unknown"},	 
+    {"callsign": "13CT1826", "name" : "Hans-Willi", "city" : "Rees", "status" : "unknown"},	 
+    {"callsign": "13CT1827", "name" : "Erwin", "city" : "Duisburg", "status" : "unknown"},	 
+    {"callsign": "13CT1828", "name" : "Martina", "city" : "Alpen", "status" : "unknown"},	 
+    {"callsign": "13CT1829", "name" : "Klaus", "city" : "Xanten", "status" : "unknown"},	 
+    {"callsign": "13CT1830", "name" : "Ralf", "city" : "Rees", "status" : "active"},	 
+    {"callsign": "13CT1831", "name" : "Dietmar", "city" : "Rees", "status" : "unknown"},	 
+    {"callsign": "13CT1832", "name" : "Burkhard", "city" : "Rees", "status" : "unknown"},	 
+    {"callsign": "13CT1833", "name" : "Iris", "city" : "Braunschweig", "status" : "unknown"},	 
+    {"callsign": "13CT1834", "name" : "Bruno", "city" : "Wesel", "status" : "unknown"},	 
+    {"callsign": "13CT1835", "name" : "Mechthilde", "city" : "Hamminkeln", "status" : "unknown"},	 
+    {"callsign": "13CT1836", "name" : "Andrea", "city" : "Goch", "status" : "unknown"},	 
+    {"callsign": "13CT1837", "name" : "Oskar", "city" : "Goch", "status" : "unknown"},	 
+    {"callsign": "13CT1839", "name" : "Dirk", "city" : "Marl", "status" : "unknown"},	 
+    {"callsign": "13CT1840", "name" : "Friedhelm", "city" : "Rees", "status" : "unknown"},	 
+    {"callsign": "13CT1841", "name" : "Jens", "city" : "Rees", "status" : "unknown"},	 
+    {"callsign": "13CT1842", "name" : "Heinrich", "city" : "Rees", "status" : "unknown"},	 
+    {"callsign": "13CT1843", "name" : "Peter", "city" : "Weeze", "status" : "unknown"},	 
+    {"callsign": "13CT1844", "name" : "Klaus", "city" : "Dorsten", "status" : "unknown"},	 
+    {"callsign": "13CT1845", "name" : "Ralf", "city" : "Weeze", "status" : "unknown"},	 
+    13CT1850	Stefan	Meschede	
+    13CT1855	Thomas	Dohna	 
+    13CT1856	Friedhelm	Dortmund	 
+    13CT1857	Peter	Dortmund	 
+    13CT1858	Jörg	Dortmund	 
+    13CT1859	Lothar	Dortmund	 
+    13CT1860	Michael	Rees	 
+    13CT1861	Rainer	Dortmund	 
+    13CT1862	Ralf-Dieter	Dortmund	 
+    13CT1863	Ralf	Dortmund	 
+    13CT1864	Wolfgang	Dortmund	 
+    13CT1865	Ralf	Kleve	 
+    13CT1866	Sascha	Gladbeck	 
+    13CT1869	Sascha	Kalkar	 
+    13CT1870	Giesela	Rees	 
+    13CT1871	Sven	Bocholt	 
+    13CT1872	Günther	Rossleben	 
+    13CT1873	Jan	Seulingen	 
+    13CT1874	Karl-Heinz	Pirmasens	 
+    13CT1875	Christian	Dülmen	
+    13CT1876	Rainer	Bremerhaven	 
+    13CT1877	Mario	Castrop-Rauxel	 
+    13CT1881	Stephan	Bernau	
+    13CT1885	Ulli	Sehmatal-Neudorf	
+    13CT1888	Uwe	Rostock	 
+    13CT1890	Giuseppe	Stuttgart	 
+    13CT1894	Manfred	Ahaus-Wüllen	 
+    13CT1895	Claudia	Vreden	 
+13CT1896	Konrad	Stadtlohn	 
+13CT1897	Peter	Ahaus-Wüllen	 
+13CT1898	Reinhold	Stadtlohn	 
+13CT1899	Christian	Rostock	 
+13CT1900	Karl-Heinz	Dorsten	 
+13CT1901	Andreas	Dortmund	 
+13CT1902	Dirk	Marl	 
+13CT1903	Holger	Dorsten	 
+13CT1904	Michael	Dorsten	 
+13CT1905	Thomas	Dorsten	 
+13CT1906	Mario	Neustadt	 
+13CT1907	Jürgen	Castrop-Rauxel	 
+13CT1908	Jürgen	Lünen	 
+13CT1909	Sven	Geldern	 
+13CT1910	Thomas	Dortmund	 
+13CT1911	Olaf	Dortmund	 
+13CT1912	Jörg	Bocholt	 
+13CT1913	Franzisko	Nossen	 
+13CT1914	Lotti	Dortmund	 
+13CT1915	Thomas	Dortmund	 
+13CT1917	Richard	Dortmund	 
+13CT1918	Dieter	Reken	 
+13CT1919	Curt	Rostock	 
+13CT1920	Georg	Vilsbiburg	
+13CT1921	Philipp	Neustadt	 
+13CT1922	Werner	Grosszerglang	 
+13CT1923	Frank	Gescher	 
+13CT1924	Jonas	Vreden	 
+13CT1925	Mario	Stadtlohn	 
+13CT1926	Stefan	Stadtlohn	 
+13CT1927	Karl-Heinz	Vreden	 
+13CT1928	Uwe	Vreden	 
+13CT1929	Albert	Bochum	 
+13CT1930	Jürgen	Südlohn	 
+13CT1931	Achim	Nossen	
+13CT1932	Guido	Eichenau	
+13CT1933	Wolfgang	Waltrop	 
+13CT1934	Renate	Castrop-Rauxel	 
+13CT1935	Anderas	Spora	
+13CT1936	Stephan	Müden (Aller)	
+13CT1940	Rudolf	Vettelschoss	 
+13CT1941	Harry	Ballenstedt	
+13CT1945	Rolf	Marl	 
+13CT1946	Reinhard	Dorsten	 
+13CT1948	Walter	Ludwigsfelder	 
+13CT1950	Achim	Einbeck	
+13CT1952	Mark	Wesel	
+13CT1953	Mayk	Rammenau	 
+13CT1954	Günter	Nossen	
+13CT1955	Klaus	Vetschau	 
+13CT1956	Jonny 	Ellerbeck 	
+13CT1958	Elke	Borken	 
+13CT1959	Ferdi	Velen	 
+13CT1960	Peter	Egglkofen	
+13CT1961	Mattes	Bremen	 
+13CT1962	Frank	Bochum	
+13CT1963	Klaus	Bochum	 
+13CT1964	Astrid	Raesfeld	 
+13CT1965	Tina	Borken	 
+13CT1966	Andreas	Lengerich	 
+13CT1967	Armin	Dresden	 
+13CT1968	Markus	Leverkusen	
+13CT1969	Horst	Gelsenkirchen	 
+13CT1970	Michael	Uedem	
+13CT1972	Udo	Seligenstadt	
+13CT1973	Stephan	Oldenburg	
+13CT1974	Daniel	Borken	 
+13CT1975	Michael	Görlitz	
+13CT1976	Daniel	Dresden	
+13CT1977	Jürgen	Essen	 
+13CT1979	Jörg	Dresden	
+13CT1980	Carsten	Mühlheim-Ruhr	 
+13CT1981	Dennis	Bielefeld	
+13CT1982	Andre	Borken	 
+13CT1983	Wolfgang	Vreden	 
+13CT1985	Patrick	Oeding	 
+13CT1987	Andreas	Solingen	
+13CT1988	Michael	Heidenheim	 
+13CT1989	Lutz	Alsfeld	
+13CT1990	Gerhard	 	 
+13CT1991	Daniel	Heiden	 
+13CT1992	Chantal	Solingen	
+13CT1993	Steven	Solingen	
+13CT1994	Horst	Bochum	 
+13CT1995	Tom	Neubrandenburg	
+13CT1996	Christian	Quickborn	
+13CT1997	Günther	Ludwigsfelde	 
+13CT1998	Ulf	Witten	
+13CT1999	Oliver	Gelsenkirchen	 
+13CT2000	Michael	Frankfurt/Oder	
+13CT2001	Lothar	Xanten	 
+13CT2002	Arne	Borken	 
+13CT2003	Werner	Stolberg	 
+13CT2004	Elke	Goch	 
+13CT2005	Gerald	Goch	 
+13CT2006	Dirk	Xanten	 
+13CT2007	Sabine	Hollingstedt	
+13CT2008	Silke	Duisburg	 
+13CT2009	Horst	Weeze	 
+13CT2010	Herbert	Gelsenkirchen	 
+13CT2011	Karin	Gelsenkirchen	 
+13CT2012	Nina	Gelsenkirchen	 
+13CT2013	Heiko	Schüttorf	 
+13CT2014	Wolfgang	Schüttorf	 
+13CT2015	Holger	Schüttorf	 
+13CT2016	Ralf	Forchheim	 
+13CT2017	Gerhard	Göttingen	 
+13CT2018	Guido	Velen	 
+13CT2019	Heinz	Viöl	
+13CT2020	Angelo	Stuttgart	 
+13CT2021	Michael	Rees	 
+13CT2022	Sebastian	Kalkar	 
+13CT2025	Rolf	Banink	 
+13CT2026	Josef	Bocholt	 
+13CT2030	Guiseppe	Stuttgart	 
+13CT2031	Jürgen	Gaisthal	 
+13CT2032	Peer	Borken	 
+13CT2033	Karin	Stadtlohn	 
+13CT2034	Manfred	Gröden	 
+13CT2035	Andreas	Borken	 
+13CT2036	Barbara	Südlohn	 
+13CT2037	Thomas	Gescher	 
+13CT2038	Verena	Borken	 
+13CT2039	Marianka	Südlohn	 
+13CT2040	Manuela	Leer	 
+13CT2041	Carsten	Erwitte	 
+13CT2042	Rüdiger	Lüdinghausen	 
+13CT2043	Sebastian	Hemmingen	 
+13CT2044	Lothar	Borken	 
+13CT2045	Ismail	Gelsenkirchen	 
+13CT2046	Hasan	Herten	 
+13CT2048	Stephan	Haburg	 
+13CT2049	Dennis	Gera	 
+13CT2050	Kemal	Gelsenkirchen	 
+13CT2051	Karl-Heinz	Jülich	 
+13CT2052	Dieter	Kröv/Mosel	 
+13CT2054	Andreas	Gelsenkirchen	
+13CT2056	Horst	Gelsenkirchen	 
+13CT2057	Ralf	Gelsenkirchen	 
+13CT2058	Frank	Herne	 
+13CT2059	Karl	Gelsenkirchen	 
+13CT2061	Timo	Gelsenkirchen	 
+13CT2062	Michael	Gelsenkirchen	 
+13CT2064	Roland	Freiberg	 
+13CT2065	Paul	Borken	 
+13CT2066	Wolfgang	Borken	 
+13CT2067	Jürgen	Kesfeld	 
+13CT2068	Walter	Stendal	 
+13CT2070	Bernt	Bremerhaven	 
+13CT2075	Hans-Gerhard	Rosendahl	 
+13CT2076	Michael	Heidenheim	 
+13CT2077	Bernd	Borken	 
+13CT2078	Marco	Herne	 
+13CT2079	Hansi	Herne	 
+13CT2080	Klaus	Herne	 
+13CT2081	Dieter	Bochum	 
+13CT2082	Frank	Bochum	 
+13CT2083	Toni	Bochum	 
+13CT2084	Andy	Bochum	 
+13CT2085	Klaus	Herne	 
+13CT2086	Jens	Herne	 
+13CT2087	Andreas	Herne	 
+13CT2088	Michael	Borken	 
+13CT2090	Walter	Trier	 
+13CT2096	Ingo	Hinterhermsdorf	 
+13CT2097	Mathias	Ottendorf-Okrella	 
+13CT2099	Elmar	Herne	 
+13CT2100	Guiseppe	Stuttgart	 
+13CT2101	Toni	Stuttgart	 
+13CT2102	Hans-Georg	Herne	 
+13CT2103	Werner	Essen	 
+13CT2104	Kai	Dortmund	 
+13CT2105	Reinhard	Essen	 
+13CT2106	Udo	Herne	 
+13CT2107	Manfred	Borken	 
+13CT2108	Dirk	Herne	 
+13CT2109	Camillo	Erfurt	
+13CT2110	Anja	Hattingen	 
+13CT2111	Andreas	Gelsenkirchen	 
+13CT2112	Frank	Hattingen	 
+13CT2113	Frank	Hattingen	 
+13CT2114	Michael	Herne	 
+13CT2115	Thomas	Hattingen	 
+13CT2117	Claus	Velbert	 
+13CT2118	Peter	Herne	 
+13CT2119	Sylvia	Herne	 
+13CT2120	Erwin	Waltrop	 
+13CT2121	Norbert	Waltrop	 
+13CT2122	Andreas	Dorsten	 
+13CT2123	Werner	Coesfeld	 
+13CT2124	Mike	Karlsruhe	 
+13CT2125	Peter	Garching	 
+13CT2126	Reinhold	Cham	 
+13CT2127	Walter	Mittelberg	 
+13CT2128	Michael	Neustadt	 
+13CT2129	Georg	TBB/BW	 
+13CT2130	Holger	Höchst	 
+13CT2131	Andreas	TBB/BW	 
+13CT2140	Helga	Salzgitter	 
+13CT2141	Joachim	Schwäbisch-Gmünd	 
+13CT2144	Detlef	Rechtenbach	 
+13CT2145	Sven	Vreden	 
+13CT2146	Frank	Stadtlohn	 
+13CT2147	Karl	Ahaus/Ottenstein	 
+13CT2148	Frank	Vreden	 
+13CT2149	Klaus	Stadtlohn	 
+13CT2150	Patrick	Stadtlohn	 
+13CT2151	Doris	Heek	 
+13CT2152	Thomas	Vreden	 
+13CT2153	Sascha	Ahaus/Wüllen	 
+13CT2154	Renate	Vreden	 
+13CT2155	Karl-Heinz	Dortmund	 
+13CT2156	Rainer	Südlohn	 
+13CT2160	Frank	Weilerswist	 
+13CT2161	Markus	Weilerswist	 
+13CT2162	Stefan	Rostock	 
+13CT2163	Stephan	Allstedt	 
+13CT2164	Ursula	Bocholt	 
+13CT2165	Andre	Lette	 
+13CT2166	Wilhelm	Brake	 
+13CT2169	Horst	Altleisnig	 
+13CT2170	Peter	Bochum	 
+13CT2171	Robert	Pfullendorf	 
+13CT2177	Siegbert	Heiden	 
+13CT2180	Manfred	Rödermark	 
+13CT2181	Matthias	Alsdorf	 
+13CT2182	Torsten	Coswig	 
+13CT2185	Sascha	Vreden	 
+13CT2186	Dieter	Ahaus	 
+13CT2187	Jürgen	Vreden	 
+13CT2188	Ingo	Haltern	 
+13CT2189	Michael	Rees	 
+13CT2190	Ralf	Rees	 
+13CT2191	Thorsten	Rees	 
+13CT2192	Günter	Rees	 
+13CT2193	Thorsten	Meppen	 
+13CT2194	Diddi	Rees	 
+13CT2195	Robin	Rees	 
+13CT2196	Elisabeth	Kalkar	 
+13CT2197	Theo	Kalkar	 
+13CT2198	Gerd	Wesel	 
+13CT2199	Klaus	Haltern	 
+13CT2200	Manfred	Wackersdorf	 
+13CT2201	Carsten	Schüttorf	 
+13CT2202	Michael	Ostelsheim	 
+13CT2203	Hedrich	Saarwellingen	 
+13CT2204	Jürgen	Saarbrücken	 
+13CT2205	Jürgen	Saarbrücken	 
+13CT2206	Markus	Saarbrücken	 
+13CT2207	Armin	Dorsten	 
+13CT2208	Lothar	Dorsten	 
+13CT2209	Jürgen	Jessen	 
+13CT2210	Arno	unbekannt	 
+13CT2211	Andreas	Aalen	 
+13CT2212	Mike	Strasburg	 
+13CT2213	Peter	Waldheim	 
+13CT2214	Jürgen	Nossen	 
+13CT2215	Alexander	Borken	 
+13CT2216	Günter	Schipkau	 
+13CT2219	Ludger	Ochtrup	 
+13CT2220	Helmut	Ochtrup	 
+13CT2221	Uwe	Elsdorf	 
+13CT2222	Patricia	Stuttgart	 
+13CT2223	Michael	Lauchhammer	 
+13CT2224	Jens	Hamburg	 
+13CT2225	Thomas	Krummesse	 
+13CT2226	Peter	Hamburg	 
+13CT2227	Marco	Halstenbek	 
+13CT2228	Ulla	Hamburg	 
+13CT2230	Thomas	Seyda	 
+13CT2231	Sven	Lübbenau	 
+13CT2232	Christopher	Neuruppin	 
+13CT2233	Oliver	Neuruppin	
+13CT2234	Thomas	Passau	 
+13CT2235	Frank	Pinnewitz	 
+13CT2236	Kay	Olbersdorf	 
+13CT2237	Reinhard	Dorsten	 
+13CT2238	Carsten	Rees	 
+13CT2239	Frank	Rees	 
+13CT2240	Thorsten	Wesel	 
+13CT2241	Frank	Rees	 
+13CT2242	Michael	Rees	 
+13CT2243	Ole	Rees	 
+13CT2244	Udo	Rees	 
+13CT2245	Anne	Goch	 
+13CT2246	Hans	Goch	 
+13CT2247	Wolfgang	Rees	 
+13CT2248	Ricardo	Klix	 
+13CT2249	Siegmund	Nossen	 
+13CT2250	Michael	Gescher	 
+13CT2251	Doris	Gescher	 
+13CT2252	Detlef	Grüningen	 
+13CT2253	Christian	Friedrichsfeld	 
+13CT2254	Roy	Hamminkeln	 
+13CT2256	Mümatz	Wesel	 
+13CT2257	Marcel	Rees	 
+13CT2258	Ralf	Bocholt	 
+13CT2259	Birgit	Duisburg	 
+13CT2260	Ulrike	Rees	 
+13CT2261	Michael	Rees	 
+13CT2262	Rolf	Rees	 
+13CT2263	Thorsten	Görlitz	 
+13CT2264	Siegfried	Augsburg	 
+13CT2265	Olaf	Kostebrau	 
+13CT2266	Oliver	Kamp-Lintfort	 
+13CT2267	Jürgen	Nossen	 
+13CT2268	Steffen	Nossen	 
+13CT2269	Hans	Gruna	 
+13CT2270	Jörg	Tann	 
+13CT2271	Dieter	Pasewalk	 
+13CT2272	Horst	Nossen	 
+13CT2273	Malk Daniel	Bad Saarow	 
+13CT2274	Wolfgang	Grimmen	 
+13CT2275	Christian	Dortmund	 
+13CT2276	Günter	Eberswalde	 
+13CT2277	Hermann	Dortmund	 
+13CT2278	Charlotte	Hanau am Main	 
+13CT2279	Ronny	Vreden	 
+13CT2280	Reiner	Castrop-Rauxel	 
+13CT2281	Carsten	Neukirchen-Vluyn	 
+13CT2282	Kurt	Hamminkeln	 
+13CT2283	Karl-Heinz	Rees	 
+13CT2284	Lars	Rees	 
+13CT2285	Marcel	Rees	 
+13CT2286	Marc	Rees	 
+13CT2287	Diana	Rees	 
+13CT2288	Ralf	Rees	 
+13CT2289	Horst	Rees	 
+13CT2290	Stefan	Kalkar	 
+13CT2291	Burkhard	Rees	 
+13CT2295	Florian	Wesel	 
+13CT2296	Christian	Xanten	 
+13CT2297	Daniel	Wesel	 
+13CT2299	Steffen	Klosterau	 
+13CT2300	Arno	Rees	 
+13CT2301	Horst	Wesel	 
+13CT2302	Uwe	Rees	 
+13CT2303	Freddy	Rees	 
+13CT2304	Torsten	Hamminkeln	 
+13CT2305	Stefan	Xanten	 
+13CT2306	Erich	Xanten	 
+13CT2307	Markus	Rees	 
+13CT2308	Tobias	Rees	 
+13CT2309	Herbert	Rees	 
+13CT2310	Ali	Rees	 
+13CT2311	Ingo	Rinteln-Krankenhagen	 
+13CT2313	Ewald	Saarwellingen	 
+13CT2314	Mike	Gelsenkirchen-Reese	 
+13CT2315	Marco	Herten	 
+13CT2320	Christian	Grimmen	 
+13CT2321	Andreas	Bremerhaven	 
+13CT2322	Anke	Brake	 
+13CT2323	Hans	Engelsberg	 
+13CT2324	Bernd	Reken	 
+13CT2325	Hans	Siebenlehn	 
+13CT2326	Siegfried	Borken - Weseke	 
+13CT2327	Monika	Garching/Alz	 
+13CT2328	Jörg	Hartfeld/Alz	 
+13CT2329	Andre	Bremerhaven	 
+13CT2330	Heiko	Duisburg	 
+13CT2331	Wolfgang	Duisburg	 
+13CT2333	Markus	Duisburg	 
+13CT2334	Kalender	Düsseldorf	 
+13CT2335	Norbert	Bad Salzungen	 
+13CT2336	Jochen	Isselburg	 
+13CT2337	Maik	Isselburg	 
+13CT2338	Gerd	Goch	 
+13CT2339	Karsten	Rees	 
+13CT2340	Michael	Burgdo-fOtze	 
+13CT2343	Manfred	Wolgast	 
+13CT2344	Werner	Marschau	 
+13CT2345	Jimmy	Adelsdorf	 
+13CT2346	Gerald	Emmerich	 
+13CT2347	Renate	Wesel	 
+13CT2348	Jürgen	Wesel	 
+13CT2349	Marlies	Xanten	 
+13CT2350	Matthias	Rees	 
+13CT2351	Thomas	Wesel	 
+13CT2352	Thorsten	Hünxe	 
+13CT2353	Lothar	Mehrhoog	 
+13CT2354	Fabian	Vörde	 
+13CT2355	Uwe	Wesel	 
+13CT2356	Markus	Isselburg - Anholt	 
+13CT2357	Thomas	Düsseldorf	 
+13CT2358	Markus	Duisburg	 
+13CT2359	Frank	Dortmund	 
+13CT2360	Erwin	Moers	 
+13CT2361	Burkard	Rees	 
+13CT2362	Daniel	Rees	 
+13CT2363	Ulrich	Brake	 
+13CT2364	Sascha	Wesel-Bislich	 
+13CT2365	Peter	Xanten - Lüttingen	 
+13CT2366	Pierre	Vörde	 
+13CT2370	Jörg	Rees	 
+13CT2371	Michael	Jessen/Elster	 
+13CT2372	Daniel	Döbeln	 
+13CT2373	Dieter	Sangerhausen	
+13CT2375	Wolfgang	Luhe-Wildenau	
+13CT2377	Andreas	Borken	 
+13CT2378	Nico	Oldisleben	 
+13CT2380	Karl-Heinz	Reken	 
+13CT2381	Josef	Reken	 
+13CT2382	Andre	Öding	 
+13CT2383	Christian	Norderney	 
+13CT2384	Sascha	Borken	 
+13CT2385	Daniel	Borken	 
+13CT2386	Dennis	Rossbach	 
+13CT2387	Jörg	Holzdorf/Ost	 
+13CT2388	Ralf	Borken	 
+13CT2389	Kira	Bocholt	 
+13CT2390	Klaus	Südlohn	 
+13CT2391	Heins	Borken	 
+13CT2392	Peter	Wastran	 
+13CT2393	Steffan	Norderney	 
+13CT2394	Dennis	Rhede	 
+13CT2395	Rene	Rhede	 
+13CT2396	Michael	Borken	 
+13CT2397	Boris	Norderney	 
+13CT2398	Hans	Hausham	 
+13CT2399	Hendrik	Borken	 
+13CT2400	Peter	Lübbenau	 
+13CT2401	Gordian	Ulm	
+13CT2402	Freddy	Gladbeck	 
+13CT2403	Daniela	Hanau	 
+13CT2404	Eberhard	Leisnig	 
+13CT2405	Reinhold	Mühlheim	 
+13CT2506	Sascha	Rees	 
+13CT2407	Ruth	Hanau	 
+13CT2408	Stephanie	Hanau	 
+13CT2409	Sebastian	Borken	 
+13CT2410	Thomas	Velen	 
+13CT2412	Jörg	Hanau	 
+13CT2413	Rene	Berlin	 
+13CT2414	Frank	Erfurt	 
+13CT2415	Horst	Erfurt	 
+13CT2416	Rico	Nossen	 
+13CT2417	Reiner	Heldrungen	 
+13CT2418	Manfred	Viersen	 
+13CT2419	Wolfgang	Waldheim	 
+13CT2420	Dirk	Metelen	 
+13CT2421	Michael	Gronau	 
+13CT2422	Hans-Joachim	Magdeburg	 
+13CT2423	Tanja	Gescher	 
+13CT2424	Mike	Borken	 
+13CT2425	Bernd	Dorsten	 
+13CT2426	Bernd	Coesfeld / Lette	 
+13CT2427	Norbert	Beelitz	 
+13CT2428	Thomas	Hamburg	 
+13CT2429	Patrick	Grimma	 
+13CT2430	Horst	Waldheim	 
+13CT2431	Frank	Waldheim	 
+13CT2432	Denny	Waldheim	 
+13CT2433	Sebastian	Borken-Weseke	 
+13CT2434	Georg	Memmelsdorf	 
+13CT2435	Roland	Pomssen	 
+13CT2436	Eduard	Aachen	 
+13CT2437	Bernd	Sangerhausen	 
+13CT2438	Daniel	Leutnitz	 
+13CT2439	Sandy	Leutnitz	 
+13CT2440	Uwe	Nossen	 
+13CT2441	Helmut	Nossen	 
+13CT2442	Ulrich	Pulsnitz	 
+13CT2443	Matthais	Bülzig	 
+13CT2444	Hardy	Görlsdorf	 
+13CT2445	Lothar	Haldensleben	 
+13CT2446	Horst	Rossleben	 
+13CT2447	Michael	Eibelshausen	 
+13CT2448	Simon	Fehmarn	 
+13CT2449	Stefan	Potsdam	 
+13CT2450	Tino	Mühlberg/Elbe	 
+13CT2451	Andreas	Rossbach	 
+13CT2452	Mario	Grabischau	 
+13CT2453	Rene	Zehren	 
+13CT2454	Andre	Nossen	 
+13CT2455	Bert	Marnitz	 
+13CT2456	Harald	Garching/Alz	 
+13CT2457	Horst	Lückersdorf	 
+13CT2458	Sebastian	Nossen	 
+13CT2459	Andre	Velen	 
+13CT2460	Stefan	Rees	 
+13CT2461	Norbert	Kleve	 
+13CT2462	Thomas	Emmerich	 
+13CT2463	Detlef	Emmerich	 
+13CT2464	Siegfried	Emmerich	 
+13CT2465	Beate	Emmerich	 
+13CT2466	Andreas	Emmerich	 
+13CT2467	Noel	Emmerich	 
+13CT2468	Frank	Birkenwerder	 
+13CT2469	Patrick	Isselburg	 
+13CT2470	Harald	Waldheim	 
+13CT2471	Sebastian	Hartha/Sa.	 
+13CT2472	Peter	Betzdorf	 
+13CT2474	Brigitte	Emmerich	 
+13CT2475	Detlev	Emmerich	 
+13CT2476	Carsten	Rees	 
+13CT2477	Dirk	Isselburg-Anholt	 
+13CT2478	Franz	Hamminkeln	 
+13CT2479	Markus	Isselburg	 
+13CT2480	Raphael	Isselburg-Anholt	 
+13CT2481	Ingo	Bocholt	 
+13CT2482	Sabine	Rees	 
+13CT2483	Monika	Rees	 
+13CT2485	Marion	Rees	 
+13CT2486	Helga	Rees	 
+13CT2487	Dieter	Rees	 
+13CT2488	Thomas	Isselburg-Anholt	 
+13CT2489	Helmut	Isselburg	 
+13CT2490	Gabi	Isselburg	 
+13CT2491	Stefan	Isselburg	 
+13CT2492	Markus	Emmerich	 
+13CT2493	Uwe	Eibenstock	 
+13CT2494	Maik	Rügen	 
+13CT2495	Wolfgang	 Rees	 
+13CT2498	Rolf	Großbodungen	 
+13CT2499	Mathias	Kirchseeon	 
+13CT2500	Ronny	Uedem	 
+13CT2501	Peter W.	Hückelhoven	 
+13CT2502	Ingo	Bocholt	 
+13CT2503	Krista	Bocholt	 
+13CT2504	Cornelia	Lorch	 
+13CT2505	Gerd	Worblingen	 
+13CT2506	Walter	Herne	 
+13CT2507	Alexander	Bad Sülze	 
+13CT2508	Christian	Wuppertal	 
+13CT2509	Bernd	Lommatzsch	 
+13CT2510	Lothar	Bochum	 
+13CT2511	Achim	Rüdershausen	 
+13CT2512	Marco	Oberheldrungen	 
+13CT2513	Volker	Wachtendonk	 
+13CT2514	Mirko	Altenburg	 
+13CT2515	Frank	Essen	 
+13CT2516	Ingo	Angermünde	 
+13CT2517	Lutz	Schwedt/Oder	 
+13CT2518	Diethold	Castrop-Rauxel	 
+13CT2519	Jens	Semlow	 
+13CT2520	Hans-Georg	Altenberg	 
+13CT2521	Mark	Hattingen	 
+13CT2522	Karl-Heinz	Kleinwaltersdorf	 
+13CT2523	Jakob	Kirchhain	 
+13CT2524	Ferdinand	H.-Westerholt	 
+13CT2525	Manfred	Borken	 
+13CT2526	Manuel	Essen	 
+13CT2527	Stefan	Südtlohn	 
+13CT2528	Bernd	Teising	 
+13CT2529	Roland	Waldkraiburg	 
+13CT2530	Christian	Öding	 
+13CT2531	Marco	Öding	 
+13CT2532	Philipp	Ichenhausen	 
+13CT2533	Herbert	Stolberg	 
+13CT2534	Bernd	Viesecke	 
+13CT2535	Karl-Heinz	Burgdorf	 
+13CT2536	Maik	Holzdorf-Ost	 
+13CT2537	Harald	Kahren-Karlshof	 
+13CT2538	Peter	Görlitz	 
+13CT2539	Marcus	Alt Golm	 
+13CT2540	Holger	Petersdorf	 
+13CT2541	Peter	Eschenburg	 
+13CT2542	Monika	Herten	 
+13CT2543	Benjamin	Castrop-Rauxel	 
+13CT2544	Paul	Borken	 
+13CT2545	Thomas	Herten	 
+13CT2546	Ilona	Bernburg	 
+13CT2547	Detlef	Berlin	 
+13CT2548	Ingold	Berlin	 
+13CT2549	Ingo	Neuhardenberg	 
+13CT2550	Udo	Oeding	 
+13CT2551	Uwe	Swisttal	 
+13CT2552	Frank	Lübben	 
+13CT2553	Ulrich	Lübben	 
+13CT2555	Andreas	Kassel	
+13CT2556	Chris	Stolpe	 
+13CT2557	Paul	Stolpe	 
+13CT2558	Dieter	Stolpe	 
+13CT2559	Axel	Vreden	 
+13CT2560	Heiko	Görlitz	 
+13CT2561	Frank	Görlitz	 
+13CT2562	Oliver	Görlitz	 
+13CT2563	Robert	Birstein	 
+13CT2564	Heinz	Kall	 
+13CT2565	Christoph	Coesfeld	 
+13CT2567	Mario	Biesen	 
+13CT2568	Heinz	Dietzhölztal	 
+13CT2569	Frank	Schwarzheide	 
+13CT2570	Torsten	Barth	 
+13CT2571	Werner	Bilzingsleben	 
+13CT2572	Herbert	Kall	 
+13CT2573	Christoph	Wald/Alz	 
+13CT2574	Adolf	Bad Endbach	 
+13CT2575	Rene	Riesa	 
+13CT2576	Daniela	Dresden	 
+13CT2577	Peggy	Rathmannsdorf	 
+13CT2578	Klaus-Dieter	Reinhardtsdorf	 
+13CT2579	Carsten	Riesa	 
+13CT2580	Hans	Kall	 
+13CT2581	Thomas	Duisburg	 
+13CT2582	Patrick	Offenbach	 
+13CT2583	Carola	Offenbach	 
+13CT2584	Marcus	Riesa	 
+13CT2585	Udo	Südlohn	 
+13CT2586	Kurt	Markersdorf	 
+13CT2587	Johannes	Haren/Ems	 
+13CT2588	Sven	Hamburg	 
+13CT2589	Thorsten	Berlin	 
+13CT2590	Hans-Jürgen	Krummesse	 
+13CT2591	Ingo	Groß-Krams	 
+13CT2592	Hans	Großschirma	 
+13CT2593	Frank	Weigsdorf-Köblitz	 
+13CT2594	Dieter	Handewitt	 
+13CT2595	Jens	Stübbeu	 
+13CT2596	Christian	Münster	 
+13CT2597	Martin	Neuwied-Irlich	 
+13CT2599	Ralf	Angelbachtal	
+13CT2601	Franz-Josef	Kalkar	 
+13CT2602	Paul-Ingo	Wangerland	 
+13CT2603	Thomas	Waldheim	 
+13CT2605	Willy	Albruck	 
+13CT2606	Udo	Norderney	 
+13CT2608	Wolfgang	Burkhardswalde	 
+13CT2609	Heinrich	Hage	 
+13CT2610	Jörn	Hage	 
+13CT2611	Franco	Norden	 
+13CT2612	Dirk	Ahaus	 
+13CT2613	Uwe	Borken	 
+13CT2614	Martin	Borken	 
+13CT2615	Günter	Stadtlohn	 
+13CT2616	Normann	Eningen	
+13CT2617	Gustav	Schönwald	 
+13CT2618	Ernst	Wunsiedel	 
+13CT2619	Markus	Wunsiedel	 
+13CT2620	Alex	Stadtlohn	 
+13CT2621	Sascha	Stadtlohn	 
+13CT2622	Roland	Pirna	
+13CT2623	Ernst	Stadtlohn	 
+13CT2624	Busters	Stadtlohn	 
+13CT2625	Thomas	Borken-Gemen	 
+13CT2626	Andy	Burlo	 
+13CT2627	Gerd	Oberkotzau	 
+13CT2628	Gustav	Ramsdorf	 
+13CT2629	Niko	Hage	 
+13CT2630	Carsten	Borken	 
+13CT2631	Karl-Heinz	Norden	 
+13CT2632	Christoph	Borken	 
+13CT2633	Ivan	Rhede	 
+13CT2635	Heinz	Öding	 
+13CT2636	Michael	Essen	 
+13CT2637	Christian	Norderney	 
+13CT2640	Helmut	Vreden	 
+13CT2645	Thomas	Köln	 
+13CT2646	Dennis	Bochum	 
+13CT2647	Ralf	Rosendahl	 
+13CT2649	Wolfgang	Ochtrup	 
+13CT2650	Nicole	Stadtlohn	 
+13CT2651	Manuel	Borken	 
+13CT2652	Bernd	Stadtlohn	 
+13CT2653	Rudi	Coesfeld	 
+13CT2654	Norbert	Datteln	 
+13CT2655	Daniel	Vreden	 
+13CT2656	Thomas	Friedrichsdorf	 
+13CT2657	Jens	Brake	 
+13CT2658	Michael	Jessen	 
+13CT2660	Nico	Bochum	 
+13CT2661	Herbert	Stockach	 
+13CT2662	Hans-Jürgen	Seelze	 
+13CT2663	Erwin	Schwarzach	 
+13CT2664	Uwe	Burg a/Fehm.	 
+13CT2665	Heinz	Herten	 
+13CT2666	Benjamin	Coesfeld-Lette	 
+13CT2667	Rolf	Seyda	 
+13CT2668	Manfred	Höchstädt	 
+13CT2669	Lutz	Stockach	 
+13CT2670	Georg	Techentin	 
+13CT2671	Peter	Kastett	 
+13CT2672	Markus	Raupenhain	 
+13CT2673	Helmut	Grossquenstedt	 
+13CT2676	Torsten	Elsfleth	 
+13CT2677	Jan	Bad Homburg	 
+13CT2680	Kai-Uwe	Rostock-Warnem.	 
+13CT2681	Christian	Stadtlohn	 
+13CT2682	Franz	Vreden	 
+13CT2683	Florian	Stadtlohn	 
+13CT2684	Rene	Stadtlohn	 
+13CT2685	Andreas	Borken	 
+13CT2686	Peter	Borken	 
+13CT2687	Thomas	Bremerhaven	 
+13CT2688	Holger	Rackel	 
+13CT2690	Alois	Stadtlohn	 
+13CT2696	Daniel	Borken	 
+13CT2697	Martin	Borken	 
+13CT2699	Gerd	Kölleda/Thür.	 
+13CT2700	Jürgen	Roth	
+13CT2701	Peter	Niederwürschnitz	 
+13CT2702	Mathias	Anger	 
+13CT2703	Günter	Kamenz	 
+13CT2704	Reiner	Erfurt	 
+13CT2705	Tristan	Gelsenkirchen	 
+13CT2706	Herbert	Kall	 
+13CT2707	Christian	Stadtlohn	 
+13CT2708	Horst	Feilitzsch	 
+13CT2709	Karl-Heinz	Straubenhardt	 
+13CT2710	Uwe	Callenberg	 
+13CT2711	Ralph	Erfurt	 
+13CT2712	Michael	Wittmund	 
+13CT2713	Joachim	Massanei/Sa	 
+13CT2714	Björn	Hünxe	 
+13CT2715	Ralf	Dietzenbach	 
+13CT2716	Steffen	Dresden	 
+13CT2717	Chris	Borken	 
+13CT2718	Olaf	Hünxe	 
+13CT2720	Sven	Radeberg	
+13CT2722	Gerd	Flensburg	 
+13CT2723	Jürgen	Allstedt	 
+13CT2724	Gregor	Friedrichshafen	 
+13CT2725	Siggi	Allstedt	 
+13CT2726	Salvatore	Gladbeck	 
+13CT2727	Kurt	Wadgassen	 
+13CT2728	Hans-Jürgen	Geithain	 
+13CT2729	Ralf	Altenburg	 
+13CT2730	Gerd	Altenburg	 
+13CT2731	Hans-Jürgen	Geithain	 
+13CT2732	Stephan	Glauchau	 
+13CT2733	Mario	Sotterhausen	 
+13CT2734	Klaus-Dieter	Görlitz	 
+13CT2737	Uwe	Dippoldiswalde 	
+13CT2739	Richard	Rees	 
+13CT2740	Karl-Heinz	Hamminkeln-Loikum	 
+13CT2741	Michael	Geldern	 
+13CT2742	Marco	Waldkraiburg	 
+13CT2743	Dennis	Bocholt	 
+13CT2744	Andi	Rees	 
+13CT2745	Jochen	Bocholt	 
+13CT2746	Roland	Isselburg-Vehlingen	 
+13CT2747	Stefanie	Rees	 
+13CT2748	Günter	Rees	 
+13CT2749	Magret	Ahaus	 
+13CT2750	Matthias	Ahaus	 
+13CT2751	Dieter	Bayreuth	 
+13CT2752	Rolf	Bad Laasphe	 
+13CT2753	Armin	Schönfeld 	 	
+13CT2755	Christian	Duisburg	 	
+13CT2757	Michael	Witten / NRW	 
+13CT2758	Nadin	Duisburg	 	 	
+13CT2760	Jan-Eric	Bocholt	 
+13CT2761	Matthias	Vreden	  	 	
+13CT2766	Marcel	Borken	 
+13CT2767	Andreas	Evkersreuth/Selb	 
+13CT2768	Stefan	Schönwald	 
+13CT2769	Dieter	Selb	 
+13CT2770	Rudi	Selb	 
+13CT2771	Jörg	Selb	 
+13CT2772	Berthold	Selb	 
+13CT2773	Wolfgang	Selb	 
+13CT2774	Harry	Fichtelberg	 
+13CT2775	Peter	Selb	 
+13CT2776	Andreas	Selb	 
+13CT2777	Florian	Mitterfelden	 
+13CT2778	Wolfgang	Görlitz	  	 	
+13CT2780	Christian	Castrop-Rauxel	 
+13CT2781	Werner	Castrop-Rauxel 	 	
+13CT2787	Rolf-Dieter	Neustadt 	 	
+13CT2789	Manfred	Gamehl	 
+13CT2790	Konrad	Keez	 
+13CT2791	Norbert	Hilgendorf	 
+13CT2792	Uwe	Sternberg	 
+13CT2793	Hans	Moltow	 
+13CT2794	Frank	Wietow	 
+13CT2795	Ursula	Rastorf	 
+13CT2796	Gerhard	Schwerin	 
+13CT2797	Doris	Keez	 
+13CT2798	Christian	Groß Pravtshagen	 
+13CT2799	Detlef	Uphal	 
+13CT2800	Stephan	Lahnstein	 
+13CT2801	Michael	Kölleda	 
+13CT2802	Martin	Berge	 
+13CT2803	Helmut	Herborn	 
+13CT2804	Uwe	Burlo	 
+13CT2805	Stephan	Würselen	 
+13CT2806	Alex	Konstanz	 
+13CT2807	Wolf	Landsberg	 
+13CT2808	Günther	Selb 	 	
+13CT2810	Georg	Marktleuthen	 
+13CT2811	Edmund	Marktleuthen	 
+13CT2812	Markus	Sonsbeck	
+13CT2813	Alfons	Stadtlohn	 
+13CT2814	Jens	Lügde	 
+13CT2815	Claus	Bettenfeld	 
+13CT2816	Oliver	Gera	 
+13CT2817	Thomas	Hainichen/Sa	 
+13CT2818	Helmut	Berlin	 
+13CT2819	Daniel	Höchstädt	 
+13CT2820	Markus	Pegnitz		 	 	 
+13CT2822	Jutta	Bippen	 
+13CT2823	Andreas	Grossromstedt	 
+13CT2824	Horst-Ullrich	Karow	 
+13CT2825	Michael	Coesfeld	 	
+13CT2827	Helmut	Gamehl	 
+13CT2828	Thomas	Wismar	 
+13CT2829	Heiko	Wismar	 
+13CT2830	Eva-Maria	Schwerin	 
+13CT2831	Gerda	Kletzin	 
+13CT2832	Laura	Sternberg	 
+13CT2833	Helmut	Sternberg	 
+13CT2834	Roswitha	Gamehl	  	 	
+13CT2836	Detlef	Herzberg	 	 	 	
+13CT2838	Günter	Schwerin	 
+13CT2839	Dirk	Bocholt	 
+13CT2840	Christopher	Esselburg-Werth	 
+13CT2841	Doris	Bocholt	 
+13CT2842	Sandra	Bocholt	 
+13CT2843	Daniel	Bocholt	 
+13CT2844	Kay	Wittenberg	 
+13CT2845	Sabine	Rees	 
+13CT2846	Daniel	Rees-Millingen	 
+13CT2847	Bodo	Emmerich	 
+13CT2848	Nino	Trent	 
+13CT2849	Marco	Isselburg-Heelden	 
+13CT2850	Dominik	Ramsdorf	 
+13CT2851	Klaus	Gladbeck	 
+13CT2852	Steffen	Prestewitz	 
+13CT2853	Peter	Seeligstadt 	 	
+13CT2864	Frank	Gescher	 
+13CT2865	Kristian	Gescher	 
+13CT2866	Gerd	Wesselstorf	 
+13CT2867	Siegfried	Jochstedt	 
+13CT2868	Markus	Stadtlohn	 
+13CT2869	Andreas	Fuldatal	
+13CT2870	Tom	Stadtlohn	 
+13CT2871	Matthias	Stadtlohn	 
+13CT2872	Mario	Stadtlohn 	 	
+13CT2876	Reiner	Waltrop	 
+13CT2877	Michael	Reken	 
+13CT2878	Andre	Velen	  	 	
+13CT2880	Sonja	Velen-Ramsdorf	 
+13CT2881	Dirk	Wunstorf	 
+13CT2882	Donata	Velen-Ramsdorf	 
+13CT2883	Dieter	Kressbronn	 
+13CT2884	Jörg	Diesbar-Seusslitz	 
+13CT2885	Thorsten	Heiden	 
+13CT2886	Werner	Kyritz	 
+13CT2887	Gerhard	Kall	 
+13CT2888	Günter	Krummesse	 
+13CT2889	Sven	Groß Pravtshagen	 
+13CT2890	Uwe	Schwerin	 
+13CT2891	Detlef	Schwerin	 
+13CT2892	Dirk	Wustrow-Ostseebad	 
+13CT2893	Ernst	Schwerin	 
+13CT2894	Michael	Schwerin	 
+13CT2895	Uwe	Plüschow	 
+13CT2896	Hans	Plüschow	 
+13CT2897	Hubert	Schwerin	 
+13CT2898	Roman	Sternberg	 
+13CT2899	Dieter	Schwerin	 
+13CT2900	Christian	Vreden	 
+13CT2901	Günter	Vreden	 
+13CT2902	Bernd	Udersleben	 
+13CT2903	Andreas 	Ursensollen 	 	
+13CT2910	Thomas	Döbeln	 
+13CT2911	Andreas	Waldheim	 
+13CT2912	Marcel	Emmerich	 
+13CT2913	Werner	Rees	 
+13CT2914	Heiko	Bocholt	 
+13CT2915	Michael	Rees	 
+13CT2916	Horst	Rees	 
+13CT2917	Uwe	Rees	 
+13CT2918	Sascha	Bocholt	 
+13CT2919	Thorsten	Rees	 
+13CT2920	Jens	Kalkar	 
+13CT2921	Wolfgang	Stadtlohn	 
+13CT2922	Marina	Stadtlohn	 
+13CT2923	Jessica	Stadtlohn	 
+13CT2924	Kai	Stadtlohn	 
+13CT2925	Peter	Südlohn	 
+13CT2926	Birgit	Rendsburg	  	 	
+13CT2928 	Rene	Kamen	 
+13CT2929	Gordon	Dortmund	 
+13CT2930	Hayo	Norden	 
+13CT2931	Maria	Vreden	 	 	 	
+13CT2933	Ingo	Willmsfeld	 	 	 	
+13CT2935	Marcel	Schöppingen	  	 	
+13CT2939	Marlis	Reken	 	 	
+13CT2945	Kai Uwe	Norderney	 
+13CT2946	Christian	Juist	 
+13CT2947	Horst	Funix	 	 	 	
+13CT2949	Nils	Norderney	 
+13CT2950	Fred	Schwerin	 
+13CT2951	Heinz	Schwerin	 
+13CT2952	Albin	Schwerin	 
+13CT2953	Volkmar	Hilgendorf	 
+13CT2954	David	Hilgendorf	 
+13CT2955	Dietrich	Grabow	 
+13CT2956	Paul	Leezen	 
+13CT2957	Werner	Ludwigslust	 
+13CT2958	Olaf	Schwerin	 
+13CT2960	Emil	Schwerin	 
+13CT2961	Egon	Schwerin	 
+13CT2962	Arthur	Schwerin	 
+13CT2963	Horst	Schwerin	 
+13CT2964	Gerd	Stabenow	 
+13CT2965	Denis	Göhlen	 
+13CT2966	Eckart	Techentin	 
+13CT2967	Dieter	Rostock	 
+13CT2968	Steffen	Schwerin	 
+13CT2969	Michael	Dobbertin	 
+13CT2970	Reinhard	Rostock	 
+13CT2971	Wolfgang	Rostock	 
+13CT2972	Dieter	Paetow	 
+13CT2973	Karl-Heinz	Schwerin	 
+13CT2974	Edith	Rostock	 
+13CT2975	Kurt	Stadt-Kühlungsborn	 	 	
+13CT2998	Dirk	Velen	 
+13CT3000	Rolf	Dortmund	 
+13CT3001	Werner	Kleve	 
+13CT3002	Sven	Borken	 
+13CT3003	Jörg	Borken	 
+13CT3004	Christian	Rees	 
+13CT3005	Reinhard	Alt-Jabel	 
+13CT3006	Thomas	Perdöhl	 
+13CT3007	Lenia	Hamm	 	
+13CT3010	Klaus-Dieter	Schwerin - Lankow	 
+13CT3011	Karsten	Borken		 	 	
+13CT3054	Peter 	Kalbe/Brunau 		 	 	
+13CT3072	Markus	Duisburg		 	 	
+13CT3075	Frank	Varel		 	 	
+13CT3089	Christoph	Vreden	 	 	 	
+13CT3100	Achim	Lahntal	
+13CT3101	 	 	
+13CT3102	Andreas	Prina	 	 	 	 
+13CT3112	Christoph	Wesel	 	 	 	 
+13CT3131	Dieter	Klingenberg	 
+13CT3132	Barbara	Dessau	 	 	 	 
+13CT3135	Thomas	Uslar	 	 	 
+13CT3137	Andrej	Emsbüren	
+13CT3164	Ralf	Dortmund	
+13CT3250	Frank	Hagen	 	 	 	 
+13CT3256	Jürgen	Castrop-Rauxel	 
+13CT3311	Daniel	Luckau	 
+13CT3333	Matthias	Veitschöchheim	 
+13CT3344	Josef	Rommerskirchen	 
+13CT3366	Jens	Kleve	               
+13CT3440	Uwe	Bremerhaven	 
+13CT3456	Matthias	Heidenheim	 
+13CT3489	Jürgen	Waltrop	 
+13CT3535	Georg	Borken	 
+13CT3716	Frank	Hagen	 
+13CT3950	Thomas	Staudt	
+13CT4000	Bernhard	Wallersdorf	 
+13CT4001	Astrid	Retzow	 
+13CT4002	Gerald	Wischuer	 
+13CT4003	Peter	Dieddrichsdorf	 
+13CT4004	Uwe	Wiligrad	 
+13CT4005	Alfred	Weilheim	 
+13CT4006	Uwe	Pokrent	 
+13CT4007	Rainer	Rostock	 
+13CT4008	Erhard	Rostock	
+13CT4009	Frank	Schwerin	 
+13CT4010	Detlef	Schwerin	 
+13CT4087	Marcel	Übach-Palenberg	 
+13CT4088	Brigitte	Lichtenhain	 
+13CT4089	Christian	Rees	 
+13CT4141	Gregor	Essen	 
+13CT4193	Klaus	Gaildorf	 
+13CT4272	Ralf	Leipzig	
+13CT4300	Albert	Essen	 
+13CT4400	Markus	Friedrichshafen	 
+13CT4401	Daniel	Friedrichshafen	 
+13CT4402	Uwe	Freiberg	 
+13CT4403	Rolf	Chemnitz	 
+13CT4404	Heinz	Freiberg	 
+13CT4405	Jens	Freiberg	 
+13CT4406	Tilo	Neuhaus-Schierschnitz	 
+13CT4408	Marietta 	Karl / Eifel	 
+13CT4409	Thorsten	Pirmasens	 
+13CT4410	Ralf	Borken	 
+13CT4411	Andy	Friedrichshafen	 
+13CT4412	Mario	Eisenhüttenstadt	 
+13CT4413	Herbert	Ulm	 
+13CT4414	Liane	Alsdorf	 
+13CT4415	Maik	Sehnde	 
+13CT4417	Eva	Lüdenscheid	 
+13CT4418	Siegfried	Schönborn-Dreiwerden	 
+13CT4420	Wolfgang	Selm	 
+13CT4421	Friedhelm	Mühlanger	 
+13CT4422	Oli	Friedrichshafen	 
+13CT4433	Bernd	Friedrichshafen	 
+13CT4434	Werner	Herne	 
+13CT4435	Jürgen	Schorndorf	 
+13CT4436	Johannes	Rabenau	 
+13CT4437	Hans-Jürgen	Hermsdorf	 
+13CT4438	Lars	Leuben	 
+13CT4439	Dieter	Dommitzsch	 
+13CT4441	Johann	Sontheim	 
+13CT4443	Peter	Rostock	 
+13CT4444	Heike	Rees	 
+13CT4455	Margot	Friedrichshafen	 
+13CT4456	Thomas	Selb	 
+13CT4457	Frank	Titisee-Neustadt	 
+13CT4458	Dirk	Wülfrath	 
+13CT4459	Jochen	Blankenfelde	 
+13CT4460	Manfred	Wesel	 
+13CT4461	Fred	Freital	 
+13CT4462	Ralf	Rees	 
+13CT4463	Manfred	Gittelde im Harz	 
+13CT4466	Alessandro	Stuttgart	 
+13CT4467	Sabine	Bermatingen	 
+13CT4473	Horst	Reken	 
+13CT4477	Dirk	Oberteuringen	 
+13CT4488	Günther	Friedrichshafen	 
+13CT4499	Wolfgang	Markdorf	 
+13CT4567	Thomas	Heidenheim	 
+13CT4653	Gerrit	Pinneberg	
+13CT4711	Anja	Borken	 
+13CT4801	Roland	Laupheim	  
+13CT4879	Vanessa	Rees	 
+13CT5001	Toni	Dülmen	 
+13CT5002	Steffi	Bocholt	 
+13CT5161	Harald	Unkersdorf	 
+13CT5311	Klaus	Ravensburg	 
+13CT5555	Halis	Heidenheim	 
+13CT5566	Gerd	Bad Honnef	 
+13CT5999	Sascha	Berlin	 
+13CT6133	Günther	Weissenfels	 
+13CT6184	Edith	Nossen	 
+13CT6270	Alex	Stolberg	 
+13CT6350	Bernd	Dresden	 
+13CT6372	Rudi	Plaue	 
+13CT6401	Hans	Willich	
+13CT6418	Klaus	Tutow	 
+13CT6441	Werner	Leipzig	 
+13CT6464	Franz	Altötting	 
+13CT6504	Arno	Briescht	 
+13CT6506	Uwe	Briescht	 
+13CT6534	Wolfgang	Dortmund	 
+13CT6576	Dietmar	Nossen	 
+13CT6621	Theo	Zinnowitz	 
+13CT6622	Ernst	Velen	 
+13CT6644	Herbert	Borken	 
+13CT6645	Frank	Pirmasens	 
+13CT6655	Willi	Borken	 
+13CT6661	Heiko	Kalkar	 
+13CT6666	Sascha	Hamm	
+13CT6677	Fritz	Wesel	 
+13CT6691	Waldemar	Bad Suderode	 
+13CT7777	Klaus	Velen	 
+13CT8020	Jochen	Neu - Ulm	
+13CT8038	Karl-Heinz	Luppa	 
+13CT8050	Günter	Mügeln	 
+13CT8078	Ray	Limbach-Oberfrohna	 
+13CT8086	Ulrich	Görlitz	 
+13CT8130	Bernhard	Hohenleipisch	 
+13CT8159	Holger	Erfurt	 
+13CT8160	Manfred	Dresden	 
+13CT8167	Heiko	Thale	 
+13CT8173	Ronald	Mittweida	
+13CT8174	Manfred	Dresden	 
+13CT8177	Uwe	Gera	 
+13CT8186	Frank-Dieter	Nordhausen	 
+13CT8206	Ingolf	Grimma	 
+13CT8208	Inge	Zabakuck	 
+13CT8211	Erwin	Lausitzring	 
+13CT8216	Horst	Königerode	 
+13CT8244	Hans-Rainer	Bad-Saarow-Pieskow	 
+13CT8299	Günter	Leipzig	 
+13CT8302	Torsten	Leipzig	 
+13CT8307	Carsten	Leuna	 
+13CT8319	Jürgen	Hermsdorf	 
+13CT8322	Ernst	Bleyen	 
+13CT8327	Michael	Ziltendorf	 
+13CT8332	Manfred	Borgsdorf	 
+13CT8334	Jürgen	Wilsleben	 
+13CT8341	Rainer	Breitenhagen	 
+13CT8373	Horst	Kirchmöser	 
+13CT8399	Karin	Dresden	 
+13CT8402	Axel	Erfurt	 
+13CT8409	Hans-Joachim	Halle	 
+13CT8428	Karin	Weddersleben	 
+13CT8436	Marco	Grossröhrsdorf	 
+13CT8445	Roland	Dahlen	 
+13CT8448	Heinz	Dresden	 
+13CT8451	Marco	Oranienburg	 
+13CT8454	Frank	Cottbus	 
+13CT8455	Andreas	Crimmitschau	 
+13CT8472	Joachim	Dürröhrsdorf	 
+13CT8475	Thomas	Döbeln	 
+13CT8494	Heiko	Oranienburg	 
+13CT8499	Uwe	Bretzschendorf	 
+13CT8537	Gerd	Heidenau	 
+13CT8544	Walter	Rostock	 
+13CT8553	Mario	Waldsieversdorf	 
+13CT8560	Mathias	Schipkau	 
+13CT8566	Bärbel	Plessa	 
+13CT8567	Thomas	Kyritz	 
+13CT8580	Thomas	Leipzig	 
+13CT8581	Siegert	Leipzig	 
+13CT8589	Ulrich	Langenleuba - Niederha.	 
+13CT8594	Rudolf	Gera	 
+13CT8598	Mirko	Weinböhla	 
+13CT8599	Conny	Weinböhla	 
+13CT8616	Manfred	Malkwitz/Sachsen	 
+13CT8619	Bob	Merseburg	 
+13CT8622	Hans	Merseburg	 
+13CT8626	Tom	Merseburg	 
+13CT8638	Gunder	Dresden	 
+13CT8640	Andreas	Görlitz	 
+13CT8642	Rene	Breitenhagen	 
+13CT8643	Ralf	Cunnersdorf	 
+13CT8645	Wiland	Eula	 
+13CT8647	Jens	Boran	 
+13CT8648	Marco	Schmannewitz	 
+13CT8650	Gerd	Bad Hersfeld	 
+13CT8658	Andreas	Leipzig	 
+13CT8660	Michael	Dahlen	 
+13CT8675	Rigobert	Oranienburg	 
+13CT8676	Peter	Oranienburg	 
+13CT8677	Frank	Oranienburg	 
+13CT8711	Dirk	Zeitz	 
+13CT8748	Hans-Egon	Dahlen	 
+13CT8827	Daniel	 Rees	 
+13CT8888	Guido	Rees	 
+
 ]

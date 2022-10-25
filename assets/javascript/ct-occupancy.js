@@ -4,6 +4,17 @@ let circuitDiagram;
 async function initCbOccupancy(){
     await getDataFromOccupancyJSON();
     setTimeout(forLoopMicrophoneAssignment, 500);
+    renderCbMicrophoneHeadLine();
+}
+
+function renderCbMicrophoneHeadLine(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Mikrofonbelegung CB-Funkeräte`;
+            clearInterval(intervall)
+            }
+       });
 }
 
 async function getDataFromOccupancyJSON(){

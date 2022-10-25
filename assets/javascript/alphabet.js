@@ -107,6 +107,7 @@ const ALPHABET = [
 ]
 
 function initAlphabet(){
+    renderAlphabetHeadLine();
     let spellingAlphabet = document.getElementById('spellingAlphabet');
     for (let i = 0; i < ALPHABET.length; i++) {
         const letter = ALPHABET[i]['letter'];
@@ -119,5 +120,15 @@ function initAlphabet(){
                                         </tr>`;
         
     }
-    console.log(ALPHABET);
 }
+
+function renderAlphabetHeadLine(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Buchstabier-Alphabet`;
+            clearInterval(intervall)
+            }
+       });
+}
+

@@ -13,6 +13,7 @@ const CITYPROTECTIONZONE = [
 ]
 
 function initCbProtektionZone(){
+    renderCBProtectionZoneHeadLine();
     let radioProtectionZoneList = document.getElementById('radioProtectionZone');
     for (let i = 0; i < CITYPROTECTIONZONE.length; i++) {
         const CITY = CITYPROTECTIONZONE[i];
@@ -21,4 +22,14 @@ function initCbProtektionZone(){
     }
 
 
+}
+
+function renderCBProtectionZoneHeadLine(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `CB-Schutzzonen`;
+            clearInterval(intervall)
+            }
+       });
 }

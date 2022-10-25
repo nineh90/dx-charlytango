@@ -11,6 +11,12 @@
 body{
     font-family: 'Roboto Mono';
     color: white;
+    /* background-image: url('../img/antenne2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: 100%; */
+   
 }
 
 strong{
@@ -27,6 +33,7 @@ strong{
 
 .bg-page{
     background-color: #1095b0;
+    /* background-color: rgba(0, 0, 0, 0.2); */
 }
 
 .bg-green{
