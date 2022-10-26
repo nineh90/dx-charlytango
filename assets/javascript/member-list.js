@@ -85,8 +85,11 @@ function checkForCbStatus(status, j){
     }
 
 function generateTableCurrentCountry(){
-    allMemberList.innerHTML = ` <div class="w-50">
-                                    <table class="txt-center mobile-table">
+    allMemberList.innerHTML = ` <div class="w-70">
+                                    <h2 class="mobile-d-flex d-none txt-center">Tabellen sind Mobil nicht verfügbar.<br>
+                                        schau gerne in der Desktop Version vorbei
+                                    </h2>
+                                    <table class="txt-center mobile-table mobile-hide">
                                         <thead>
                                             <tr>
                                                 <th>Rufzeichen</th>

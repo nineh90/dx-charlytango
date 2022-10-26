@@ -21,87 +21,89 @@
     <!--Content-->
 
         <div class="d-flex column justify-center align-center margin-top-30px margin-bottom-30px txt-center">
-            <div class="w-50">
+            <h2 class="mobile-d-flex d-none">Tabellen sind Mobil nicht verfügbar.<br>
+                schau gerne in der Desktop Version vorbei</h2>
+            <div class="w-50 mobile-hide">
                 <p>
                     Im Zusammenhang mit der Montage einer Funkantenne tauchen oftmals die Begriffe SWR, Dämpfung, Verluste auf.
                 </p>
             </div>
 
             <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
-                <img src="./assets/img/kodax-02.gif" alt="">
+                <img class="cable" src="./assets/img/kodax-02.gif" alt="">
             </div>
+            <div class="mobile-hide">
+                <div class="w-50">
+                    <p>
+                        <strong>
+                            Zusammenhang zwischen SWR und Verlust
+                        </strong>    
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>SWR</th>
+                                <th>Verlust in %</th>
+                            </tr>
+                        </thead>
+                        <tbody id="swr"></tbody>    
+                    </table>
+                </div>
 
-            <div class="w-50">
-                <p>
-                    <strong>
-                        Zusammenhang zwischen SWR und Verlust
-                    </strong>    
-                </p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>SWR</th>
-                            <th>Verlust in %</th>
-                        </tr>
-                    </thead>
-                    <tbody id="swr"></tbody>    
-                </table>
-            </div>
+                <div class="w-50">
+                    <p>
+                        Der Einfluß des Verbindungskabels zwischen Antenne und CB-Funkgerät auf die Leistungsfähigkeit der gesamten Funkanlage
+                    </p>
+                </div>
 
-            <div class="w-30">
-                <p>
-                    Der Einfluß des Verbindungskabels zwischen Antenne und CB-Funkgerät auf die Leistungsfähigkeit der gesamten Funkanlage
-                </p>
-            </div>
+                <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+                    <img src="./assets/img/kodax-02.gif" alt="">
+                </div>
 
-            <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
-                <img src="./assets/img/kodax-02.gif" alt="">
+                <div class="w-50">
+                    <p>
+                        <strong>
+                            RG58C/U
+                        </strong>    
+                    </p>
+                    <table class="table mobile-table">
+                        <thead>    
+                            <tr>
+                                <th>Länge in m</th>
+                                <th>Dämpfung in db</th>
+                                <th>Verminderung Sendeleistung</th>
+                                <th>Verminderung der Sendeleistung</th>
+                            </tr>
+                        </thead>
+                        <tbody  id="rg58c"></tbody>    
+                    </table>
+                </div>
+                <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
+                    <img src="./assets/img/kodax-02.gif" alt="">
+                </div>
+                <div class="w-50">
+                    <p>
+                        <strong>
+                            RG213
+                        </strong>    
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Länge in m</th>
+                                <th>Dämpfung in db</th>
+                                <th>Verminderung Sendeleistung</th>
+                                <th>Verminderung der Sendeleistung</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rg213"></tbody>    
+                    </table>
+                </div>
             </div>
-
-            <div class="w-50">
-                <p>
-                    <strong>
-                        RG58C/U
-                    </strong>    
-                </p>
-                <table class="table mobile-table">
-                    <thead>    
-                        <tr>
-                            <th>Länge in m</th>
-                            <th>Dämpfung in db</th>
-                            <th>Verminderung Sendeleistung</th>
-                            <th>Verminderung der Sendeleistung</th>
-                        </tr>
-                    </thead>
-                    <tbody  id="rg58c"></tbody>    
-                </table>
-            </div>
-            <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
-                <img src="./assets/img/kodax-02.gif" alt="">
-            </div>
-            <div class="w-50">
-                <p>
-                    <strong>
-                        RG213
-                    </strong>    
-                </p>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Länge in m</th>
-                            <th>Dämpfung in db</th>
-                            <th>Verminderung Sendeleistung</th>
-                            <th>Verminderung der Sendeleistung</th>
-                        </tr>
-                    </thead>
-                    <tbody id="rg213"></tbody>    
-                </table>
-            </div>
-
         </div>  
     
     <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px">
-        <img src="./assets/img/kodax-02.gif" alt="">
+        <img class="cable mobile-hide" src="./assets/img/kodax-02.gif" alt="">
     </div>
 
     <!--Footer-->

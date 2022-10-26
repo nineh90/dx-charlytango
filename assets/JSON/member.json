@@ -12613,7 +12613,7 @@
      {"callsign": "13CT8827", "name" : "Daniel", "city" : " Rees", "status" : "unknown"},	 
      {"callsign": "13CT8888", "name" : "Guido", "city" : "Rees", "status" : "unknown"}            
     ]
-          },
+        },
     {
         "country" : "FRANCE",
         "flag" : "fr",

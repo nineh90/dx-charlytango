@@ -1,26 +1,297 @@
-@media(max-width: 1540px){
-            
-    .mobile-hide{
-        display: none;
-    }
-
-    .mobile-table{
-        display: flex;
-        overflow: hidden;
-    }
-
-    .mobile-table tbody{
-        display: flex;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-    }
-    .mobile-table tr{
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
+@media(max-width: 1024px){
+    .open-start-page-btn{
+      left: 25%;
 
     }
     
- 
-}            
+    .radio-content-container div {
+        width: 250px;
+
+    }
+
+    .submenu{
+        width: 45%;
+
+    }
+
+    .candle{
+        width: 75px;
+
+    }
+
+    .welcome-text p {
+        font-size: 16px;
+
+    }
+
+    .qsl-img img {
+        width: 550px;
+    }  
+    
+    .welcome-text h1 {
+        font-size: 1.5rem;
+    }
+    .europa-funk-img {
+        width: 350px;
+        height: 250px;
+    }    
+    
+    .ts3img{
+        width: 400px;
+    }
+} 
+
+@media(max-width: 768px){
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-d-flex{
+        display: flex;
+    }
+    .navbarbanner {
+        height: 38px;
+        cursor: pointer;
+    }
+    .header{
+        padding-bottom: 0px;
+        border-bottom: none;
+        border-bottom-right-radius: 0%;
+        box-shadow: none;
+    }
+
+    .header h1{
+        font-size: 2rem;
+    }
+
+    .header-content{
+        font-size: 1rem; 
+    }
+    .radio-image{
+        width: 300px;
+    }
+
+    .welcome-text p{
+        font-size: 16px;
+    }
+
+    .welcome-text h2{
+        font-size: 1rem;
+    }
+
+    .cable{
+        width: 50%;
+    }
+    
+    .ts-img{
+        width: 70px;
+        height: 70px;
+    }
+    .teamspeak h2 {
+        font-size: 1.5rem;
+    }
+    .contact p {
+        font-size: 18px;
+    }
+    .contact h2 {
+        font-size: 1.5rem;
+    }  
+    .submenu {
+        width: 50%;
+    }
+    .open-start-page-btn {
+        left: 75%;
+    } 
+    .footer h2 {
+        font-size: 18px;
+    }
+    .qsl-img img {
+        width: 430px;
+    } 
+
+    .circuit-diagram{
+        width: 450px;
+    }
+    strong {
+        font-size: 16px;
+    }
+    .pc{
+        width: 75px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .radioIMG{
+        width: 75px;
+    }
+    .ts3img{
+        width: 280px;
+    }
+
+}
+
+@media(max-width: 414px){
+    .navbarbanner {
+        height: 33px;
+        cursor: pointer;
+    }
+    .open-start-page-btn {
+        left: 85%;
+    }
+    .candle {
+        width: 45px;
+    }
+    .header-content {
+        font-size: 0.75rem;
+        margin-top: 35px;
+    }
+    .header{
+        height: 28vh;
+        background-position: bottom;
+    }
+    .welcome-text h1 {
+        bottom: 70%;
+        margin-left: 45px;
+        text-shadow: 3px 2px 0 #171515;
+    }
+    
+    .header h1 {
+        font-size: 1.35rem;
+    }
+
+    .ct13{
+        width: 50%;
+    }
+    
+    .welcome-text h2 {
+       font-size: 1rem;
+    }
+    .radio-image {
+        width: 220px;
+    }
+    .margin-top-30px {
+        margin-top: 15px;
+    }
+    .margin-bottom-30px {
+        margin-bottom: 15px;
+    }
+    .welcome-text p {
+        font-size: 0.9rem;
+    }
+    .mobile-hide-425px{
+        display: none;
+    }
+    .mobile-column{
+        flex-direction: column;
+    }
+    .contact p {
+        font-size: 14px;
+    }
+    .contact img {
+        width: 170px;
+    }
+    .footer{
+        min-height: 17vh;
+        padding-top: 25px;
+    }
+    .footer a {
+        font-size: 14px;
+    } 
+    .footer h2 {
+        font-size: 0.75rem;
+    }   
+    .footer p {
+        font-size: 10px;
+    }
+    .navbar a{
+        width: 175px;
+    }
+    .submenu {
+        width: 60%;
+    }
+    .qsl-img img {
+        width: 350px;
+    }
+    .not-available-headline{
+        font-size: 1rem;
+    }
+    .radio-content-container div {
+        width: 140px;
+        font-size: 12px;
+    }
+    .font-size{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+    strong {
+        font-size: 18px;
+    }
+    .cb-history-content {
+        width: 85%;
+    }
+    .w-50{
+        width: 90%;
+    }
+    .cb-regulate-content{
+        font-size: 0.75rem;
+        padding: 7px;
+    }
+
+    table{
+        font-size: 12px;
+    }
+
+    .circuit-diagram {
+        width: 320px;
+    }
+
+}
+
+@media(max-width: 375px){
+    .header-content {
+        font-size: 0.6rem;
+    } 
+    .header {
+        height: 23vh;
+        background-position: bottom;
+    }
+    .welcome-text h1{
+        bottom: 73%;
+    }
+    .navbarbanner {
+        height: 28px;
+        cursor: pointer;
+    }
+    .header h1 {
+        font-size: 1.42rem;
+    }
+
+    .qsl-img img {
+        width: 250px;
+    }
+    .radio-content-container div {
+        width: 120px;
+        font-size: 12px;
+    }
+    .circuit-diagram {
+        width: 270px;
+    }
+
+}
+
+@media(max-width: 320px){
+    .circuit-diagram {
+        width: 220px;
+    }
+
+    .welcome-text h1 {
+        bottom: 77%;
+    }
+
+    .header {
+        height: 19vh;
+    }
+}

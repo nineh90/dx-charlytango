@@ -88,6 +88,7 @@ strong{
 
 .ts-img{
     width: 120px;
+    height: 120px;
 }
 
 .contact h2{
@@ -109,7 +110,6 @@ strong{
     min-height: 24vh;
     background-color: #00aef7;
     border-top: 5px solid white;
-    box-shadow: 0px 1px 1px 2px black;
     padding-top: 90px;
 }
 
@@ -279,7 +279,9 @@ nav.active a {
 
 .pmr-img-container{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .pmr-img-container img{
@@ -445,7 +447,6 @@ table th {
 
 .qsl-img img{
     width: 650px;
-    height: 450px;
     padding: 15px;
     margin-bottom: 15px;
     margin-top: 15px;

@@ -22,6 +22,26 @@ function initInMemorian(){
        });
 }
 
+function initPrBetriebsart(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `PR-Betriebsart`;
+            clearInterval(intervall)
+            }
+       });
+}
+
+function initPrAufCB(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `PR auf CB`;
+            clearInterval(intervall)
+            }
+       });
+}
+
 function initNewMember(){
     let intervall = setInterval(function(){
         let headline = document.getElementById('headLine');
@@ -166,7 +186,7 @@ function initTeamspeakInstHelp(){
     let intervall = setInterval(function(){
         let headline = document.getElementById('headLine');
         if (headline){
-            headline.innerHTML = `Teamspeak Installations Hilfe`;
+            headline.innerHTML = `TS 3 Installations Hilfe`;
             clearInterval(intervall)
             }
        });

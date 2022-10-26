@@ -51,6 +51,7 @@ const WAVETABLE = [
 ]
 
 function initWavePropagation(){
+    renderWaveHeadline()
     let waveTable = document.getElementById('waveList');
     for (let i = 0; i < WAVETABLE.length; i++) {
         const frequencyRanges = WAVETABLE[i]['frequencyRanges'];
@@ -64,8 +65,16 @@ function initWavePropagation(){
         <td>${otherRange.toUpperCase()}</td>
         <td>${shortcut}</td>
         <td>${englishMeaning.toUpperCase()}</td>
-    </tr>`;
-        
+    </tr>`;    
     }
-console.log(WAVETABLE)
+}
+
+function renderWaveHeadline(){
+    let intervall = setInterval(function(){
+        let headline = document.getElementById('headLine');
+        if (headline){
+            headline.innerHTML = `Wellenausbreitung`;
+            clearInterval(intervall)
+            }
+       });
 }
