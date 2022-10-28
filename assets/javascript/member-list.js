@@ -20,7 +20,8 @@ function renderHeadLine(){
     
 } 
 
-function forLoopCountryList(){ 
+function forLoopCountryList(){
+    let allMemberList = document.getElementById('allMemberList'); 
     allMemberList.innerHTML = "";
     for (let i = 0; i < loadedData.length; i++) {
         const countryImage = loadedData[i]['flag'];
@@ -33,7 +34,8 @@ function forLoopCountryList(){
 }   
 
 function renderCountryList(countryImage, countryName, preFix, i){
-    allMemberList.innerHTML += `
+    let allMemberCountryList = document.getElementById('allMemberList');
+    allMemberCountryList.innerHTML += `
                                 <div onclick="openDetailview(${i})" class="country-card">
                                     <div id="${countryName.toLowerCase()}" class="country-card-wrapper txt-center">
                                         <h3>
@@ -50,18 +52,35 @@ function renderCountryList(countryImage, countryName, preFix, i){
 }
 
 function openDetailview(i){
-    allMemberList.innerHTML = '';
-    let memberJSON = loadedData[i]["member"];
+    renderLoadingSpinner();
     generateTableCurrentCountry();
+    setTimeout(renderDetailView(i))   
+}
+
+function renderDetailView(i){
+    let currentMemberList = document.getElementById('currentMemberList')
+    currentMemberList.innerHTML = '';
+    let memberJSON = loadedData[i]["member"];
     for (let j = 0; j < memberJSON.length; j++) {
         const callsign = memberJSON[j]['callsign'];
         const name = memberJSON[j]['name'];
         const city = memberJSON[j]['city'];
         const status = memberJSON[j]['status'];
         renderMemberListCurrentCountry(callsign, name, city, status, j);
-               
+             
     }
-     
+    removeSpinner(currentMemberList);
+}
+
+function removeSpinner(currentMemberList){
+    if(currentMemberList){
+        document.getElementById('spinner').classList.add('d-none');
+    }
+}
+
+function renderLoadingSpinner(){
+    let spinner = document.getElementById('spinner');
+    spinner.classList.remove('d-none');
 }
 
 function checkForCbStatus(status, j){
@@ -70,22 +89,23 @@ function checkForCbStatus(status, j){
         statusColor.style.color = "orange";
     }
     if(status == 'active'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        let statusColor = document.getElementById(`CBSTATUS${j}`);
         statusColor.style.color = "lime";
     }
     if(status == 'inactive'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        let statusColor = document.getElementById(`CBSTATUS${j}`);
         statusColor.style.color = "red";
     }
   
     if(status == 'dead'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`)
+        let statusColor = document.getElementById(`CBSTATUS${j}`);
         statusColor.style.color = "black";
     } 
     }
 
 function generateTableCurrentCountry(){
-    allMemberList.innerHTML = ` <div class="w-70">
+    let generatedTableHead = document.getElementById('allMemberList');
+    generatedTableHead.innerHTML = `<div class="w-70"> 
                                     <h2 class="mobile-d-flex d-none txt-center">Tabellen sind Mobil nicht verfügbar.<br>
                                         schau gerne in der Desktop Version vorbei
                                     </h2>
@@ -100,12 +120,11 @@ function generateTableCurrentCountry(){
                                         </thead>
                                         <tbody id="currentMemberList"></tbody>    
                                     </table>  
-                                </div>`;
-                             
-                    
+                                </div>`;           
 }
 
-function renderMemberListCurrentCountry(callsign, name, city, status, j ){
+function renderMemberListCurrentCountry(callsign, name, city, status, j){
+    let currentMemberList = document.getElementById('currentMemberList');
     currentMemberList.innerHTML += `<tr>
                                         <td>${callsign}</td>
                                         <td>${name.toUpperCase()}</td>
