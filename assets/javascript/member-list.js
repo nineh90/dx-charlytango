@@ -1,14 +1,30 @@
 let loadedData;
+let allMemberList;
+let spinner;
 
-
-async function init(){
-    let JSON = './assets/JSON/member.json';
-    let responseFromJSON = await fetch(JSON);
-    loadedData = await responseFromJSON.json();
-    setTimeout(forLoopCountryList, 500);
-    renderHeadLine(); 
+window.onload = function () { 
+    waitForMemberlist();
 }
 
+function waitForMemberlist() {
+    setTimeout(() => {
+        allMemberList = document.getElementById('memberlist-container'); 
+        if (allMemberList) {
+            init();
+        } else {
+            waitForMemberlist();
+        }
+    });
+}
+
+async function init(){
+    let JSON = './assets/json/member.json';
+    let responseFromJSON = await fetch(JSON);
+    spinner = document.getElementById('loading-spinner');
+    loadedData = await responseFromJSON.json();
+    forLoopCountryList();
+    renderHeadLine(); 
+}
 function renderHeadLine(){
     let intervall = setInterval(function(){
         let headline = document.getElementById('headLine');
@@ -17,12 +33,10 @@ function renderHeadLine(){
             clearInterval(intervall)
             }
        });
-    
 } 
 
-function forLoopCountryList(){
-    let allMemberList = document.getElementById('allMemberList'); 
-    allMemberList.innerHTML = "";
+function forLoopCountryList(){ 
+    
     for (let i = 0; i < loadedData.length; i++) {
         const countryImage = loadedData[i]['flag'];
         const countryName = loadedData[i]['country'];
@@ -34,17 +48,15 @@ function forLoopCountryList(){
 }   
 
 function renderCountryList(countryImage, countryName, preFix, i){
-    let allMemberCountryList = document.getElementById('allMemberList');
-    allMemberCountryList.innerHTML += `
-                                <div onclick="openDetailview(${i})" class="country-card">
+    allMemberList.innerHTML += `<div onclick="openDetailview(${i})" class="country-card">
                                     <div id="${countryName.toLowerCase()}" class="country-card-wrapper txt-center">
                                         <h3>
                                             ${countryName.toUpperCase()}
                                         </h3>
                                             <span class="fi fi-${countryImage} flag-icon"></span>
-                                        <div class="prefix-wrapper">
+                                        <p class="prefix-wrapper">
                                             "${preFix}"
-                                        </div>
+                                        </p>
                                         
                                     </div>
                                 </div>
@@ -52,64 +64,37 @@ function renderCountryList(countryImage, countryName, preFix, i){
 }
 
 function openDetailview(i){
-    renderLoadingSpinner();
-    generateTableCurrentCountry();
-    setTimeout(renderDetailView(i))   
+    allMemberList.innerHTML = '';
+    allMemberList.style.display = 'none';
+    spinner.style.display = "block";
+    setTimeout( () => {
+        createMembers(i);
+    }, 100)
 }
 
-function renderDetailView(i){
-    let currentMemberList = document.getElementById('currentMemberList')
-    currentMemberList.innerHTML = '';
+function createMembers(i) {
     let memberJSON = loadedData[i]["member"];
+    generateTableCurrentCountry();
     for (let j = 0; j < memberJSON.length; j++) {
         const callsign = memberJSON[j]['callsign'];
         const name = memberJSON[j]['name'];
         const city = memberJSON[j]['city'];
         const status = memberJSON[j]['status'];
-        renderMemberListCurrentCountry(callsign, name, city, status, j);
-             
-    }
-    removeSpinner(currentMemberList);
-}
-
-function removeSpinner(currentMemberList){
-    if(currentMemberList){
-        document.getElementById('spinner').classList.add('d-none');
+        renderMemberListCurrentCountry(callsign, name, city, status);        
+        if (j == memberJSON.length -1) {
+            allMemberList.style.display = 'flex';
+            spinner.style.display = "none";
+        }
     }
 }
-
-function renderLoadingSpinner(){
-    let spinner = document.getElementById('spinner');
-    spinner.classList.remove('d-none');
-}
-
-function checkForCbStatus(status, j){
-    if(status == 'unknown'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`)
-        statusColor.style.color = "orange";
-    }
-    if(status == 'active'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`);
-        statusColor.style.color = "lime";
-    }
-    if(status == 'inactive'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`);
-        statusColor.style.color = "red";
-    }
-  
-    if(status == 'dead'){
-        let statusColor = document.getElementById(`CBSTATUS${j}`);
-        statusColor.style.color = "black";
-    } 
-    }
 
 function generateTableCurrentCountry(){
-    let generatedTableHead = document.getElementById('allMemberList');
-    generatedTableHead.innerHTML = `<div class="w-70"> 
+    allMemberList.innerHTML = ` <div class="w-70"> 
                                     <h2 class="mobile-d-flex d-none txt-center">Tabellen sind Mobil nicht verfügbar.<br>
                                         schau gerne in der Desktop Version vorbei
                                     </h2>
-                                    <table class="txt-center mobile-table mobile-hide">
+                                </div>    
+                                    <table class="txt-center mobile-hide">
                                         <thead>
                                             <tr>
                                                 <th>Rufzeichen</th>
@@ -119,18 +104,16 @@ function generateTableCurrentCountry(){
                                             </tr>
                                         </thead>
                                         <tbody id="currentMemberList"></tbody>    
-                                    </table>  
-                                </div>`;           
+                                    </table>  `;
+                             
+                    
 }
 
-function renderMemberListCurrentCountry(callsign, name, city, status, j){
-    let currentMemberList = document.getElementById('currentMemberList');
+function renderMemberListCurrentCountry(callsign, name, city, status){
     currentMemberList.innerHTML += `<tr>
                                         <td>${callsign}</td>
                                         <td>${name.toUpperCase()}</td>
                                         <td>${city.toUpperCase()}</td>
-                                        <td id="CBSTATUS${j}">${status.toUpperCase()}</td>
+                                        <td>${status.toUpperCase()}</td>
                                     </tr>`
-    checkForCbStatus(status,j)
-                                                                   
 }
