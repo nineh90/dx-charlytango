@@ -232,32 +232,97 @@ function initWhatIsPMR(){
        });
 }
 
+// var myIndex = 0;
+// carousel();
+
+// function carousel() {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   myIndex++;
+//   if (myIndex > x.length) {myIndex = 1}    
+//   x[myIndex-1].style.display = "block";  
+//   setTimeout(carousel, 9000);
+//   console.log('carousel')    
+// }
 
 
-
+// let slider;
+// let currentSlide = 0;
 function loadHeader(){
-    setTimeout(showSecondImage, 2000);
+    // let intervall = setInterval(function(){
+    //     slider = document.getElementsByClassName("image-silder")[0];
+    //     if (slider){
+    //         slider.children[0].classList.add("bounce-in-top");
+    //         clearInterval(intervall)
+    //         createSlider(slider);
+    //     }
+    // });
+    setTimeout(imgScaleOut, 7000);
+}
+
+function imgScaleOut(){
+    let image = document.getElementById('silderImg');
+        image.classList.remove('bounce-in-top');
+        image.classList.add('scale-out-center');
+    setTimeout(secondImgSRC, 2500);
+}
+
+function secondImgSRC(){
+    let image = document.getElementById('silderImg');
+    image.src = './assets/img/antenne1.png';
+    image.classList.remove('scale-out-center');
+    image.classList.add('scale-in-center');
+    setTimeout(slideOutLeft, 7000);
+}
+
+function slideOutLeft(){
+    let image = document.getElementById('silderImg');
+    image.classList.remove('scale-in-center');
+    image.classList.add('slide-out-left');
+    setTimeout(thirdImgSRC,2500);
+}
+
+function thirdImgSRC(){
+    let image = document.getElementById('silderImg');
+    image.src = './assets/img/antenne3.png';
+    image.classList.add('scale-in-center');
+    image.classList.remove('slide-out-left');
+    setTimeout(slideOutImage, 7000);
+}
+
+function slideOutImage(){
+    let image = document.getElementById('silderImg');
+    image.classList.remove('scale-in-center');
+    image.classList.add('slide-out-left');
+    setTimeout(firstImgSRC,2500);
+}
+
+function firstImgSRC(){
+    let image = document.getElementById('silderImg');
+    image.src = './assets/img/antenne2.png';
+    image.classList.remove('slide-out-left');
+    image.classList.add('bounce-in-top');
+    
+    setTimeout(imgScaleOut, 7000);
+}
+
+function createSlider(slider) {    
+        setInterval(function(){
+            let currentAnimated = slider.getElementsByClassName("bounce-in-top")[0];
+            currentSlide++;
+            if (currentSlide >= slider.children.length) {
+                currentSlide = 0;
+            }
+            currentAnimated.classList.remove("bounce-in-top");
+            slider.children[currentSlide].classList.add("bounce-in-top");  
+
+        },5000);
 }
 
 
-
-function showSecondImage(){
-    let image = document.getElementById('headerImageContainer');
-        image.style.backgroundImage = "url('./assets/img/antenne3.png')";
-    setTimeout(showThirdImage, 2000);
-}
-
-function showThirdImage(){
-    let image = document.getElementById('headerImageContainer');
-        image.style.backgroundImage = "url('./assets/img/antenne1.png')";
-    setTimeout(showFirstImage, 2000);
-}
-
-function showFirstImage(){
-    let image = document.getElementById('headerImageContainer');
-        image.style.backgroundImage = "url('./assets/img/antenne2.png')";
-    setTimeout(showSecondImage, 2000);
-}
 
 async function includeHTML(link) {
     let includeElements = document.querySelectorAll('[w3-include-html]');

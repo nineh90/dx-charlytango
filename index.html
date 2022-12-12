@@ -10,17 +10,30 @@
     <link rel="stylesheet" href="./assets/css/media.css">
     <!--Remove after Test-->
     <link rel="stylesheet" href="./assets/css/newheader.css">
-    <!---->
     <script src="./assets/javascript/main.js"></script>
- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
-<body onload="loadHeader()" class="bg-page">
+<body onload="loadHeader()" class="bg-page"><!--loadHeader()-->
     <!--Navbar Top-->
     <div w3-include-html="./assets/template/navbar-top.html"></div>
     <!--Open Navbar fullPage-->
     <div w3-include-html="./assets/template/navbar.html"></div>
     <!--Header-->
-    <div w3-include-html="./assets/template/newheader.html"></div>  
+    <!-- <div w3-include-html="./assets/template/newheader.html"></div> -->
+    <div id="headerImageContainer" class="header-container">
+        <div class="image-silder">
+            <div class=""><img id="silderImg" class="index-image-slider bounce-in-top"  src="./assets/img/antenne2.png" alt=""></div>
+            <!-- <div class=""><img class="index-image-slider" src="./assets/img/antenne1.png" alt=""></div>
+            <div class=""><img class="index-image-slider" src="./assets/img/antenne2.png" alt=""></div>
+            <div class=""><img class="index-image-slider" src="./assets/img/antenne3.png" alt=""></div> -->
+        </div>    
+        <div class="txt-cont bounce-in-top">
+            <h1>
+                Herzlich Willkommen<br> bei
+                DX-CharlyTango
+            </h1>
+        </div>      
+    </div>    
     <!--Welcome Content-->
     <div class="d-flex justify-center txt-center">
         <p class="header-content">
@@ -102,6 +115,7 @@
     <script>
         includeHTML();
     </script> 
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+       
+
 </body>
 </html>

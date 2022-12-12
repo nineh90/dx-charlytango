@@ -39,9 +39,20 @@
     .ts3img{
         width: 400px;
     }
+    .navbarbanner {
+        height: 42px;
+        cursor: pointer;
+    }
+    .nav{
+        font-size: 16px;
+    }
+    .header-content {
+        margin-top: 45px;
+        font-size: 1.2rem;
+    }
 } 
 
-@media(max-width: 768px){
+@media(max-width: 760px){
     .mobile-hide{
         display: none;
     }
@@ -131,10 +142,13 @@
 
 }
 
-@media(max-width: 414px){
+@media(max-width: 425px){
     .navbarbanner {
         height: 33px;
         cursor: pointer;
+    }
+    .header-content {
+        font-size: 14px;
     }
     .open-start-page-btn {
         left: 85%;
@@ -145,10 +159,6 @@
     .header-content {
         font-size: 0.75rem;
         margin-top: 35px;
-    }
-    .header{
-        height: 28vh;
-        background-position: bottom;
     }
     .welcome-text h1 {
         bottom: 70%;
@@ -168,7 +178,7 @@
        font-size: 1rem;
     }
     .radio-image {
-        width: 220px;
+        width: 165px;
     }
     .margin-top-30px {
         margin-top: 15px;
@@ -253,10 +263,6 @@
 @media(max-width: 375px){
     .header-content {
         font-size: 0.6rem;
-    } 
-    .header {
-        height: 23vh;
-        background-position: bottom;
     }
     .welcome-text h1{
         bottom: 73%;
@@ -289,9 +295,5 @@
 
     .welcome-text h1 {
         bottom: 77%;
-    }
-
-    .header {
-        height: 19vh;
     }
 }

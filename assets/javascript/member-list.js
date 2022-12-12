@@ -10,15 +10,15 @@ function waitForMemberlist() {
     setTimeout(() => {
         allMemberList = document.getElementById('memberlist-container'); 
         if (allMemberList) {
-            init();
+            initMember();
         } else {
             waitForMemberlist();
         }
     });
 }
 
-async function init(){
-    let JSON = './assets/json/member.json';
+async function initMember(){
+    let JSON = './assets/JSON/member.json';
     let responseFromJSON = await fetch(JSON);
     spinner = document.getElementById('loading-spinner');
     loadedData = await responseFromJSON.json();
