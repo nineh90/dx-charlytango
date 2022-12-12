@@ -1,9 +1,5 @@
 @media(max-width: 1024px){
-    .open-start-page-btn{
-      left: 25%;
-
-    }
-    
+  
     .radio-content-container div {
         width: 250px;
 
@@ -109,9 +105,6 @@
     .submenu {
         width: 50%;
     }
-    .open-start-page-btn {
-        left: 75%;
-    } 
     .footer h2 {
         font-size: 18px;
     }
@@ -150,9 +143,6 @@
     .header-content {
         font-size: 14px;
     }
-    .open-start-page-btn {
-        left: 85%;
-    }
     .candle {
         width: 45px;
     }
@@ -161,9 +151,11 @@
         margin-top: 35px;
     }
     .welcome-text h1 {
-        bottom: 70%;
-        margin-left: 45px;
+        bottom: 24px;
+        margin-left: 0;
         text-shadow: 3px 2px 0 #171515;
+        width: 100%;
+        text-align: center;
     }
     
     .header h1 {
@@ -214,11 +206,8 @@
     .footer p {
         font-size: 10px;
     }
-    .navbar a{
-        width: 175px;
-    }
     .submenu {
-        width: 60%;
+        width: 80%;
     }
     .qsl-img img {
         width: 350px;
@@ -257,15 +246,14 @@
     .circuit-diagram {
         width: 320px;
     }
-
+    .cable{
+        width: 90%;
+    }
 }
 
 @media(max-width: 375px){
     .header-content {
         font-size: 0.6rem;
-    }
-    .welcome-text h1{
-        bottom: 73%;
     }
     .navbarbanner {
         height: 28px;
@@ -294,6 +282,6 @@
     }
 
     .welcome-text h1 {
-        bottom: 77%;
+        font-size: 1.25rem;
     }
 }

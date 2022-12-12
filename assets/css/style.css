@@ -118,13 +118,14 @@ strong{
     height: 50vh;
     background-image: url('../img/antenne2.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     padding-top: 70px;
     padding-bottom: 70px;
     border-bottom: 5px solid white;
     border-bottom-right-radius: 100%;
     box-shadow: 1px 1px 1px 0px black;
+    position: relative;
 }
 
 
@@ -223,14 +224,10 @@ strong{
 
 }
 
-/* 
+ 
  #navImg {
-    -moz-transform: translate(0px, -60px);
-    -webkit-transform: translate(0px, -60px);
-    -o-transform: translate(0px, -60px);
-    -ms-transform: translate(0px, -60px);
-    transform: translate(0px, -60px);
-    }  */
+    margin-left: 24px;
+    } 
 
 .nav{
     font-family:  'Roboto Mono';
@@ -238,7 +235,7 @@ strong{
     top: 0;
     left: 0;
     right: 0;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     font-size: 20px;
     height: 65px;
@@ -254,6 +251,7 @@ strong{
     color: white;
     cursor: pointer;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    margin-left: 24px;
 }
 
 .main-menu:hover{

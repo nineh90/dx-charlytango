@@ -75,16 +75,18 @@ function openDetailview(i){
 function createMembers(i) {
     let memberJSON = loadedData[i]["member"];
     generateTableCurrentCountry();
-    for (let j = 0; j < memberJSON.length; j++) {
-        const callsign = memberJSON[j]['callsign'];
-        const name = memberJSON[j]['name'];
-        const city = memberJSON[j]['city'];
-        const status = memberJSON[j]['status'];
+    var i = 0, len = memberJSON.length;
+    while (i < len) {
+        const callsign = memberJSON[i]['callsign'];
+        const name = memberJSON[i]['name'];
+        const city = memberJSON[i]['city'];
+        const status = memberJSON[i]['status'];
         renderMemberListCurrentCountry(callsign, name, city, status);        
-        if (j == memberJSON.length -1) {
+        if (i == memberJSON.length -1) {
             allMemberList.style.display = 'flex';
             spinner.style.display = "none";
         }
+        i++;
     }
 }
 
