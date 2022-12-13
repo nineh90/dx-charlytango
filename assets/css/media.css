@@ -1,5 +1,4 @@
 @media(max-width: 1024px){
-  
     .radio-content-container div {
         width: 250px;
 
@@ -48,7 +47,7 @@
     }
 } 
 
-@media(max-width: 760px){
+@media(max-width: 768px){
     .mobile-hide{
         display: none;
     }
@@ -65,6 +64,8 @@
         border-bottom-right-radius: 0%;
         box-shadow: none;
     }
+
+    
 
     .header h1{
         font-size: 2rem;

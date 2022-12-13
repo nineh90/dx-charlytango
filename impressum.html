@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DX-CharlyTango/Impressum</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <script src="./assets/javascript/main.js"></script>
+</head>
+<body onload="renderImpressumHeadline()" class="bg-page">
+    <!--Navbar Top-->
+    <div w3-include-html="./assets/template/navbar-top.html"></div>
+    <!--Header-->
+    <div w3-include-html="./assets/template/header.html"></div>
+    <!--Impressum Content-->
+    <div class="d-flex align-center justify-center column">
+        <h2>Domainbetreiber</h2>
+        <h3>Wolfgang Müller</h3>
+        <p>
+            49143 Bissendorf
+        </p>
+        <p>
+            Telefon: (+49) 0160-98486171
+        </p>
+        <p>
+            E-Mail: <a href="mailto:Dx-charlytango@gmx.de">Dx-charlytango@gmx.de</a>
+        </p>
+    </div>
+    <div class="d-flex align-center justify-center column">
+        <p class="w-50 txt-center">
+            Haftung für Inhalte Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach 
+            den allgemeinen Gesetzen verantwortlich.
+            Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde 
+            Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. 
+            Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon 
+            unberührt.
+            Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich.
+            Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+            Haftung für Links Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben.    
+            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
+            Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+            Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. 
+            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+            Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
+            Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+        </p>
+        <p class="w-50 txt-center">                
+            <strong>Urheberrecht</strong>
+        </p>
+        <p class="w-50 txt-center">    
+            2 / 4 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+            Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes 
+            bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+            Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet.
+            Insbesondere werden Inhalte Dritter als solche gekennzeichnet.
+            Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
+            Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+            Für Fragen, Anregungen oder Kritik bitte eine Email direkt an dx-charlytango@gmx.de schicken.
+        </p>
+    </div>
+    <div  class="d-flex align-center justify-center column txt-center">
+        <h2>Webmaster</h2>
+        <h3>Nils Nehring & Kevin Herrmann</h3>
+        <p>
+            49525 Lengerich
+        </p>
+    </div>
+    <!--Footer-->
+    <div w3-include-html="./assets/template/footer.html"></div>
+    <script>
+        includeHTML();
+        function renderImpressumHeadline(){
+            let intervall = setInterval(function(){
+                let headline = document.getElementById('headLine');
+                if (headline){
+                    headline.innerHTML = `Impressum`;
+                    clearInterval(intervall)
+                    }
+        });
+}
+
+    </script>
+</body>
+</html>
