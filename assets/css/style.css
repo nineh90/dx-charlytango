@@ -105,20 +105,22 @@ strong{
 }
 
 .header{
+    position: relative;
     font-family:  'Roboto Mono';
     height: 50vh;
     background-image: url('../img/antenne2.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
     border-bottom: 5px solid white;
     border-bottom-right-radius: 100%;
     box-shadow: 1px 1px 1px 0px black;
-    position: relative;
+   
 }
 
+.privacy{
+    font-size: 0.8rem;
+}
 
 
 .header-content{
@@ -127,10 +129,14 @@ strong{
     color: white;
 }
 
+
 .welcome-text p{
     font-family:  'Roboto Mono';
     font-size: 20px;
 }
+
+
+
 .welcome-text h1{
     position: absolute;
     bottom: 50%;
@@ -215,10 +221,6 @@ strong{
 
 }
 
- 
- #navImg {
-    margin-left: 24px;
-    } 
 
 .nav{
     font-family:  'Roboto Mono';

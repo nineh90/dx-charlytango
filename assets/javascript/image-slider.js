@@ -1,6 +1,3 @@
-// jQuery(document).ready(function(){
-//     $('.image-silder').slick();
-// });
 
 document.onreadystatechange = function () {
     if (document.readyState === 'complete') {

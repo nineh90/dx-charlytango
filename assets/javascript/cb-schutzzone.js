@@ -17,11 +17,8 @@ function initCbProtektionZone(){
     let radioProtectionZoneList = document.getElementById('radioProtectionZone');
     for (let i = 0; i < CITYPROTECTIONZONE.length; i++) {
         const CITY = CITYPROTECTIONZONE[i];
-        radioProtectionZoneList.innerHTML += `<div>${CITY}</div>`;
-        
+        radioProtectionZoneList.innerHTML += `<div>${CITY}</div>`; 
     }
-
-
 }
 
 function renderCBProtectionZoneHeadLine(){
