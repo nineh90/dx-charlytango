@@ -2,7 +2,7 @@ let loadedData;
 let allMemberList;
 let spinner;
 
-window.onload = function () { 
+window.onload = function() { 
     waitForMemberlist();
 }
 
@@ -36,7 +36,6 @@ function renderHeadLine(){
 } 
 
 function forLoopCountryList(){ 
-    
     for (let i = 0; i < loadedData.length; i++) {
         const countryImage = loadedData[i]['flag'];
         const countryName = loadedData[i]['country'];
@@ -72,31 +71,87 @@ function openDetailview(i){
     }, 100)
 }
 
+let renderedMember;
+
 function createMembers(i) {
+    renderedMember = 20
+    const scroll = window.scrollTo(0, 0); 
     let memberJSON = loadedData[i]["member"];
+    memberJSON = memberJSON.reverse();
     generateTableCurrentCountry();
-    var i = 0, len = memberJSON.length;
-    while (i < len) {
-        const callsign = memberJSON[i]['callsign'];
-        const name = memberJSON[i]['name'];
-        const city = memberJSON[i]['city'];
-        const status = memberJSON[i]['status'];
-        renderMemberListCurrentCountry(callsign, name, city, status);        
-        if (i == memberJSON.length -1) {
+    document.getElementById('land').innerHTML = loadedData[i]['country'];
+    for (let j = 0; j < memberJSON.length; j++) {
+        const callsign = memberJSON[j]['callsign'];
+        const name = memberJSON[j]['name'];
+        const city = memberJSON[j]['city'];
+        const status = memberJSON[j]['status'];
+        renderMemberListCurrentCountry(callsign, name, city, status);
+        if (j == renderedMember-1){
+            scroll;
+            allMemberList.style.display = 'flex';
+                spinner.style.display = "none";
+            break;    
+        } 
+        if (j == memberJSON.length - 1){
+            scroll;
             allMemberList.style.display = 'flex';
             spinner.style.display = "none";
+            document.getElementById('loadMoreMember').classList.add('d-none');
+
         }
-        i++;
+        
     }
+    
+    window.onscroll = (function() {   
+        if(($(window).scrollTop() / $(document).height() * 100) > 45) {
+            renderNextMembers(i);
+            console.log("bottom!");
+        }
+    });
+
+}
+
+function renderNextMembers(i){
+    let plusMember = +50;
+    let result = renderedMember + plusMember;
+    let memberJSON = loadedData[i]["member"];
+    memberJSON = memberJSON.reverse();
+    for (let k =  renderedMember; k < memberJSON.length; k++) {
+        const callsign = memberJSON[k]['callsign'];
+        const name = memberJSON[k]['name'];
+        const city = memberJSON[k]['city'];
+        const status = memberJSON[k]['status'];
+        if (k == result){
+            allMemberList.style.display = 'flex';
+            renderedMember = result;
+            console.log('k==result',result);
+            break;
+        }
+        if(k == memberJSON.length -1 ){
+            renderedMember = memberJSON.length; 
+            console.log('memberJSON');
+        }
+        renderMemberListCurrentCountry(callsign, name, city, status);
+    }
+    
+
+}
+
+function closeDetailView(){
+    allMemberList.innerHTML = '';
+    const scroll = window.scrollTo(0, 0);
+    scroll;
+    waitForMemberlist();
 }
 
 function generateTableCurrentCountry(){
-    allMemberList.innerHTML = ` <div class="w-70"> 
-                                    <h2 class="mobile-d-flex d-none txt-center">Tabellen sind Mobil nicht verfügbar.<br>
-                                        schau gerne in der Desktop Version vorbei
-                                    </h2>
-                                </div>    
-                                    <table class="txt-center mobile-hide">
+    allMemberList.innerHTML = ` 
+                                <div class="w-70 d-flex align-center justify-center column">
+                                    <div onclick="closeDetailView()" class="cross-container">
+                                        <div class="main-menu">zurück</div>
+                                    </div>
+                                    <h2 id="land" class="txt-center"></h2>    
+                                    <table class="txt-center">
                                         <thead>
                                             <tr>
                                                 <th>Rufzeichen</th>
@@ -106,16 +161,20 @@ function generateTableCurrentCountry(){
                                             </tr>
                                         </thead>
                                         <tbody id="currentMemberList"></tbody>    
-                                    </table>  `;
-                             
+                                    </table>
+                                </div>`;                       
                     
 }
 
 function renderMemberListCurrentCountry(callsign, name, city, status){
-    currentMemberList.innerHTML += `<tr>
-                                        <td>${callsign}</td>
-                                        <td>${name.toUpperCase()}</td>
-                                        <td>${city.toUpperCase()}</td>
-                                        <td>${status.toUpperCase()}</td>
-                                    </tr>`
+    let currentMemberList = document.getElementById('currentMemberList');
+        
+    if(currentMemberList){
+        currentMemberList.innerHTML += `<tr>
+                                            <td>${callsign}</td>
+                                            <td>${name.toUpperCase()}</td>
+                                            <td>${city.toUpperCase()}</td>
+                                            <td>${status.toUpperCase()}</td>
+                                        </tr>`
+    };                                    
 }

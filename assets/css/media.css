@@ -246,7 +246,12 @@
     }
 
     table{
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    table td, .table th {
+        border: 1px solid #ddd;
+        padding: 2px;
     }
 
     .circuit-diagram {
