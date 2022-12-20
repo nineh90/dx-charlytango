@@ -280,12 +280,23 @@ function openSTartPage(){
 function openNavEntry(e) {
     let activeEntry = e.currentTarget;
     let navs = document.getElementsByTagName("nav");
-    if (navs) {
-        for (let i = 0 ; i < navs.length; i++) {
-            navs[i].classList.remove("active");
+    if (activeEntry.classList.contains("active")) {
+        activeEntry.classList.remove("active");
+    } else {
+        if (navs) {
+            for (let i = 0 ; i < navs.length; i++) {
+                navs[i].classList.remove("active");
+                activeEntry.classList.add("active");
+            }
         }
     }
-    activeEntry.classList.add("active");
- 
+    
 }
+
+function closeCurrentNav(activeEntry, i){
+
+    activeEntry[i].classList.remove("active");
+        console.log('Navbar clicked');    
+}
+
 

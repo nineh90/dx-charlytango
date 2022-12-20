@@ -634,6 +634,19 @@ li{
     box-shadow: 1px 1px 1px 1px black;
 }
 
+.submenu-headline{
+    font-size: 12px;
+    border: solid white;
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 240px;
+    font-family: 'Roboto Mono';
+}
+
 .slick-slider{
     -webkit-box-shadow: 0px 6px 10px 0px #000000;   
     box-shadow: 0px 6px 10px 0px #000000;
@@ -643,4 +656,10 @@ li{
 .image-silder img {
     width: 100%;
     max-height: 75vh;
+}
+
+@media(max-width: 425px){
+    .ws-100 {
+        width: 100%;
+    }
 }
