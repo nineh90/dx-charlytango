@@ -76,11 +76,10 @@ function createMembers(i) {
     renderedMember = 50
     const scroll = window.scrollTo(0, 0); 
     let memberJSON = loadedData[i]["member"];
-    // const filterStatus = memberJSON.filter(status => status.status =="active");
-    // console.log(filterStatus);
     // memberJSON = memberJSON.reverse();
     generateTableCurrentCountry();
     document.getElementById('land').innerHTML = loadedData[i]['country'];
+    filterStatus(memberJSON);
     for (let j = 0; j < memberJSON.length; j++) {
         const callsign = memberJSON[j]['callsign'];
         const name = memberJSON[j]['name'];
@@ -103,6 +102,13 @@ function createMembers(i) {
     }
     addEventlistenterOnScroll(i);
 
+}
+
+function filterStatus(memberJSON){
+    const statusActice = memberJSON.filter(status => status.status =="active");
+    const statusUnknown = memberJSON.filter(status => status.status =="unknown");
+    const statusDead = memberJSON.filter(status => status.status =="dead");
+    console.log("activ-ARR:", statusActice, "unknown-ARR:", statusUnknown, "dead-arr", statusDead);
 }
 
 function addEventlistenterOnScroll(i){
