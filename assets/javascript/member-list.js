@@ -64,6 +64,11 @@ function renderCountryList(countryImage, countryName, preFix, i){
 }
 
 function openDetailview(i){
+    // let searchContainer = document.getElementById('searchContainerOverlay');
+    // if(searchContainer){
+    //     searchContainer.style.display = 'none';
+    //     document.body.classList.remove('overflow-hidden');
+    // }
     allMemberList.innerHTML = '';
     allMemberList.style.display = 'none';
     spinner.style.display = "block";
@@ -79,7 +84,6 @@ function createMembers(i) {
     // memberJSON = memberJSON.reverse();
     generateTableCurrentCountry();
     document.getElementById('land').innerHTML = loadedData[i]['country'];
-    filterStatus(memberJSON);
     for (let j = 0; j < memberJSON.length; j++) {
         const callsign = memberJSON[j]['callsign'];
         const name = memberJSON[j]['name'];
@@ -97,19 +101,12 @@ function createMembers(i) {
             allMemberList.style.display = 'flex';
             spinner.style.display = "none";
 
-        }
-        
+        }    
     }
     addEventlistenterOnScroll(i);
 
 }
 
-function filterStatus(memberJSON){
-    const statusActice = memberJSON.filter(status => status.status =="active");
-    const statusUnknown = memberJSON.filter(status => status.status =="unknown");
-    const statusDead = memberJSON.filter(status => status.status =="dead");
-    console.log("activ-ARR:", statusActice, "unknown-ARR:", statusUnknown, "dead-arr", statusDead);
-}
 
 function addEventlistenterOnScroll(i){
     window.onscroll = (function() {   
@@ -124,7 +121,6 @@ function renderNextMembers(i){
     let plusMember = +50;
     let result = renderedMember + plusMember;
     let memberJSON = loadedData[i]["member"];
-    // console.log(filterStatus);
     // memberJSON = memberJSON.reverse();
     for (let k =  renderedMember; k < memberJSON.length; k++) {
         const callsign = memberJSON[k]['callsign'];
@@ -153,11 +149,84 @@ function closeDetailView(){
     waitForMemberlist();
 }
 
+// function openSearchContainer(i){
+//     document.body.classList.add('overflow-hidden');
+//     document.getElementById('memberMenu').style.display = 'none';
+//     renderMemberSearchContainer(i);
+// }
+
+// function renderMemberSearchContainer(i){
+//     const allMember = loadedData[i]["member"];
+//     const statusUnknown = allMember.filter(status => status.status =="unknown");
+//     const statusDead = allMember.filter(status => status.status =="dead");
+//     console.log("allMember-ARR:", allMember, "unknown-ARR:", statusUnknown, "dead-arr", statusDead);
+//     let searchContainer = document.getElementById('searchContainerOverlay');
+//     searchContainer.style.display = 'flex';
+//     searchContainer.innerHTML = `<div class="search-container">
+//                                     <div class="d-flex">
+//                                         <input type="checkbox" id="all" onclick="openDetailview(${i})">
+//                                         <label for="all">Alle Mitglieder</label>
+//                                     </div>
+//                                     <div class="d-flex">    
+//                                         <input type="checkbox" id="active" onclick="renderActiveMember(${i})">
+//                                         <label for="active">Aktive Mitglieder</label>
+//                                     </div>
+//                                     <div class="d-flex">    
+//                                         <input type="checkbox" id="unknown" onclick="myFunction()">
+//                                         <label for="unknown">Status unbekannt</label>
+//                                     </div>
+//                                     <div class="d-flex">    
+//                                         <input type="checkbox" id="dead" onclick="myFunction()">
+//                                         <label for="dead">verstorben</label>
+//                                     </div>    
+//                                 </div>`;
+// }
+
+// function renderActiveMember(i){
+//     delete window.addEventlistenterOnScroll(i);
+//     const allMember = loadedData[i]["member"];
+//     const statusActive = allMember.filter(status => status.status =="active");
+//     console.table(statusActive);
+//     generateTableCurrentCountry(i);
+//     let searchContainer = document.getElementById('searchContainerOverlay');
+//         searchContainer.style.display = 'none';
+//         document.body.classList.remove('overflow-hidden');
+//     for (let ai = 0; ai < statusActive.length; ai++) {
+//         const callsign = statusActive[ai]['callsign'];
+//         const name = statusActive[ai]['name'];
+//         const city = statusActive[ai]['city'];
+//         const status = statusActive[ai]['status'];
+//         generateActiveMemberHTML(callsign, name, city, status)
+//         console.log('callsign', callsign, 'name', name, 'city', city, 'status', status);
+//         if(ai == statusActive.length -1){
+//         delete loadedData;
+//            break
+//         }
+//     }
+// }
+
+
+// function generateActiveMemberHTML(callsign, name, city, status){
+//     let currentMemberList = document.getElementById('currentMemberList');
+//     if(currentMemberList){
+//         currentMemberList.innerHTML += `<tr>
+//                                             <td>${callsign}</td>
+//                                             <td>${name.toUpperCase()}</td>
+//                                             <td>${city.toUpperCase()}</td>
+//                                             <td>${status.toUpperCase()}</td>
+//                                         </tr>`
+//     };    
+// }
+
+
+//  add to funcion generateTableCurrentCountry <img onclick="openSearchContainer(${i})" class="search" src="./assets/img/search.png">
+
 function generateTableCurrentCountry(){
     allMemberList.innerHTML = ` 
                                 <div class="w-70 ws-100 d-flex align-center justify-center column">
-                                    <div class="cross-container">
-                                        <div  onclick="closeDetailView()" class="main-menu">zurück</div>
+                                    <div id="memberMenu" class="member-menu-container">
+                                        <div  onclick="closeDetailView()" class="back">zurück</div>
+                                       
                                     </div>
                                     <h2 id="land" class="txt-center"></h2>    
                                     <table class="txt-center">
@@ -186,8 +255,3 @@ function renderMemberListCurrentCountry(callsign, name, city, status){
                                         </tr>`
     };                                    
 }
-
-// function checkStatus(){
-//     const filterStatus = status.filter;
-//         console.log(filterStatus)
-// }

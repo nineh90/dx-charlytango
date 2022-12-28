@@ -16,6 +16,11 @@
     .header-container h1{
         font-size: 2.2rem;
     }
+
+    .txt-cont {
+        position: absolute;
+        bottom: 50%;
+    }
 }
 
 @media(max-width: 768px){
@@ -42,8 +47,13 @@
 @media(max-width: 425px){
 
     .header-container{
-        height: 70vh;
+        height: 30vh;
         background-position: bottom;
+    }
+
+    .txt-cont {
+        bottom: 70%;
+        text-align: center;
     }
 
     .header-container h1{

@@ -2,7 +2,7 @@
 document.onreadystatechange = function () {
     if (document.readyState === 'complete') {
         $('.image-silder').slick({
-            dots: false,
+            dots: true,
             arrows: false,
             infinite: true,
             speed: 2500,
