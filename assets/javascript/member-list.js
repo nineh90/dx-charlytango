@@ -81,8 +81,10 @@ function createMembers(i) {
     renderedMember = 50
     const scroll = window.scrollTo(0, 0); 
     let memberJSON = loadedData[i]["member"];
+    const statusActive = memberJSON.filter(status => status.status =="active");
+    console.table(statusActive);
     // memberJSON = memberJSON.reverse();
-    generateTableCurrentCountry();
+    generateTableCurrentCountry(i);
     document.getElementById('land').innerHTML = loadedData[i]['country'];
     for (let j = 0; j < memberJSON.length; j++) {
         const callsign = memberJSON[j]['callsign'];
@@ -219,14 +221,14 @@ function closeDetailView(){
 // }
 
 
-//  add to funcion generateTableCurrentCountry <img onclick="openSearchContainer(${i})" class="search" src="./assets/img/search.png">
+//  add to funcion generateTableCurrentCountry 
 
-function generateTableCurrentCountry(){
+function generateTableCurrentCountry(i){
     allMemberList.innerHTML = ` 
                                 <div class="w-70 ws-100 d-flex align-center justify-center column">
                                     <div id="memberMenu" class="member-menu-container">
                                         <div  onclick="closeDetailView()" class="back">zurück</div>
-                                       
+                                        <img onclick="openSearchContainer(${i})" class="search" src="./assets/img/search.png">
                                     </div>
                                     <h2 id="land" class="txt-center"></h2>    
                                     <table class="txt-center">
