@@ -1,5 +1,11 @@
 [
     {
+        "date" : "10.01.2023",
+        "memberCode" : "13CT3379",
+        "name": "Daniel",
+        "locator": "",
+        "placeOfResidence": "Nieheim"
+    },{
         "date" : "18.09.2022",
         "memberCode" : "13CT2233",
         "name": "Oliver",

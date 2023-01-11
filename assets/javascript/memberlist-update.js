@@ -1,4 +1,5 @@
-window.onload = getAllData();
+window.onload = getAllData();     
+
 
 let loadedData;
 let renderedMember;
@@ -6,6 +7,8 @@ let allMember;
 let activeMember;
 let unknownMember;
 let deadMember;
+let memberFilter = false;
+let chosenFilter;
 
 async function getAllData(){
     renderHeadLine();
@@ -53,44 +56,77 @@ function showMember(i){
     window.scrollTo(0, 0);
     renderedMember = 50;
     generateTable();
-    document.getElementById('land').innerHTML = loadedData[i]['country'];
-    allMember = loadedData[i]['member'];
-    generateMemberFilter();
     document.getElementById('memberMenu').style.display = 'flex';
-    for (let i = 0; i < allMember.length; i++) {
-        const callsign = allMember[i]['callsign'];
-        const name = allMember[i]['name'];
-        const city = allMember[i]['city'];
-        const status = allMember[i]['status'];
-        renderMemberList(callsign, name, city, status);
-        if(i == renderedMember) break
-        if(i == allMember.length -1) {
-            renderedMember = allMember.length
-            break
+    if(memberFilter == true){
+        let memberList = document.getElementById('currentMemberList');
+        memberList.innerHTML = '';
+        for (let i = 0; i < chosenFilter.length; i++) {
+            const callsign = chosenFilter[i]['callsign'];
+            const name = chosenFilter[i]['name'];
+            const city = chosenFilter[i]['city'];
+            const status = chosenFilter[i]['status'];
+            renderMemberList(callsign, name, city, status);
+            if(i == renderedMember) break   
+            if (i == chosenFilter.length -1){
+                renderedMember = chosenFilter.length;
+                break 
+            } 
         }
-    }
-    document.addEventListener("scroll", renderNextMembers); 
-}
-
-function renderNextMembers(){
-    let plusMember = +50;
-    let result = renderedMember + plusMember;
-        for (let i =  renderedMember; i < allMember.length; i++) {
+    }else{
+        document.getElementById('land').innerHTML = loadedData[i]['country'];
+        allMember = loadedData[i]['member'];
+        generateMemberFilter();
+        for (let i = 0; i < allMember.length; i++) {
             const callsign = allMember[i]['callsign'];
             const name = allMember[i]['name'];
             const city = allMember[i]['city'];
             const status = allMember[i]['status'];
+            renderMemberList(callsign, name, city, status);
+            if(i == renderedMember) break
+            if(i == allMember.length -1) {
+                renderedMember = allMember.length
+                break
+            }
+        }
+    }
+    document.addEventListener('scroll', renderNextMembers, chosenFilter);  
+}    
+
+function renderNextMembers(){
+    let plusMember = 50;
+    let result = renderedMember + plusMember;
+    if(memberFilter == true){
+        for (let i =  renderedMember; i < chosenFilter.length; i++) {
+            const callsign = chosenFilter[i]['callsign'];
+            const name = chosenFilter[i]['name'];
+            const city = chosenFilter[i]['city'];
+            const status = chosenFilter[i]['status'];
             if (i == result){
-                renderedMember = result;
-                document.addEventListener('scroll', renderNextMembers);  
+                renderedMember = result; 
                 break;
             }
-            if (i == allMember.length -1){
-                renderedMember = allMember.length;
-                document.removeEventListener("scroll", renderNextMembers);  
+            if (i == chosenFilter.length -1){
+                renderedMember = chosenFilter.length;  
             }
             renderMemberList(callsign, name, city, status);
+        }  
+    }else{
+            for (let i =  renderedMember; i < allMember.length; i++) {
+                const callsign = allMember[i]['callsign'];
+                const name = allMember[i]['name'];
+                const city = allMember[i]['city'];
+                const status = allMember[i]['status'];
+                if (i == result){
+                    renderedMember = result;
+                    break;
+                }
+                if (i == allMember.length -1){
+                    renderedMember = allMember.length;  
+                }
+                renderMemberList(callsign, name, city, status);
+        }
     }  
+       
 }
 
 function generateMemberFilter(){
@@ -118,9 +154,8 @@ function renderMemberList(callsign, name, city, status){
 }
 
 function checkMemberFilter(filter){
-    document.removeEventListener('scroll', renderNextMembers);
-    document.removeEventListener('scroll', renderNextFilteredMember);
     renderedMember = 0;
+    window.removeEventListener('scroll', renderNextMembers);
     ifStatusIsAllMember(filter);
     ifStatusIsActive(filter);
     ifStatusIsUnknown(filter);
@@ -129,8 +164,9 @@ function checkMemberFilter(filter){
 
 function ifStatusIsAllMember(filter){
     if(filter === 'all'){
-        
-        renderFilteredMember(allMember);
+        chosenFilter = allMember;
+        memberFilter = true;
+        showMember();
         closeSearchContainer();
     }
 }
@@ -140,7 +176,9 @@ function ifStatusIsActive(filter){
         if(activeMember.length < 1){
             alert('keine Aktiven Mitglieder vorhanden')
         } else {
-            renderFilteredMember(activeMember);
+            chosenFilter = activeMember;
+            memberFilter = true;
+            showMember();
             closeSearchContainer();
         }    
     }
@@ -148,7 +186,9 @@ function ifStatusIsActive(filter){
 
 function ifStatusIsUnknown(filter){
     if(filter === 'unknown'){
-        renderFilteredMember(unknownMember);
+        chosenFilter = unknownMember;
+        memberFilter = true;
+        showMember();
         closeSearchContainer();
     }
 }
@@ -158,52 +198,12 @@ function ifStatusIsDead(filter){
         if(deadMember.length < 1){
             alert('Keine Mitglieder gefunden')
         } else {
-            renderFilteredMember(deadMember);
+            memberFilter = true;
+            chosenFilter = deadMember;
+            showMember();
             closeSearchContainer();
         }    
     }
-}
-
-
-function renderFilteredMember(choosenFilter){
-    window.scrollTo(0, 0);
-    renderedMember = 50;
-    let memberList = document.getElementById('currentMemberList');
-    memberList.innerHTML = '';
-    for (let i = 0; i < choosenFilter.length; i++) {
-        const callsign = choosenFilter[i]['callsign'];
-        const name = choosenFilter[i]['name'];
-        const city = choosenFilter[i]['city'];
-        const status = choosenFilter[i]['status'];
-        renderMemberList(callsign, name, city, status);
-        if(i == renderedMember) break   
-        if (i == choosenFilter.length -1){
-            renderedMember = choosenFilter.length;
-            break 
-        } 
-    }
-    document.addEventListener('scroll', renderNextFilteredMember(choosenFilter));
-}
-
-function renderNextFilteredMember(choosenFilter){
-    let plusMember = +50;
-    let result = renderedMember + plusMember;
-        for (let i =  renderedMember; i < choosenFilter.length; i++) {
-            const callsign = choosenFilter[i]['callsign'];
-            const name = choosenFilter[i]['name'];
-            const city = choosenFilter[i]['city'];
-            const status = choosenFilter[i]['status'];
-            if (i == result){
-                renderedMember = result;
-                document.addEventListener('scroll', renderNextFilteredMember(choosenFilter));  
-                break;
-            }
-            if (i == choosenFilter.length -1){
-                renderedMember = choosenFilter.length;
-                document.removeEventListener('scroll', renderNextFilteredMember(choosenFilter));  
-            }
-            renderMemberList(callsign, name, city, status);
-    }  
 }
 
 function openSearchContainer(){
@@ -212,10 +212,83 @@ function openSearchContainer(){
     document.getElementById('searchContainerOverlay').style.display = 'flex';
 }
 
+
+
 function closeSearchContainer(){
     let searchContainerOverlay = document.getElementById('searchContainerOverlay');
     document.body.classList.remove('overflow-hidden');
     document.getElementById('memberMenu').style.display = 'flex'; 
-    searchContainerOverlay.style.display = 'none';
-        
+    searchContainerOverlay.style.display = 'none';     
+}
+
+function closeDetailView(){
+    memberFilter = false;
+    document.getElementById('memberTableContainer').innerHTML = '';
+    location.reload();
+    window.scrollTo(0, 0);
+}
+
+function searchMember(){
+    let searchResult = [];
+    document.removeEventListener('scroll', renderNextMembers);
+    window.scrollTo(0,0);
+    let searchInput = document.getElementById('inputField').value;
+    let searchList = document.getElementById('currentMemberList');
+    for (let i = 0; i < allMember.length; i++) {
+        const callsign = allMember[i]['callsign'];
+        const member = allMember[i]['name'].toLowerCase();
+        const city = allMember[i]['city'].toLowerCase();
+        if(callsign == searchInput.toUpperCase()){
+            renderCallSignSearchResult(searchList, searchResult, i);
+            document.getElementById('inputField').value = '';
+        }
+        if(member == searchInput.toLowerCase()){
+            renderMemberSearchresult(searchResult, searchList, i);
+            document.getElementById('inputField').value = '';
+        }
+        if(city == searchInput.toLowerCase()){
+            renderCitySearchResult(searchResult, searchList, i);
+            document.getElementById('inputField').value = '';
+        }
+
+}
+
+function renderCallSignSearchResult(searchList, searchResult, i){
+    searchList.innerHTML = '';
+            searchResult.push(allMember[i]);
+            for (let j = 0; j < searchResult.length; j++) {
+                const callsign = searchResult[j]['callsign'];
+                const name = searchResult[j]['name'].toLowerCase();
+                const city = searchResult[j]['city'];
+                const status = searchResult[j]['status'];
+                renderMemberList(callsign, name, city, status);
+                closeSearchContainer();
+            } 
+}
+
+function renderMemberSearchresult(searchResult, searchList, i){
+    searchResult.push(allMember[i]);
+            searchList.innerHTML = '';
+            for (let k = 0; k < searchResult.length; k++) {
+                const callsign = searchResult[k]['callsign'];
+                const name = searchResult[k]['name'].toLowerCase();
+                const city = searchResult[k]['city'];
+                const status = searchResult[k]['status'];
+                renderMemberList(callsign, name, city, status);
+                closeSearchContainer();
+            } 
+}
+
+function renderCitySearchResult(searchResult, searchList, i){
+    searchResult.push(allMember[i]);
+            searchList.innerHTML = '';
+            for (let k = 0; k < searchResult.length; k++) {
+                const callsign = searchResult[k]['callsign'];
+                const name = searchResult[k]['name'].toLowerCase();
+                const city = searchResult[k]['city'];
+                const status = searchResult[k]['status'];
+                renderMemberList(callsign, name, city, status);
+                closeSearchContainer();
+            } 
+        }
 }

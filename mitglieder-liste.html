@@ -45,10 +45,24 @@
     <!--member content-->
     <div id="searchContainerOverlay">
         <div class="search-container">
-            <form onsubmit="return false">
-                <input required placeholder="Nach Rufzeichen suchen" type="text" name="" id="">
-                <button>Suchen</button>
-            </form>  
+            <img onclick="closeSearchContainer()" class="close-btn pointer" src="./assets/img/cross.png" alt="">
+            <h2>Mitglieder suchen</h2>
+            <p class="w-70">
+                Hier kannst du im aktuell gewähltem Land
+                nach Rufzeichen, Name oder Stadt suchen.
+                Nutze dazu das Suchfeld<br>
+                <b>
+                    Bitte beachte, dass du nur nach Vollständigen Rufzeichen suchen kannst.<br>
+                    Beispiel: 13CT0001<br>
+                    Es ist egal ob du große oder kleine Buchstaben verwendest.<br>
+                    Verwende keine Leerzeichen bei der Suche.
+                </b>
+            </p>
+            <h3>Nach Status filtern</h3>
+            <p class="w-70">
+                Auf dem PC: Einfach mit der Maus über den Status Button Hovern und du kannst einen Filter Auswählen.<br>
+                Auf dem Smartphone: Status Button klicken und den gewünschen Status wählen.
+            </p>
             <div class="dropdown">
                 <button class="dropbtn">Status</button>
                 <div class="dropdown-content">
@@ -58,6 +72,11 @@
                     <p onclick="checkMemberFilter('dead')">verstorben</p>
                 </div>
             </div>
+           
+            <form onsubmit="return false">
+                <input required placeholder="Rufzeichen, Name oder Stadt" type="search" id="inputField">
+                <button class="search-btn" onclick="searchMember()" type="submit">Suchen</button>
+            </form>
         </div>
     </div>
     <div class="d-flex w-100 justify-center margin-top-30px margin-bottom-30px"></div>
@@ -94,7 +113,7 @@
 
     <div id="memberMenu" class="member-menu-container">
         <div  onclick="closeDetailView()" class="back">zurück</div>
-        <img onclick="openSearchContainer()" class="search" src="./assets/img/search.png">
+        <img onclick="openSearchContainer()" class="search pointer" src="./assets/img/search.png">
     </div>
 
     <div class="d-flex w-100 justify-center  margin-top-30px margin-bottom-30px">

@@ -7,6 +7,24 @@
          url('../fonts/roboto-mono-v22-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: solid 1px lightgrey;
+    border-radius: 24px;
+    box-shadow: 0px 0px 2px 2px lightgrey;
+    margin-top: 18px;
+  }
+
+  input{
+    font-size: 18px;
+    width: 280px;
+    padding: 4px;
+    font-weight: bold;
+  }
+
   .loader {
     border: 6px solid #f3f3f3;
     border-radius: 50%;
@@ -354,9 +372,6 @@ nav.active a {
     
 }
 
-.member-menu-container img{
-    cursor: url(../img/searchcur.cur), auto;
-}
 
 .cross{
     width: 35px;
@@ -690,6 +705,18 @@ li{
     background-color: rgba(0,0,0,85%);
 }
 
+.close-btn{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
 .dropbtn {
     background-color: #1095b0;
     color: white;
@@ -719,15 +746,29 @@ li{
 }
 
 .search-container{
+    position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    padding: 100px;
     color: black;
     border-radius: 24px;
+    max-height: 80vh;
+    text-align: -webkit-center;
+    padding-bottom: 12px;
 
+}
+
+.search-btn{
+    margin-top: 12px;
+    font-size: 18px;
+    border-radius: 12px;
+    padding: 6px;
+    font-weight: bold;
+    color: white;
+    background: #1095b0;
+    cursor: pointer;
 }
 
 @media(max-width: 1024px){
@@ -738,7 +779,7 @@ li{
 
 @media(max-width: 425px){
     .ws-100 {
-        width: 100%;
+        max-width: 100%;
     }
     .image-silder img {
         width: 100%;
